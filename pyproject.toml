@@ -1,5 +1,5 @@
 [project]
-name = "ai-candidate-ranking-system"
+name = "candidate-shortlister"
 version = "0.1.0"
 description = "AI-powered Candidate Discovery & Ranking Challenge Solution"
 readme = "README.md"

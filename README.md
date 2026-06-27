@@ -1,4 +1,4 @@
-# Redrob Candidate Intelligence Platform
+# Candidate Shortlister
 
 An AI-powered candidate ranking and intelligence system designed for recruiting teams. It bypasses keyword-stuffing traps and honeypots by understanding career trajectories, company pedigree, notice period bounds, and real-time behavioral signals to deliver a high-signal, trusted shortlist of candidates.
 
