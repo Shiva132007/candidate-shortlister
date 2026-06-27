@@ -1,0 +1,16 @@
+[project]
+name = "ai-candidate-ranking-system"
+version = "0.1.0"
+description = "AI-powered Candidate Discovery & Ranking Challenge Solution"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sentence-transformers>=3.0.0",
+    "numpy>=1.24.0",
+    "scikit-learn>=1.2.0",
+    "fastapi>=0.95.0",
+    "uvicorn>=0.22.0",
+    "python-docx>=1.0.0",
+    "tqdm>=4.65.0",
+    "python-multipart>=0.0.32",
+]

@@ -1,0 +1,68 @@
+# Redrob Hackathon — Submission Metadata
+#
+# Filled out according to our implementation specifications.
+
+# ============================================================================
+# Team identity
+# ============================================================================
+team_name: "Antigravity Recruiter AI"
+
+primary_contact:
+  name: "Shiva"
+  email: "shiva132007@gmail.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Shiva"
+    email: "shiva132007@gmail.com"
+    role: "ML & Backend Engineer"
+
+# ============================================================================
+# Code and reproducibility
+# ============================================================================
+github_repo: "https://github.com/Shiva132007/Github_profile_Reader"
+sandbox_link: "https://huggingface.co/spaces/Shiva132007/redrob-ranker"
+
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+# The single command that produces submission.csv from candidates.jsonl.
+# Completes in under 2 seconds for a small sample, and about 30 seconds for the full pool.
+
+# ============================================================================
+# Compute environment
+# ============================================================================
+compute:
+  platform: "Local Windows PC"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.13.5"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 25
+
+# ============================================================================
+# AI tools declaration
+# ============================================================================
+ai_tools_used:
+  - "Gemini"
+  - "Other"
+
+ai_usage_summary: |
+  Used Antigravity AI coding assistant for system architecture design, debugging Powershell path wildcards, and coding the React/FastAPI recruiter dashboard. No candidate profile data was fed to external APIs.
+
+# ============================================================================
+# Approach summary
+# ============================================================================
+methodology_summary: |
+  A 4-stage hybrid scoring model combining local SentenceTransformer semantic similarity with heuristic multipliers (YoE targets, product pedigree bonus, location preference, and notice period bounds) and behavioral availability modifiers. Includes a custom undergraduate timeline scanner to eliminate honeypots (0% honeypot rate in Top 100), and a deterministic hash-based reasoning generator to supply high-quality, varied justifications for manual review.
+
+# ============================================================================
+# Declarations
+# ============================================================================
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true

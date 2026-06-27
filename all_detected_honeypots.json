@@ -1,0 +1,6360 @@
+{
+  "CAND_0000435": {
+    "name": "Pooja Mishra",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Dunder Mifflin) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0000444": {
+    "name": "Vikram Mukherjee",
+    "reasons": [
+      "Senior job 3 (Project Manager at Pied Piper) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0000491": {
+    "name": "Zara Hegde",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0000504": {
+    "name": "Aarohi Chopra",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wipro) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0000542": {
+    "name": "Aadhya Dutta",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0000812": {
+    "name": "Reyansh Chopra",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Stark Industries) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0000960": {
+    "name": "Shreya Vora",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Infosys) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0001146": {
+    "name": "Dev Trivedi",
+    "reasons": [
+      "Senior job 3 (Project Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0001584": {
+    "name": "Riya Naidu",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0001662": {
+    "name": "Sanjay Gupta",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0001728": {
+    "name": "Anil Singh",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0001736": {
+    "name": "Arnav Pandey",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0001868": {
+    "name": "Jay Bose",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2013 before college started in 2016",
+      "Senior job 5 (Project Manager at TCS) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0002017": {
+    "name": "Riya Sen",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Globex Inc) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0002070": {
+    "name": "Vikram Naidu",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wipro) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0002108": {
+    "name": "Aarohi Pandey",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0002334": {
+    "name": "Naina Verma",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0002725": {
+    "name": "Aditya Malhotra",
+    "reasons": [
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0002861": {
+    "name": "Sunil Iyer",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0002877": {
+    "name": "Ira Banerjee",
+    "reasons": [
+      "Senior job 4 (HR Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0002948": {
+    "name": "Kiara Arora",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0002952": {
+    "name": "Dev Sen",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0002953": {
+    "name": "Advik Malhotra",
+    "reasons": [
+      "Senior job 5 (Project Manager at Initech) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0002983": {
+    "name": "Ishaan Gupta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0003195": {
+    "name": "Meera Naidu",
+    "reasons": [
+      "Senior job 6 (Project Manager at Infosys) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0003225": {
+    "name": "Dev Desai",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0003234": {
+    "name": "Om Dutta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0003328": {
+    "name": "Ira Mukherjee",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0003393": {
+    "name": "Priya Agarwal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0003430": {
+    "name": "Atharv Ghosh",
+    "reasons": [
+      "YoE mismatch: profile YoE 13.7 vs history YoE 0.92"
+    ]
+  },
+  "CAND_0003604": {
+    "name": "Divya Mittal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Stark Industries) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0003929": {
+    "name": "Riya Chowdary",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wipro) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0003983": {
+    "name": "Arnav Bhatia",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0004027": {
+    "name": "Mira Trivedi",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Initech) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0004090": {
+    "name": "Aanya Patel",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0004103": {
+    "name": "Rahul Sharma",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0004126": {
+    "name": "Karan Sen",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0004289": {
+    "name": "Manish Nair",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0004330": {
+    "name": "Naina Kumar",
+    "reasons": [
+      "Senior job 4 (Project Manager at Infosys) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0004395": {
+    "name": "Sunil Khanna",
+    "reasons": [
+      "Senior job 5 (Project Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0004452": {
+    "name": "Aditya Mukherjee",
+    "reasons": [
+      "Senior job 7 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0004511": {
+    "name": "Zara Pandey",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0004647": {
+    "name": "Amit Pandey",
+    "reasons": [
+      "Senior job 3 (HR Manager at Stark Industries) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0004766": {
+    "name": "Reyansh Sethi",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2012 before college started in 2015",
+      "Senior job 5 (Operations Manager at Hooli) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0004810": {
+    "name": "Ela Kumar",
+    "reasons": [
+      "Senior job 4 (Project Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0004840": {
+    "name": "Tanya Desai",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2014 before college started in 2018",
+      "Senior job 5 (Operations Manager at Pied Piper) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0004894": {
+    "name": "Manish Bansal",
+    "reasons": [
+      "Senior job 4 (HR Manager at Initech) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0004970": {
+    "name": "Ananya Banerjee",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0005014": {
+    "name": "Advik Sen",
+    "reasons": [
+      "Senior job 5 (Operations Manager at TCS) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0005046": {
+    "name": "Jay Saxena",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0005164": {
+    "name": "Sai Iyer",
+    "reasons": [
+      "Senior job 4 (Project Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0005291": {
+    "name": "Priya Singh",
+    "reasons": [
+      "YoE mismatch: profile YoE 12.8 vs history YoE 0.92"
+    ]
+  },
+  "CAND_0005316": {
+    "name": "Om Patel",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0005321": {
+    "name": "Pranav Chopra",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wipro) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0005326": {
+    "name": "Reyansh Verma",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0005336": {
+    "name": "Ayaan Reddy",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0005415": {
+    "name": "Yash Khanna",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0005434": {
+    "name": "Amit Bose",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0005436": {
+    "name": "Krishna Mittal",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0005441": {
+    "name": "Ishaan Kapoor",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0005505": {
+    "name": "Atharv Menon",
+    "reasons": [
+      "Senior job 3 (Project Manager at Initech) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0005521": {
+    "name": "Arnav Goyal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0005576": {
+    "name": "Anika Agarwal",
+    "reasons": [
+      "Senior job 5 (Operations Manager at TCS) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0005580": {
+    "name": "Aisha Bose",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0005657": {
+    "name": "Dev Iyengar",
+    "reasons": [
+      "Senior job 3 (Project Manager at Hooli) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0005698": {
+    "name": "Arjun Agarwal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Dunder Mifflin) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0005757": {
+    "name": "Siya Pillai",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0005862": {
+    "name": "Yash Goyal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0005932": {
+    "name": "Naina Khanna",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0005951": {
+    "name": "Om Dalal",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Wayne Enterprises) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0005961": {
+    "name": "Om Dutta",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0005976": {
+    "name": "Zara Trivedi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0006510": {
+    "name": "Aditya Sen",
+    "reasons": [
+      "Senior job 5 (Project Manager at Infosys) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0006599": {
+    "name": "Krishna Dutta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0006619": {
+    "name": "Zara Khanna",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0006881": {
+    "name": "Arnav Menon",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0006904": {
+    "name": "Anika Hegde",
+    "reasons": [
+      "Senior job 3 (HR Manager at Infosys) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0007096": {
+    "name": "Divya Mishra",
+    "reasons": [
+      "Senior job 4 (Project Manager at Acme Corp) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0007232": {
+    "name": "Karan Naidu",
+    "reasons": [
+      "Senior job 4 (HR Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0007246": {
+    "name": "Jay Bansal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0007267": {
+    "name": "Ritu Mukherjee",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0007349": {
+    "name": "Avni Trivedi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0007353": {
+    "name": "Aarav Subramanian",
+    "reasons": [
+      "Job 0 (Wayne Enterprises) duration 166 exceeds span 33 months"
+    ]
+  },
+  "CAND_0007399": {
+    "name": "Anil Bansal",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0007400": {
+    "name": "Ishaan Mishra",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Globex Inc) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0007413": {
+    "name": "Ved Nair",
+    "reasons": [
+      "YoE mismatch: profile YoE 13.3 vs history YoE 1.33"
+    ]
+  },
+  "CAND_0007528": {
+    "name": "Kavya Joshi",
+    "reasons": [
+      "Senior job 6 (HR Manager at Infosys) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0007584": {
+    "name": "Riya Shah",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0007613": {
+    "name": "Sai Singh",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0007671": {
+    "name": "Ananya Bose",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Infosys) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0007848": {
+    "name": "Divya Hegde",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Hooli) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0007872": {
+    "name": "Ira Joshi",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Infosys) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0008080": {
+    "name": "Arjun Iyer",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0008272": {
+    "name": "Yash Khanna",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0008352": {
+    "name": "Aryan Mehta",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0008365": {
+    "name": "Sunil Joshi",
+    "reasons": [
+      "Senior job 5 (Operations Manager at TCS) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0008448": {
+    "name": "Shreya Iyengar",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0008535": {
+    "name": "Pari Sen",
+    "reasons": [
+      "Senior job 5 (HR Manager at TCS) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0008551": {
+    "name": "Ayaan Gupta",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0008669": {
+    "name": "Diya Mukherjee",
+    "reasons": [
+      "Senior job 4 (Project Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0008671": {
+    "name": "Tanvi Menon",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Initech) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0008846": {
+    "name": "Diya Gupta",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Acme Corp) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0008936": {
+    "name": "Divya Chatterjee",
+    "reasons": [
+      "Senior job 2 (HR Manager at Initech) started in 2015 before college started in 2018",
+      "Senior job 3 (HR Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0008960": {
+    "name": "Meera Naidu",
+    "reasons": [
+      "Job 0 (Stark Industries) duration 171 exceeds span 21 months"
+    ]
+  },
+  "CAND_0008968": {
+    "name": "Aarohi Bose",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0008995": {
+    "name": "Anika Dutta",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Acme Corp) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0009172": {
+    "name": "Divya Banerjee",
+    "reasons": [
+      "Senior job 4 (Project Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0009189": {
+    "name": "Ishaan Chopra",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0009400": {
+    "name": "Sunil Kapoor",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Infosys) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0009406": {
+    "name": "Kiara Mishra",
+    "reasons": [
+      "Senior job 3 (Project Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0009434": {
+    "name": "Shreya Iyengar",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Acme Corp) started in 2016 before college started in 2019",
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2019",
+      "Senior job 5 (HR Manager at Stark Industries) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0009725": {
+    "name": "Rohan Mukherjee",
+    "reasons": [
+      "Senior job 3 (HR Manager at Initech) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0009743": {
+    "name": "Ved Sen",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0009959": {
+    "name": "Avni Joshi",
+    "reasons": [
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0010093": {
+    "name": "Yash Vora",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0010140": {
+    "name": "Vihaan Rao",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wayne Enterprises) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0010294": {
+    "name": "Reyansh Nair",
+    "reasons": [
+      "Job 0 (Mphasis) duration 144 exceeds span 19 months"
+    ]
+  },
+  "CAND_0010325": {
+    "name": "Amit Arora",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0010556": {
+    "name": "Sanjay Pillai",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0010670": {
+    "name": "Aarav Hegde",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0010908": {
+    "name": "Vikram Agarwal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0010935": {
+    "name": "Myra Krishnan",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2014 before college started in 2018",
+      "Senior job 5 (Project Manager at TCS) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0010971": {
+    "name": "Riya Sethi",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wayne Enterprises) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0010996": {
+    "name": "Kavya Dutta",
+    "reasons": [
+      "Senior job 4 (Project Manager at Stark Industries) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0011072": {
+    "name": "Advik Shah",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2013 before college started in 2016",
+      "Senior job 6 (Project Manager at Acme Corp) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0011166": {
+    "name": "Yash Ghosh",
+    "reasons": [
+      "Senior job 3 (HR Manager at Hooli) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0011204": {
+    "name": "Tanvi Mukherjee",
+    "reasons": [
+      "Senior job 4 (HR Manager at Pied Piper) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0011310": {
+    "name": "Naina Mittal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0011503": {
+    "name": "Advik Bhatia",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0011507": {
+    "name": "Mira Vora",
+    "reasons": [
+      "Senior job 3 (Project Manager at Initech) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0011573": {
+    "name": "Aisha Agarwal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0011653": {
+    "name": "Ishaan Sharma",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0011689": {
+    "name": "Aadhya Trivedi",
+    "reasons": [
+      "Senior job 4 (Project Manager at Pied Piper) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0011714": {
+    "name": "Krishna Verma",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0011736": {
+    "name": "Rajesh Arora",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Initech) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0011848": {
+    "name": "Ishaan Bhatia",
+    "reasons": [
+      "Senior job 3 (HR Manager at Globex Inc) started in 2013 before college started in 2017",
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0011882": {
+    "name": "Kiara Pillai",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0012205": {
+    "name": "Zara Malhotra",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0012351": {
+    "name": "Sunil Shah",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2014 before college started in 2017",
+      "Senior job 4 (Operations Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0012382": {
+    "name": "Rahul Verma",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0012432": {
+    "name": "Priya Malhotra",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0012596": {
+    "name": "Rajesh Mishra",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Infosys) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0012700": {
+    "name": "Deepak Desai",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0012959": {
+    "name": "Kiara Iyengar",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0013221": {
+    "name": "Pari Reddy",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0013230": {
+    "name": "Naina Mukherjee",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0013453": {
+    "name": "Arnav Joshi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0013916": {
+    "name": "Arjun Bhatia",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Dunder Mifflin) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0014098": {
+    "name": "Dev Goyal",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2017",
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0014186": {
+    "name": "Aisha Malhotra",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2015 before college started in 2019",
+      "Senior job 6 (Project Manager at Dunder Mifflin) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0014195": {
+    "name": "Sneha Gupta",
+    "reasons": [
+      "Senior job 2 (HR Manager at Hooli) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0014212": {
+    "name": "Sai Agarwal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Globex Inc) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0014315": {
+    "name": "Aryan Menon",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0014653": {
+    "name": "Pooja Chatterjee",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0014657": {
+    "name": "Ishaan Vora",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Acme Corp) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0014876": {
+    "name": "Myra Shah",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0014917": {
+    "name": "Neha Gupta",
+    "reasons": [
+      "Senior job 3 (Project Manager at Dunder Mifflin) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0014994": {
+    "name": "Shaurya Malhotra",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2012 before college started in 2017",
+      "Senior job 5 (Operations Manager at TCS) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0015205": {
+    "name": "Priya Mukherjee",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Pied Piper) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0015209": {
+    "name": "Zara Hegde",
+    "reasons": [
+      "Senior job 5 (Project Manager at Acme Corp) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0015286": {
+    "name": "Sanjay Agarwal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Globex Inc) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0015349": {
+    "name": "Shaurya Dalal",
+    "reasons": [
+      "Senior job 3 (Operations Manager at TCS) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0015472": {
+    "name": "Arjun Ghosh",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0015599": {
+    "name": "Divya Mishra",
+    "reasons": [
+      "Senior job 5 (HR Manager at Acme Corp) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0015706": {
+    "name": "Anil Naidu",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0015820": {
+    "name": "Suresh Pandey",
+    "reasons": [
+      "Senior job 5 (Project Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0015886": {
+    "name": "Om Vora",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0015981": {
+    "name": "Aarohi Singh",
+    "reasons": [
+      "Senior job 4 (Project Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0016000": {
+    "name": "Aarav Bansal",
+    "reasons": [
+      "Skills anomaly: 5 expert/advanced skills with 0 months duration"
+    ]
+  },
+  "CAND_0016028": {
+    "name": "Myra Shah",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0016091": {
+    "name": "Riya Banerjee",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Hooli) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0016113": {
+    "name": "Kavya Kapoor",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0016399": {
+    "name": "Anika Nair",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Wipro) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0016526": {
+    "name": "Neha Mittal",
+    "reasons": [
+      "Senior job 5 (Project Manager at Acme Corp) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0016770": {
+    "name": "Zara Mehta",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0016798": {
+    "name": "Ritu Mukherjee",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0016864": {
+    "name": "Ayaan Bhatia",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Pied Piper) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0016921": {
+    "name": "Pooja Mehta",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0016963": {
+    "name": "Neha Sethi",
+    "reasons": [
+      "Senior job 3 (Project Manager at Infosys) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0016974": {
+    "name": "Anika Chowdary",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0017067": {
+    "name": "Ira Krishnan",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0017119": {
+    "name": "Deepak Verma",
+    "reasons": [
+      "Senior job 5 (Project Manager at Hooli) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0017226": {
+    "name": "Anika Mukherjee",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Hooli) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0017249": {
+    "name": "Anjali Rao",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Stark Industries) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0017540": {
+    "name": "Meera Iyer",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2015 before college started in 2019",
+      "Senior job 5 (HR Manager at Globex Inc) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0017620": {
+    "name": "Rohan Ghosh",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wipro) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0017656": {
+    "name": "Ira Chopra",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0017660": {
+    "name": "Diya Mishra",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0017673": {
+    "name": "Aryan Menon",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Globex Inc) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0017696": {
+    "name": "Deepak Mishra",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0017868": {
+    "name": "Aarohi Bhatia",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0017929": {
+    "name": "Aryan Joshi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Hooli) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0017940": {
+    "name": "Divya Desai",
+    "reasons": [
+      "Senior job 3 (Project Manager at Dunder Mifflin) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0017970": {
+    "name": "Siya Dutta",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0018022": {
+    "name": "Kiara Pandey",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0018029": {
+    "name": "Meera Mukherjee",
+    "reasons": [
+      "Senior job 3 (HR Manager at Globex Inc) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0018114": {
+    "name": "Dev Chowdary",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0018256": {
+    "name": "Karan Saxena",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0018508": {
+    "name": "Rajesh Krishnan",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0018515": {
+    "name": "Aarohi Dalal",
+    "reasons": [
+      "Job 0 (Initech) duration 150 exceeds span 39 months"
+    ]
+  },
+  "CAND_0018764": {
+    "name": "Aanya Mukherjee",
+    "reasons": [
+      "Senior job 6 (HR Manager at Wipro) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0018809": {
+    "name": "Tanvi Patel",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Stark Industries) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0019007": {
+    "name": "Aisha Chopra",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Acme Corp) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0019064": {
+    "name": "Atharv Desai",
+    "reasons": [
+      "Senior job 6 (HR Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0019066": {
+    "name": "Aisha Mehta",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Stark Industries) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0019124": {
+    "name": "Vivaan Mehta",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0019209": {
+    "name": "Arjun Sen",
+    "reasons": [
+      "Senior job 6 (Project Manager at TCS) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0019465": {
+    "name": "Diya Mehta",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wipro) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0019588": {
+    "name": "Advaith Khanna",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0019603": {
+    "name": "Arjun Gupta",
+    "reasons": [
+      "Senior job 2 (Project Manager at Wayne Enterprises) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0019655": {
+    "name": "Advik Kapoor",
+    "reasons": [
+      "Senior job 3 (Project Manager at Globex Inc) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0019662": {
+    "name": "Ishaan Goyal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0019663": {
+    "name": "Tanya Joshi",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0019668": {
+    "name": "Kavya Mishra",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0019852": {
+    "name": "Rohan Pandey",
+    "reasons": [
+      "Senior job 3 (HR Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0019929": {
+    "name": "Advaith Shah",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0019983": {
+    "name": "Aadhya Bansal",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0020098": {
+    "name": "Om Arora",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wipro) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0020175": {
+    "name": "Ved Pillai",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0020204": {
+    "name": "Suresh Reddy",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wipro) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0020376": {
+    "name": "Sanjay Sethi",
+    "reasons": [
+      "Senior job 4 (Project Manager at Pied Piper) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0020611": {
+    "name": "Divya Vora",
+    "reasons": [
+      "Senior job 5 (HR Manager at TCS) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0020725": {
+    "name": "Tanvi Iyengar",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0020867": {
+    "name": "Siya Singh",
+    "reasons": [
+      "Senior job 5 (HR Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0020986": {
+    "name": "Sunil Arora",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Globex Inc) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0021029": {
+    "name": "Dhruv Pandey",
+    "reasons": [
+      "Senior job 5 (HR Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0021032": {
+    "name": "Mira Verma",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2014 before college started in 2017",
+      "Senior job 5 (HR Manager at Wayne Enterprises) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0021058": {
+    "name": "Tanya Chatterjee",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wayne Enterprises) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0021179": {
+    "name": "Shaurya Chopra",
+    "reasons": [
+      "Senior job 4 (HR Manager at Hooli) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0021451": {
+    "name": "Dhruv Verma",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Pied Piper) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0021516": {
+    "name": "Aadhya Joshi",
+    "reasons": [
+      "Senior job 3 (HR Manager at Globex Inc) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0021592": {
+    "name": "Arjun Sethi",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Stark Industries) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0021595": {
+    "name": "Aanya Chopra",
+    "reasons": [
+      "Senior job 2 (Project Manager at TCS) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0021661": {
+    "name": "Ananya Mehta",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0021663": {
+    "name": "Ritu Shah",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0021923": {
+    "name": "Kabir Reddy",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Acme Corp) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0021943": {
+    "name": "Divya Sen",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Hooli) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0021984": {
+    "name": "Suresh Malhotra",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0022146": {
+    "name": "Ananya Mittal",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0022365": {
+    "name": "Yash Chatterjee",
+    "reasons": [
+      "Senior job 6 (HR Manager at Hooli) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0022402": {
+    "name": "Mira Chopra",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0022556": {
+    "name": "Rajesh Tiwari",
+    "reasons": [
+      "Senior job 4 (HR Manager at Hooli) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0022579": {
+    "name": "Sai Gupta",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Infosys) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0022712": {
+    "name": "Krishna Chopra",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0022713": {
+    "name": "Arjun Banerjee",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0022726": {
+    "name": "Atharv Iyer",
+    "reasons": [
+      "Senior job 5 (HR Manager at TCS) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0022788": {
+    "name": "Vihaan Mehta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0022887": {
+    "name": "Advaith Ghosh",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Hooli) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0023063": {
+    "name": "Riya Banerjee",
+    "reasons": [
+      "Senior job 6 (Project Manager at Globex Inc) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0023178": {
+    "name": "Advaith Mittal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0023352": {
+    "name": "Diya Bansal",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0023353": {
+    "name": "Pari Mukherjee",
+    "reasons": [
+      "Senior job 2 (Project Manager at Wipro) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0023524": {
+    "name": "Aanya Agarwal",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0023569": {
+    "name": "Aanya Arora",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wayne Enterprises) started in 2013 before college started in 2017",
+      "Senior job 4 (Operations Manager at Infosys) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0023766": {
+    "name": "Diya Bhatia",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0023782": {
+    "name": "Ananya Tiwari",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Initech) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0023932": {
+    "name": "Sneha Subramanian",
+    "reasons": [
+      "Senior job 6 (Project Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0024023": {
+    "name": "Suresh Nair",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0024065": {
+    "name": "Advik Mittal",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0024131": {
+    "name": "Shreya Gupta",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0024241": {
+    "name": "Saanvi Reddy",
+    "reasons": [
+      "Senior job 5 (Project Manager at TCS) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0024301": {
+    "name": "Sunil Mehta",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Acme Corp) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0024476": {
+    "name": "Krishna Shetty",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0024505": {
+    "name": "Nisha Patel",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Initech) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0024512": {
+    "name": "Rohan Dutta",
+    "reasons": [
+      "Senior job 3 (HR Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0024575": {
+    "name": "Yash Pandey",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2016 before college started in 2019",
+      "Senior job 6 (Project Manager at Acme Corp) started in 2012 before college started in 2019",
+      "Senior job 7 (Marketing Manager at Wipro) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0024735": {
+    "name": "Ritu Mishra",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Globex Inc) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0024752": {
+    "name": "Shaurya Dutta",
+    "reasons": [
+      "YoE mismatch: profile YoE 14.9 vs history YoE 0.67"
+    ]
+  },
+  "CAND_0024959": {
+    "name": "Tanya Menon",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wayne Enterprises) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0024962": {
+    "name": "Nisha Arora",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wipro) started in 2013 before college started in 2017",
+      "Senior job 6 (Project Manager at Globex Inc) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0025020": {
+    "name": "Rajesh Kapoor",
+    "reasons": [
+      "Senior job 5 (Project Manager at TCS) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0025399": {
+    "name": "Saanvi Banerjee",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0025524": {
+    "name": "Pooja Tiwari",
+    "reasons": [
+      "Senior job 3 (HR Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0025579": {
+    "name": "Avni Pandey",
+    "reasons": [
+      "YoE mismatch: profile YoE 12.9 vs history YoE 1.00"
+    ]
+  },
+  "CAND_0025790": {
+    "name": "Yash Goyal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0025803": {
+    "name": "Deepak Banerjee",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Hooli) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0025818": {
+    "name": "Aanya Bhatia",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0025853": {
+    "name": "Arjun Hegde",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0025937": {
+    "name": "Sunil Kumar",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wayne Enterprises) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0025972": {
+    "name": "Aisha Trivedi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0026310": {
+    "name": "Advik Mittal",
+    "reasons": [
+      "Senior job 5 (Project Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0026399": {
+    "name": "Riya Mehta",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Pied Piper) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0026470": {
+    "name": "Aditya Patel",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0026495": {
+    "name": "Sneha Desai",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0026510": {
+    "name": "Dhruv Mishra",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0026678": {
+    "name": "Ela Verma",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2013 before college started in 2016",
+      "Senior job 5 (Operations Manager at Initech) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0026679": {
+    "name": "Ishaan Desai",
+    "reasons": [
+      "Senior job 3 (Operations Manager at TCS) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0026710": {
+    "name": "Advaith Shah",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Initech) started in 2013 before college started in 2018",
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0026827": {
+    "name": "Anil Nair",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0026921": {
+    "name": "Aarohi Tiwari",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wipro) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0026940": {
+    "name": "Atharv Vora",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Globex Inc) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0026967": {
+    "name": "Aryan Nair",
+    "reasons": [
+      "Senior job 3 (Project Manager at Infosys) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0027240": {
+    "name": "Nikhil Joshi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2014 before college started in 2017",
+      "Senior job 5 (Operations Manager at Hooli) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0027336": {
+    "name": "Anika Verma",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wipro) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0027484": {
+    "name": "Vihaan Dutta",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2013 before college started in 2016",
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0027526": {
+    "name": "Aarav Khanna",
+    "reasons": [
+      "Senior job 3 (HR Manager at Pied Piper) started in 2015 before college started in 2018",
+      "Senior job 5 (HR Manager at Stark Industries) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0027594": {
+    "name": "Yash Kumar",
+    "reasons": [
+      "Senior job 3 (Project Manager at Initech) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0027708": {
+    "name": "Deepak Saxena",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0027746": {
+    "name": "Sanjay Sharma",
+    "reasons": [
+      "Senior job 2 (Project Manager at Wipro) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0027827": {
+    "name": "Vivaan Kumar",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2013 before college started in 2017",
+      "Senior job 5 (Project Manager at Dunder Mifflin) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0028039": {
+    "name": "Atharv Krishnan",
+    "reasons": [
+      "Senior job 3 (Project Manager at Globex Inc) started in 2016 before college started in 2019",
+      "Senior job 5 (Operations Manager at Hooli) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0028150": {
+    "name": "Aarohi Joshi",
+    "reasons": [
+      "Senior job 3 (Project Manager at Hooli) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0028178": {
+    "name": "Aryan Singh",
+    "reasons": [
+      "Senior job 2 (HR Manager at Stark Industries) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0028194": {
+    "name": "Kavya Sharma",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wipro) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0028242": {
+    "name": "Manish Bose",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Globex Inc) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0028276": {
+    "name": "Avni Tiwari",
+    "reasons": [
+      "Senior job 3 (Project Manager at Initech) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0028279": {
+    "name": "Priya Pandey",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0028325": {
+    "name": "Arjun Dalal",
+    "reasons": [
+      "Senior job 5 (Project Manager at Dunder Mifflin) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0028397": {
+    "name": "Rohan Pillai",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0028408": {
+    "name": "Sanjay Dalal",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0028448": {
+    "name": "Vihaan Bansal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0028485": {
+    "name": "Rahul Kumar",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Pied Piper) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0028489": {
+    "name": "Arnav Shetty",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0028524": {
+    "name": "Ayaan Iyer",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0028543": {
+    "name": "Shaurya Sethi",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at TCS) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0028593": {
+    "name": "Ela Subramanian",
+    "reasons": [
+      "Senior job 3 (Project Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0028702": {
+    "name": "Krishna Bhatia",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2014 before college started in 2018",
+      "Senior job 5 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0028748": {
+    "name": "Pari Patel",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0028970": {
+    "name": "Avni Dutta",
+    "reasons": [
+      "Senior job 5 (Project Manager at Infosys) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0029084": {
+    "name": "Aarohi Gupta",
+    "reasons": [
+      "Senior job 5 (Project Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0029120": {
+    "name": "Dev Shah",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2015 before college started in 2018",
+      "Senior job 5 (Project Manager at Wipro) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0029148": {
+    "name": "Vikram Shetty",
+    "reasons": [
+      "Senior job 5 (HR Manager at Pied Piper) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0029231": {
+    "name": "Ela Malhotra",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Stark Industries) started in 2015 before college started in 2018",
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0029328": {
+    "name": "Yash Singh",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0029515": {
+    "name": "Rahul Chowdary",
+    "reasons": [
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0029526": {
+    "name": "Aditya Chowdary",
+    "reasons": [
+      "Senior job 3 (Project Manager at Pied Piper) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0029745": {
+    "name": "Advik Pillai",
+    "reasons": [
+      "Senior job 4 (Project Manager at Infosys) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0029791": {
+    "name": "Divya Singh",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0029919": {
+    "name": "Riya Menon",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Pied Piper) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0029990": {
+    "name": "Pari Sharma",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2014 before college started in 2018",
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0029998": {
+    "name": "Amit Reddy",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0030158": {
+    "name": "Suresh Hegde",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0030361": {
+    "name": "Shaurya Singh",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0030477": {
+    "name": "Mira Agarwal",
+    "reasons": [
+      "Senior job 7 (Project Manager at Wipro) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0030811": {
+    "name": "Arnav Saxena",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Pied Piper) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0030857": {
+    "name": "Ananya Agarwal",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Initech) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0030871": {
+    "name": "Dhruv Trivedi",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at TCS) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0030883": {
+    "name": "Rajesh Kumar",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0030917": {
+    "name": "Ira Shetty",
+    "reasons": [
+      "Senior job 5 (Operations Manager at TCS) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0030938": {
+    "name": "Aditya Menon",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wayne Enterprises) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0031004": {
+    "name": "Om Nair",
+    "reasons": [
+      "Senior job 2 (Marketing Manager at Pied Piper) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0031046": {
+    "name": "Neha Bansal",
+    "reasons": [
+      "Senior job 3 (Project Manager at Dunder Mifflin) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0031050": {
+    "name": "Saanvi Hegde",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0031091": {
+    "name": "Nikhil Khanna",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Infosys) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0031264": {
+    "name": "Advaith Krishnan",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0031378": {
+    "name": "Ishaan Malhotra",
+    "reasons": [
+      "Senior job 6 (Project Manager at TCS) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0031449": {
+    "name": "Pari Chatterjee",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0031480": {
+    "name": "Diya Dutta",
+    "reasons": [
+      "Senior job 3 (Project Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0031532": {
+    "name": "Sai Desai",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0031841": {
+    "name": "Ritu Bansal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at TCS) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0031942": {
+    "name": "Sneha Nair",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0031957": {
+    "name": "Vihaan Mehta",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0032122": {
+    "name": "Tanvi Iyengar",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Infosys) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0032143": {
+    "name": "Diya Hegde",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0032193": {
+    "name": "Naina Kapoor",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0032347": {
+    "name": "Pooja Dutta",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0032564": {
+    "name": "Neha Mishra",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0032647": {
+    "name": "Vikram Subramanian",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0032668": {
+    "name": "Ritu Nair",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Infosys) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0032679": {
+    "name": "Tanvi Patel",
+    "reasons": [
+      "Senior job 3 (HR Manager at Hooli) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0032877": {
+    "name": "Dev Reddy",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0033004": {
+    "name": "Diya Kumar",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0033008": {
+    "name": "Aisha Iyengar",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2014 before college started in 2017",
+      "Senior job 4 (Operations Manager at Wipro) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0033049": {
+    "name": "Amit Dalal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wipro) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0033073": {
+    "name": "Neha Pillai",
+    "reasons": [
+      "Senior job 3 (HR Manager at Initech) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0033131": {
+    "name": "Vikram Chatterjee",
+    "reasons": [
+      "YoE mismatch: profile YoE 12.7 vs history YoE 1.33"
+    ]
+  },
+  "CAND_0033399": {
+    "name": "Zara Pillai",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0033506": {
+    "name": "Ananya Vora",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0033509": {
+    "name": "Myra Goyal",
+    "reasons": [
+      "Senior job 5 (Project Manager at Globex Inc) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0033844": {
+    "name": "Sneha Chatterjee",
+    "reasons": [
+      "Senior job 5 (Project Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0033847": {
+    "name": "Amit Trivedi",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0033903": {
+    "name": "Dhruv Kumar",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wayne Enterprises) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0033964": {
+    "name": "Aanya Kapoor",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0034002": {
+    "name": "Tanya Bose",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wipro) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0034019": {
+    "name": "Om Desai",
+    "reasons": [
+      "Senior job 5 (HR Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0034100": {
+    "name": "Ved Rao",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0034207": {
+    "name": "Dhruv Sen",
+    "reasons": [
+      "Senior job 7 (Project Manager at Wayne Enterprises) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0034354": {
+    "name": "Rahul Trivedi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0034368": {
+    "name": "Riya Bose",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0034402": {
+    "name": "Kavya Desai",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0034516": {
+    "name": "Sai Rao",
+    "reasons": [
+      "Senior job 3 (HR Manager at TCS) started in 2014 before college started in 2017",
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0034581": {
+    "name": "Shaurya Joshi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0034604": {
+    "name": "Aisha Naidu",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0035055": {
+    "name": "Sanjay Joshi",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Hooli) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0035104": {
+    "name": "Ayaan Chopra",
+    "reasons": [
+      "Job 0 (Cognizant) duration 114 exceeds span 18 months"
+    ]
+  },
+  "CAND_0035292": {
+    "name": "Pooja Pillai",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0035429": {
+    "name": "Rajesh Trivedi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0035495": {
+    "name": "Ved Agarwal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0035526": {
+    "name": "Saanvi Joshi",
+    "reasons": [
+      "Senior job 4 (Project Manager at Initech) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0035627": {
+    "name": "Aryan Dutta",
+    "reasons": [
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0035664": {
+    "name": "Mira Kumar",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0035670": {
+    "name": "Pranav Mehta",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0036193": {
+    "name": "Kavya Mittal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0036231": {
+    "name": "Ved Chopra",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0036261": {
+    "name": "Sneha Joshi",
+    "reasons": [
+      "Senior job 5 (HR Manager at Stark Industries) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0036299": {
+    "name": "Rajesh Sharma",
+    "reasons": [
+      "YoE mismatch: profile YoE 12.2 vs history YoE 0.67"
+    ]
+  },
+  "CAND_0036313": {
+    "name": "Aisha Menon",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2014 before college started in 2017",
+      "Senior job 5 (HR Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0036470": {
+    "name": "Aarav Mishra",
+    "reasons": [
+      "Senior job 2 (HR Manager at Dunder Mifflin) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0036524": {
+    "name": "Anjali Agarwal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0036530": {
+    "name": "Sanjay Reddy",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0036667": {
+    "name": "Dhruv Singh",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Globex Inc) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0036923": {
+    "name": "Aarohi Kapoor",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Infosys) started in 2015 before college started in 2018",
+      "Senior job 5 (Project Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0037148": {
+    "name": "Rahul Singh",
+    "reasons": [
+      "Senior job 2 (HR Manager at Infosys) started in 2015 before college started in 2019",
+      "Senior job 3 (Operations Manager at TCS) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0037263": {
+    "name": "Advaith Mishra",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0037539": {
+    "name": "Aryan Subramanian",
+    "reasons": [
+      "Job 0 (Stark Industries) duration 106 exceeds span 49 months"
+    ]
+  },
+  "CAND_0037594": {
+    "name": "Riya Verma",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wipro) started in 2015 before college started in 2019",
+      "Senior job 5 (Operations Manager at Pied Piper) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0037660": {
+    "name": "Jay Chopra",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0037708": {
+    "name": "Pranav Bose",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0037811": {
+    "name": "Vihaan Naidu",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0038069": {
+    "name": "Rahul Nair",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Initech) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0038122": {
+    "name": "Aisha Menon",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0038193": {
+    "name": "Aisha Nair",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0038254": {
+    "name": "Anjali Dalal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0038298": {
+    "name": "Shaurya Kumar",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0038360": {
+    "name": "Vivaan Dalal",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Globex Inc) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0038373": {
+    "name": "Pari Iyengar",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Hooli) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0038431": {
+    "name": "Tanvi Iyer",
+    "reasons": [
+      "YoE mismatch: profile YoE 15.0 vs history YoE 1.33"
+    ]
+  },
+  "CAND_0039057": {
+    "name": "Divya Chatterjee",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0039246": {
+    "name": "Vivaan Naidu",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2015 before college started in 2019",
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0039368": {
+    "name": "Pari Krishnan",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2012 before college started in 2015",
+      "Senior job 5 (Marketing Manager at TCS) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0039562": {
+    "name": "Kabir Kumar",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2015 before college started in 2018",
+      "Senior job 4 (Project Manager at Infosys) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0039686": {
+    "name": "Aarav Goyal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0039747": {
+    "name": "Aarav Patel",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Pied Piper) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0039801": {
+    "name": "Suresh Kapoor",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Initech) started in 2013 before college started in 2017",
+      "Senior job 4 (Operations Manager at Acme Corp) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0040016": {
+    "name": "Shaurya Kapoor",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0040075": {
+    "name": "Aditya Singh",
+    "reasons": [
+      "Job 0 (Pied Piper) duration 228 exceeds span 39 months"
+    ]
+  },
+  "CAND_0040089": {
+    "name": "Shaurya Menon",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0040123": {
+    "name": "Ved Rao",
+    "reasons": [
+      "Senior job 3 (HR Manager at Stark Industries) started in 2016 before college started in 2019",
+      "Senior job 4 (Marketing Manager at Wipro) started in 2015 before college started in 2019",
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0040184": {
+    "name": "Rohan Mishra",
+    "reasons": [
+      "Senior job 5 (HR Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0040466": {
+    "name": "Aditya Tiwari",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0040580": {
+    "name": "Vikram Sen",
+    "reasons": [
+      "Senior job 4 (Project Manager at Infosys) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0040723": {
+    "name": "Tanya Shah",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Globex Inc) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0040789": {
+    "name": "Vivaan Mishra",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2016 before college started in 2019",
+      "Senior job 6 (HR Manager at Wipro) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0040853": {
+    "name": "Manish Hegde",
+    "reasons": [
+      "Job 0 (Initech) duration 61 exceeds span 13 months"
+    ]
+  },
+  "CAND_0040895": {
+    "name": "Nikhil Krishnan",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Globex Inc) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0041167": {
+    "name": "Dhruv Menon",
+    "reasons": [
+      "Senior job 6 (HR Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0041260": {
+    "name": "Anika Sharma",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0041326": {
+    "name": "Ira Pandey",
+    "reasons": [
+      "Senior job 3 (HR Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0041408": {
+    "name": "Aanya Agarwal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0041490": {
+    "name": "Saanvi Bose",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at TCS) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0041515": {
+    "name": "Ishaan Mehta",
+    "reasons": [
+      "Senior job 3 (HR Manager at Infosys) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0041553": {
+    "name": "Avni Bhatia",
+    "reasons": [
+      "Senior job 3 (Operations Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0041562": {
+    "name": "Aryan Reddy",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0041580": {
+    "name": "Riya Goyal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0041795": {
+    "name": "Dhruv Saxena",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Globex Inc) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0041865": {
+    "name": "Pooja Agarwal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Globex Inc) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0041878": {
+    "name": "Anika Naidu",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0041952": {
+    "name": "Rahul Ghosh",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0041979": {
+    "name": "Meera Shetty",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0042036": {
+    "name": "Saanvi Arora",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0042352": {
+    "name": "Shreya Banerjee",
+    "reasons": [
+      "Senior job 5 (HR Manager at Pied Piper) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0042367": {
+    "name": "Neha Subramanian",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0042450": {
+    "name": "Advaith Sethi",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0042453": {
+    "name": "Sanjay Bhatia",
+    "reasons": [
+      "Job 0 (Pied Piper) duration 98 exceeds span 50 months"
+    ]
+  },
+  "CAND_0042482": {
+    "name": "Ayaan Bansal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Acme Corp) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0042571": {
+    "name": "Myra Krishnan",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wipro) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0042618": {
+    "name": "Manish Iyer",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wayne Enterprises) started in 2013 before college started in 2018",
+      "Senior job 4 (Project Manager at TCS) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0042635": {
+    "name": "Rohan Khanna",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0042696": {
+    "name": "Vivaan Gupta",
+    "reasons": [
+      "Senior job 3 (HR Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0042768": {
+    "name": "Vivaan Sharma",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Infosys) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0042769": {
+    "name": "Sneha Arora",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0042835": {
+    "name": "Myra Pandey",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2014 before college started in 2019",
+      "Senior job 4 (HR Manager at Pied Piper) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0042893": {
+    "name": "Deepak Mehta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Pied Piper) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0042967": {
+    "name": "Tanvi Hegde",
+    "reasons": [
+      "Senior job 3 (Project Manager at Infosys) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0042995": {
+    "name": "Saanvi Arora",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0043061": {
+    "name": "Om Kapoor",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Pied Piper) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0043068": {
+    "name": "Kabir Banerjee",
+    "reasons": [
+      "Senior job 4 (HR Manager at Hooli) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0043152": {
+    "name": "Vihaan Desai",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0043169": {
+    "name": "Myra Mehta",
+    "reasons": [
+      "Senior job 5 (Project Manager at Infosys) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0043253": {
+    "name": "Naina Agarwal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0043289": {
+    "name": "Advaith Shetty",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0043591": {
+    "name": "Tanvi Naidu",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0043682": {
+    "name": "Ritu Iyengar",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0043721": {
+    "name": "Ela Patel",
+    "reasons": [
+      "Job 0 (Initech) duration 102 exceeds span 48 months"
+    ]
+  },
+  "CAND_0043793": {
+    "name": "Saanvi Desai",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0043830": {
+    "name": "Ishaan Chatterjee",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2015 before college started in 2019",
+      "Senior job 5 (Operations Manager at Infosys) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0043930": {
+    "name": "Aanya Verma",
+    "reasons": [
+      "Senior job 3 (HR Manager at Globex Inc) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0044061": {
+    "name": "Vivaan Saxena",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0044237": {
+    "name": "Atharv Reddy",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Stark Industries) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0044489": {
+    "name": "Saanvi Saxena",
+    "reasons": [
+      "Senior job 5 (HR Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0044766": {
+    "name": "Aisha Ghosh",
+    "reasons": [
+      "Senior job 4 (Project Manager at Dunder Mifflin) started in 2013 before college started in 2017",
+      "Senior job 5 (HR Manager at Hooli) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0044862": {
+    "name": "Aanya Tiwari",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0044909": {
+    "name": "Manish Hegde",
+    "reasons": [
+      "Senior job 5 (HR Manager at Stark Industries) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0044926": {
+    "name": "Ved Chatterjee",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wipro) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0044959": {
+    "name": "Zara Joshi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0044973": {
+    "name": "Sunil Mittal",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0045115": {
+    "name": "Divya Hegde",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0045161": {
+    "name": "Kabir Menon",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0045243": {
+    "name": "Kabir Malhotra",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Hooli) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0045274": {
+    "name": "Aisha Iyer",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0045419": {
+    "name": "Arjun Naidu",
+    "reasons": [
+      "Senior job 3 (Project Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0045640": {
+    "name": "Diya Hegde",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0045676": {
+    "name": "Pari Goyal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Hooli) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0045695": {
+    "name": "Naina Saxena",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0045853": {
+    "name": "Rohan Bansal",
+    "reasons": [
+      "Senior job 5 (HR Manager at Initech) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0046107": {
+    "name": "Meera Chowdary",
+    "reasons": [
+      "Senior job 5 (Project Manager at Globex Inc) started in 2012 before college started in 2017",
+      "Senior job 6 (Project Manager at Infosys) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0046117": {
+    "name": "Sunil Hegde",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0046147": {
+    "name": "Manish Chatterjee",
+    "reasons": [
+      "Senior job 3 (Project Manager at Pied Piper) started in 2014 before college started in 2017",
+      "Senior job 4 (Marketing Manager at Infosys) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0046266": {
+    "name": "Tanya Goyal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0046377": {
+    "name": "Ritu Mishra",
+    "reasons": [
+      "Senior job 6 (Project Manager at Acme Corp) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0046410": {
+    "name": "Zara Khanna",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Hooli) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0046485": {
+    "name": "Ayaan Tiwari",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0046512": {
+    "name": "Meera Dalal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Infosys) started in 2016 before college started in 2019",
+      "Senior job 5 (Operations Manager at Pied Piper) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0046519": {
+    "name": "Siya Khanna",
+    "reasons": [
+      "Senior job 6 (HR Manager at Wayne Enterprises) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0046612": {
+    "name": "Rahul Malhotra",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0046649": {
+    "name": "Anil Kumar",
+    "reasons": [
+      "Skills anomaly: 5 expert/advanced skills with 0 months duration"
+    ]
+  },
+  "CAND_0046672": {
+    "name": "Reyansh Mishra",
+    "reasons": [
+      "Senior job 3 (Project Manager at Infosys) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0046687": {
+    "name": "Avni Subramanian",
+    "reasons": [
+      "Senior job 3 (Project Manager at Hooli) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0046791": {
+    "name": "Kabir Sen",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0046871": {
+    "name": "Dev Mittal",
+    "reasons": [
+      "Senior job 6 (Project Manager at Initech) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0046961": {
+    "name": "Aarav Khanna",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0047005": {
+    "name": "Pooja Bose",
+    "reasons": [
+      "Senior job 3 (Project Manager at Globex Inc) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0047087": {
+    "name": "Manish Mishra",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0047171": {
+    "name": "Riya Mukherjee",
+    "reasons": [
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0047462": {
+    "name": "Siya Chowdary",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at TCS) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0047615": {
+    "name": "Aarohi Menon",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0047618": {
+    "name": "Tanvi Mishra",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wipro) started in 2015 before college started in 2018",
+      "Senior job 5 (HR Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0047641": {
+    "name": "Jay Menon",
+    "reasons": [
+      "Senior job 4 (Project Manager at Acme Corp) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0047750": {
+    "name": "Myra Tiwari",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wipro) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0047831": {
+    "name": "Aisha Ghosh",
+    "reasons": [
+      "Senior job 6 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0047965": {
+    "name": "Kiara Hegde",
+    "reasons": [
+      "Senior job 5 (Project Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0048088": {
+    "name": "Priya Bhatia",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2016 before college started in 2019",
+      "Senior job 6 (HR Manager at Stark Industries) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0048311": {
+    "name": "Saanvi Joshi",
+    "reasons": [
+      "Senior job 3 (Operations Manager at TCS) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0048355": {
+    "name": "Manish Naidu",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0048361": {
+    "name": "Riya Kapoor",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0048703": {
+    "name": "Reyansh Naidu",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0048765": {
+    "name": "Ira Dalal",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wipro) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0048835": {
+    "name": "Jay Reddy",
+    "reasons": [
+      "Senior job 6 (HR Manager at TCS) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0048879": {
+    "name": "Ira Desai",
+    "reasons": [
+      "Senior job 5 (HR Manager at TCS) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0049091": {
+    "name": "Aisha Iyengar",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0049097": {
+    "name": "Aryan Mittal",
+    "reasons": [
+      "Senior job 3 (Project Manager at Pied Piper) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0049150": {
+    "name": "Vikram Gupta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Hooli) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0049210": {
+    "name": "Aadhya Reddy",
+    "reasons": [
+      "Senior job 2 (Project Manager at Hooli) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0049241": {
+    "name": "Anil Bhatia",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0049277": {
+    "name": "Om Naidu",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0049486": {
+    "name": "Deepak Sen",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Hooli) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0049519": {
+    "name": "Myra Mehta",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0049781": {
+    "name": "Aryan Khanna",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0049862": {
+    "name": "Advik Patel",
+    "reasons": [
+      "Senior job 5 (HR Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0049901": {
+    "name": "Aryan Patel",
+    "reasons": [
+      "Senior job 5 (Operations Manager at TCS) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0050030": {
+    "name": "Anjali Singh",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0050267": {
+    "name": "Rajesh Shah",
+    "reasons": [
+      "Senior job 5 (HR Manager at Infosys) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0050506": {
+    "name": "Kabir Krishnan",
+    "reasons": [
+      "Senior job 3 (Project Manager at Initech) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0050527": {
+    "name": "Siya Saxena",
+    "reasons": [
+      "Senior job 2 (HR Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0050587": {
+    "name": "Yash Joshi",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0050591": {
+    "name": "Arnav Sharma",
+    "reasons": [
+      "Senior job 5 (Project Manager at Dunder Mifflin) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0050595": {
+    "name": "Sneha Mishra",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Stark Industries) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0050625": {
+    "name": "Anil Sen",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0050751": {
+    "name": "Riya Chopra",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0050951": {
+    "name": "Atharv Sethi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Hooli) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0050972": {
+    "name": "Ela Verma",
+    "reasons": [
+      "Senior job 3 (Project Manager at Globex Inc) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0050977": {
+    "name": "Pranav Iyer",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Dunder Mifflin) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0050979": {
+    "name": "Aarav Chopra",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0050989": {
+    "name": "Diya Patel",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0051018": {
+    "name": "Anjali Pandey",
+    "reasons": [
+      "Senior job 3 (HR Manager at Infosys) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0051262": {
+    "name": "Siya Dutta",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0051348": {
+    "name": "Dhruv Desai",
+    "reasons": [
+      "Senior job 5 (Project Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0051528": {
+    "name": "Divya Mittal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0051582": {
+    "name": "Arnav Chowdary",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0051597": {
+    "name": "Arjun Dalal",
+    "reasons": [
+      "Senior job 5 (Project Manager at Acme Corp) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0051629": {
+    "name": "Karan Khanna",
+    "reasons": [
+      "Senior job 3 (HR Manager at Infosys) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0051705": {
+    "name": "Rahul Khanna",
+    "reasons": [
+      "Senior job 4 (Project Manager at Hooli) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0051958": {
+    "name": "Dhruv Nair",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0052021": {
+    "name": "Shreya Pandey",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0052295": {
+    "name": "Deepak Malhotra",
+    "reasons": [
+      "Senior job 4 (Project Manager at Dunder Mifflin) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0052298": {
+    "name": "Arnav Chowdary",
+    "reasons": [
+      "Senior job 5 (HR Manager at Globex Inc) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0052478": {
+    "name": "Tanvi Desai",
+    "reasons": [
+      "YoE mismatch: profile YoE 12.4 vs history YoE 1.33"
+    ]
+  },
+  "CAND_0052628": {
+    "name": "Vihaan Joshi",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0052996": {
+    "name": "Avni Rao",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0053008": {
+    "name": "Anjali Kumar",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0053126": {
+    "name": "Sneha Tiwari",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2016 before college started in 2019",
+      "Senior job 5 (Project Manager at Infosys) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0053233": {
+    "name": "Suresh Malhotra",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0053532": {
+    "name": "Sneha Hegde",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0053734": {
+    "name": "Priya Chowdary",
+    "reasons": [
+      "Job 0 (Globex Inc) duration 151 exceeds span 32 months"
+    ]
+  },
+  "CAND_0053748": {
+    "name": "Pranav Verma",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0053752": {
+    "name": "Reyansh Goyal",
+    "reasons": [
+      "Senior job 6 (HR Manager at Stark Industries) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0053857": {
+    "name": "Divya Dalal",
+    "reasons": [
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0053878": {
+    "name": "Jay Bose",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0053907": {
+    "name": "Aarav Desai",
+    "reasons": [
+      "Senior job 2 (HR Manager at TCS) started in 2016 before college started in 2019",
+      "Senior job 3 (HR Manager at TCS) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0053996": {
+    "name": "Arjun Saxena",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Infosys) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0053997": {
+    "name": "Tanvi Dutta",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Globex Inc) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0054269": {
+    "name": "Anil Pandey",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Stark Industries) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0054325": {
+    "name": "Nisha Trivedi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0054456": {
+    "name": "Kiara Kumar",
+    "reasons": [
+      "Senior job 3 (Project Manager at Dunder Mifflin) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0054675": {
+    "name": "Shaurya Tiwari",
+    "reasons": [
+      "Senior job 5 (HR Manager at Initech) started in 2016 before college started in 2019",
+      "Senior job 6 (Operations Manager at Wayne Enterprises) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0054756": {
+    "name": "Saanvi Desai",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Globex Inc) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0054768": {
+    "name": "Naina Trivedi",
+    "reasons": [
+      "Senior job 2 (Project Manager at Hooli) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0054926": {
+    "name": "Diya Gupta",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Hooli) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0054936": {
+    "name": "Ela Chowdary",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0055078": {
+    "name": "Shaurya Arora",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0055160": {
+    "name": "Om Kapoor",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0055248": {
+    "name": "Neha Dalal",
+    "reasons": [
+      "Senior job 5 (Project Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0055364": {
+    "name": "Reyansh Arora",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Initech) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0055535": {
+    "name": "Myra Vora",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0055617": {
+    "name": "Krishna Mittal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Pied Piper) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0055622": {
+    "name": "Ritu Malhotra",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0055679": {
+    "name": "Sneha Pandey",
+    "reasons": [
+      "Senior job 4 (Project Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0055685": {
+    "name": "Anjali Dalal",
+    "reasons": [
+      "Job 0 (Acme Corp) duration 64 exceeds span 16 months"
+    ]
+  },
+  "CAND_0055856": {
+    "name": "Shreya Kapoor",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Infosys) started in 2013 before college started in 2016",
+      "Senior job 4 (Project Manager at Acme Corp) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0055892": {
+    "name": "Avni Khanna",
+    "reasons": [
+      "Senior job 5 (Project Manager at Stark Industries) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0055909": {
+    "name": "Ananya Reddy",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0055974": {
+    "name": "Saanvi Krishnan",
+    "reasons": [
+      "Senior job 6 (Project Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0055988": {
+    "name": "Meera Bhatia",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wayne Enterprises) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0056022": {
+    "name": "Divya Pillai",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0056187": {
+    "name": "Kabir Agarwal",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Infosys) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0056272": {
+    "name": "Kiara Dalal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0056293": {
+    "name": "Divya Shah",
+    "reasons": [
+      "Senior job 5 (Operations Manager at TCS) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0056462": {
+    "name": "Karan Shah",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0056547": {
+    "name": "Diya Patel",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2015 before college started in 2018",
+      "Senior job 5 (Operations Manager at Infosys) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0056589": {
+    "name": "Avni Rao",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0056639": {
+    "name": "Tanvi Tiwari",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0056812": {
+    "name": "Aadhya Arora",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0056819": {
+    "name": "Arnav Patel",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0056926": {
+    "name": "Pooja Mishra",
+    "reasons": [
+      "Senior job 2 (Project Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0056983": {
+    "name": "Arnav Mittal",
+    "reasons": [
+      "Skills anomaly: 5 expert/advanced skills with 0 months duration"
+    ]
+  },
+  "CAND_0057012": {
+    "name": "Aarohi Kumar",
+    "reasons": [
+      "Senior job 5 (HR Manager at Infosys) started in 2013 before college started in 2019",
+      "Senior job 6 (Marketing Manager at Pied Piper) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0057079": {
+    "name": "Atharv Banerjee",
+    "reasons": [
+      "Senior job 3 (HR Manager at Hooli) started in 2015 before college started in 2018",
+      "Senior job 4 (Project Manager at Initech) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0057124": {
+    "name": "Tanya Hegde",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wipro) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0057152": {
+    "name": "Myra Bose",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Initech) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0057532": {
+    "name": "Rohan Mishra",
+    "reasons": [
+      "Senior job 3 (Project Manager at Globex Inc) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0057622": {
+    "name": "Naina Banerjee",
+    "reasons": [
+      "Senior job 3 (HR Manager at Acme Corp) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0057647": {
+    "name": "Rajesh Iyengar",
+    "reasons": [
+      "Senior job 4 (Project Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0057711": {
+    "name": "Vivaan Gupta",
+    "reasons": [
+      "Job 0 (Capgemini) duration 140 exceeds span 51 months"
+    ]
+  },
+  "CAND_0057767": {
+    "name": "Ayaan Reddy",
+    "reasons": [
+      "Senior job 3 (HR Manager at Infosys) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0057781": {
+    "name": "Kavya Pandey",
+    "reasons": [
+      "Senior job 5 (Project Manager at TCS) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0057826": {
+    "name": "Pari Saxena",
+    "reasons": [
+      "Senior job 6 (HR Manager at Acme Corp) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0057850": {
+    "name": "Dev Agarwal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Stark Industries) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0057981": {
+    "name": "Shreya Mittal",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Stark Industries) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0058033": {
+    "name": "Shaurya Kapoor",
+    "reasons": [
+      "Senior job 4 (HR Manager at Initech) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0058196": {
+    "name": "Sai Dalal",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wayne Enterprises) started in 2014 before college started in 2017",
+      "Senior job 4 (Operations Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0058342": {
+    "name": "Sanjay Verma",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wipro) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0058654": {
+    "name": "Kavya Rao",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Wayne Enterprises) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0058812": {
+    "name": "Sanjay Desai",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0058829": {
+    "name": "Sunil Chopra",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0058893": {
+    "name": "Divya Iyengar",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0059030": {
+    "name": "Riya Agarwal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0059250": {
+    "name": "Jay Mishra",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0059899": {
+    "name": "Tanya Singh",
+    "reasons": [
+      "Senior job 5 (Project Manager at Infosys) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0060019": {
+    "name": "Rohan Sharma",
+    "reasons": [
+      "Senior job 4 (Project Manager at Hooli) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0060027": {
+    "name": "Divya Nair",
+    "reasons": [
+      "Senior job 7 (HR Manager at Wipro) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0060308": {
+    "name": "Sunil Mittal",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0060380": {
+    "name": "Priya Subramanian",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0060627": {
+    "name": "Myra Chowdary",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0060642": {
+    "name": "Neha Krishnan",
+    "reasons": [
+      "Skills anomaly: 5 expert/advanced skills with 0 months duration"
+    ]
+  },
+  "CAND_0060740": {
+    "name": "Aarohi Mittal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2014 before college started in 2018",
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0060850": {
+    "name": "Aarav Sen",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Infosys) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0061160": {
+    "name": "Pari Agarwal",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0061315": {
+    "name": "Deepak Bhatia",
+    "reasons": [
+      "Senior job 6 (Project Manager at Initech) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0061346": {
+    "name": "Anil Rao",
+    "reasons": [
+      "Senior job 3 (HR Manager at TCS) started in 2013 before college started in 2016",
+      "Senior job 4 (Operations Manager at TCS) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0061426": {
+    "name": "Om Hegde",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0061481": {
+    "name": "Ayaan Rao",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Stark Industries) started in 2015 before college started in 2018",
+      "Senior job 3 (HR Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0061661": {
+    "name": "Shreya Dutta",
+    "reasons": [
+      "Senior job 3 (HR Manager at Initech) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0061722": {
+    "name": "Arjun Trivedi",
+    "reasons": [
+      "Skills anomaly: 5 expert/advanced skills with 0 months duration"
+    ]
+  },
+  "CAND_0061790": {
+    "name": "Advaith Pillai",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0061999": {
+    "name": "Tanya Singh",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Hooli) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0062172": {
+    "name": "Anjali Kapoor",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0062250": {
+    "name": "Aryan Chopra",
+    "reasons": [
+      "Senior job 6 (Project Manager at Infosys) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0062483": {
+    "name": "Aadhya Chatterjee",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wipro) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0062494": {
+    "name": "Krishna Dalal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wayne Enterprises) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0062518": {
+    "name": "Saanvi Trivedi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2014 before college started in 2017",
+      "Senior job 5 (Marketing Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0062647": {
+    "name": "Arjun Naidu",
+    "reasons": [
+      "Senior job 3 (HR Manager at Acme Corp) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0062797": {
+    "name": "Deepak Pandey",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wipro) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0062848": {
+    "name": "Yash Mittal",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2016 before college started in 2019",
+      "Senior job 5 (Marketing Manager at Stark Industries) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0062880": {
+    "name": "Siya Bhatia",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0062982": {
+    "name": "Vivaan Iyer",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0062999": {
+    "name": "Zara Singh",
+    "reasons": [
+      "Senior job 6 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0063133": {
+    "name": "Tanya Mehta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Pied Piper) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0063171": {
+    "name": "Krishna Mittal",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wipro) started in 2012 before college started in 2016",
+      "Senior job 5 (Project Manager at Infosys) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0063225": {
+    "name": "Pari Chowdary",
+    "reasons": [
+      "Senior job 2 (Marketing Manager at Stark Industries) started in 2016 before college started in 2019",
+      "Senior job 3 (Project Manager at Initech) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0063257": {
+    "name": "Krishna Rao",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0063344": {
+    "name": "Arnav Gupta",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0063399": {
+    "name": "Reyansh Nair",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0063432": {
+    "name": "Vikram Chopra",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Globex Inc) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0063608": {
+    "name": "Sanjay Vora",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0063657": {
+    "name": "Karan Sharma",
+    "reasons": [
+      "Senior job 6 (HR Manager at Stark Industries) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0063758": {
+    "name": "Pranav Banerjee",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0063772": {
+    "name": "Rohan Banerjee",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wipro) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0063888": {
+    "name": "Divya Mittal",
+    "reasons": [
+      "Skills anomaly: 5 expert/advanced skills with 0 months duration"
+    ]
+  },
+  "CAND_0064049": {
+    "name": "Zara Menon",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0064077": {
+    "name": "Aisha Chowdary",
+    "reasons": [
+      "Job 0 (Hooli) duration 169 exceeds span 51 months"
+    ]
+  },
+  "CAND_0064186": {
+    "name": "Atharv Gupta",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Hooli) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0064342": {
+    "name": "Vivaan Pillai",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0064568": {
+    "name": "Krishna Sen",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Dunder Mifflin) started in 2016 before college started in 2019",
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0064913": {
+    "name": "Anika Mittal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Stark Industries) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0064996": {
+    "name": "Amit Chopra",
+    "reasons": [
+      "Senior job 3 (Operations Manager at TCS) started in 2012 before college started in 2015",
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0065060": {
+    "name": "Aarohi Sen",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2014 before college started in 2017",
+      "Senior job 6 (Project Manager at Acme Corp) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0065549": {
+    "name": "Pooja Rao",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0065554": {
+    "name": "Rohan Nair",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Acme Corp) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0065662": {
+    "name": "Ananya Naidu",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0065710": {
+    "name": "Dhruv Gupta",
+    "reasons": [
+      "Job 0 (Hooli) duration 100 exceeds span 38 months"
+    ]
+  },
+  "CAND_0065760": {
+    "name": "Dev Mukherjee",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0065787": {
+    "name": "Advaith Hegde",
+    "reasons": [
+      "YoE mismatch: profile YoE 10.9 vs history YoE 1.17"
+    ]
+  },
+  "CAND_0065876": {
+    "name": "Om Goyal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0066148": {
+    "name": "Aarav Banerjee",
+    "reasons": [
+      "Senior job 2 (Marketing Manager at Globex Inc) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0066405": {
+    "name": "Ananya Chopra",
+    "reasons": [
+      "YoE mismatch: profile YoE 12.3 vs history YoE 1.08"
+    ]
+  },
+  "CAND_0066446": {
+    "name": "Tanya Mishra",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Acme Corp) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0066516": {
+    "name": "Kabir Malhotra",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2016 before college started in 2019",
+      "Senior job 6 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0066528": {
+    "name": "Vivaan Vora",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2012 before college started in 2019",
+      "Senior job 5 (Project Manager at Wipro) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0066642": {
+    "name": "Aisha Gupta",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Infosys) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0066868": {
+    "name": "Deepak Subramanian",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Globex Inc) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0067027": {
+    "name": "Advaith Chowdary",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at TCS) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0067045": {
+    "name": "Om Bhatia",
+    "reasons": [
+      "Senior job 3 (Project Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0067089": {
+    "name": "Pooja Naidu",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0067126": {
+    "name": "Dev Iyengar",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2013 before college started in 2017",
+      "Senior job 5 (Project Manager at Acme Corp) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0067190": {
+    "name": "Pari Tiwari",
+    "reasons": [
+      "Senior job 2 (Project Manager at Wayne Enterprises) started in 2016 before college started in 2019",
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0067402": {
+    "name": "Ira Goyal",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0067441": {
+    "name": "Avni Chowdary",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wipro) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0067482": {
+    "name": "Ira Goyal",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0067485": {
+    "name": "Rohan Verma",
+    "reasons": [
+      "Senior job 4 (Project Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0067594": {
+    "name": "Saanvi Mehta",
+    "reasons": [
+      "Senior job 2 (Project Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0067762": {
+    "name": "Saanvi Mehta",
+    "reasons": [
+      "Senior job 4 (Project Manager at Acme Corp) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0068014": {
+    "name": "Aanya Arora",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0068030": {
+    "name": "Ananya Sen",
+    "reasons": [
+      "Senior job 3 (HR Manager at Hooli) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0068088": {
+    "name": "Nisha Arora",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0068192": {
+    "name": "Deepak Pillai",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2016 before college started in 2019",
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0068290": {
+    "name": "Naina Arora",
+    "reasons": [
+      "Senior job 5 (Operations Manager at TCS) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0068329": {
+    "name": "Yash Arora",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0068342": {
+    "name": "Ira Reddy",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0068463": {
+    "name": "Suresh Naidu",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Infosys) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0068682": {
+    "name": "Pari Nair",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2013 before college started in 2016",
+      "Senior job 5 (Operations Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0068822": {
+    "name": "Pari Verma",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wipro) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0069105": {
+    "name": "Yash Bose",
+    "reasons": [
+      "Senior job 4 (HR Manager at Hooli) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0069241": {
+    "name": "Aryan Verma",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0069338": {
+    "name": "Kiara Pandey",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0069746": {
+    "name": "Riya Bhatia",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0069828": {
+    "name": "Siya Pandey",
+    "reasons": [
+      "Senior job 5 (HR Manager at Acme Corp) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0069911": {
+    "name": "Vikram Arora",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Pied Piper) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0070189": {
+    "name": "Ananya Arora",
+    "reasons": [
+      "Job 0 (Wayne Enterprises) duration 130 exceeds span 39 months"
+    ]
+  },
+  "CAND_0070357": {
+    "name": "Zara Iyengar",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0070429": {
+    "name": "Amit Singh",
+    "reasons": [
+      "Skills anomaly: 5 expert/advanced skills with 0 months duration"
+    ]
+  },
+  "CAND_0070433": {
+    "name": "Tanya Reddy",
+    "reasons": [
+      "Senior job 4 (Project Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0070458": {
+    "name": "Naina Patel",
+    "reasons": [
+      "Senior job 5 (Project Manager at Pied Piper) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0071065": {
+    "name": "Myra Shah",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Infosys) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0071117": {
+    "name": "Anil Patel",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0071145": {
+    "name": "Nisha Arora",
+    "reasons": [
+      "Senior job 4 (Project Manager at Acme Corp) started in 2013 before college started in 2016",
+      "Senior job 5 (HR Manager at Globex Inc) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0071164": {
+    "name": "Sneha Kapoor",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0071219": {
+    "name": "Suresh Khanna",
+    "reasons": [
+      "Senior job 4 (HR Manager at Pied Piper) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0071295": {
+    "name": "Atharv Agarwal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wayne Enterprises) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0071306": {
+    "name": "Advik Mittal",
+    "reasons": [
+      "Senior job 2 (Marketing Manager at Hooli) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0071318": {
+    "name": "Kavya Chopra",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0071344": {
+    "name": "Ela Gupta",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0071528": {
+    "name": "Rohan Sen",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0071586": {
+    "name": "Anjali Trivedi",
+    "reasons": [
+      "Senior job 3 (HR Manager at Hooli) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0072007": {
+    "name": "Ananya Khanna",
+    "reasons": [
+      "Senior job 5 (Project Manager at Pied Piper) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0072072": {
+    "name": "Aadhya Mishra",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wipro) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0072073": {
+    "name": "Suresh Dutta",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2013 before college started in 2017",
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0072377": {
+    "name": "Meera Mishra",
+    "reasons": [
+      "Senior job 5 (HR Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0072420": {
+    "name": "Ved Saxena",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Globex Inc) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0072897": {
+    "name": "Reyansh Malhotra",
+    "reasons": [
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0072920": {
+    "name": "Sunil Dalal",
+    "reasons": [
+      "Senior job 4 (HR Manager at Hooli) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0073179": {
+    "name": "Anika Khanna",
+    "reasons": [
+      "Senior job 6 (HR Manager at Dunder Mifflin) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0073240": {
+    "name": "Jay Sen",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at TCS) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0073287": {
+    "name": "Shreya Singh",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0073432": {
+    "name": "Ananya Nair",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0073452": {
+    "name": "Saanvi Kumar",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0073459": {
+    "name": "Vikram Arora",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0073596": {
+    "name": "Pranav Bhatia",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Hooli) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0073617": {
+    "name": "Rajesh Chowdary",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0073704": {
+    "name": "Rahul Naidu",
+    "reasons": [
+      "Senior job 3 (Project Manager at Acme Corp) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0073748": {
+    "name": "Rohan Rao",
+    "reasons": [
+      "Senior job 6 (Project Manager at Globex Inc) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0073792": {
+    "name": "Aryan Gupta",
+    "reasons": [
+      "Senior job 5 (HR Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0073794": {
+    "name": "Nikhil Reddy",
+    "reasons": [
+      "Senior job 2 (HR Manager at Wayne Enterprises) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0073811": {
+    "name": "Kabir Sethi",
+    "reasons": [
+      "Senior job 2 (Marketing Manager at TCS) started in 2015 before college started in 2018",
+      "Senior job 4 (Project Manager at Wipro) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0073853": {
+    "name": "Arnav Pillai",
+    "reasons": [
+      "Skills anomaly: 5 expert/advanced skills with 0 months duration"
+    ]
+  },
+  "CAND_0074073": {
+    "name": "Kabir Dutta",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wipro) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0074119": {
+    "name": "Saanvi Malhotra",
+    "reasons": [
+      "YoE mismatch: profile YoE 11.4 vs history YoE 1.08"
+    ]
+  },
+  "CAND_0074143": {
+    "name": "Avni Arora",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0074280": {
+    "name": "Vihaan Menon",
+    "reasons": [
+      "Senior job 6 (Project Manager at Acme Corp) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0074332": {
+    "name": "Sneha Reddy",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0074744": {
+    "name": "Ishaan Mukherjee",
+    "reasons": [
+      "Senior job 4 (Project Manager at Initech) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0074789": {
+    "name": "Pranav Kumar",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0074866": {
+    "name": "Anjali Hegde",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0074969": {
+    "name": "Aisha Bose",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0075008": {
+    "name": "Rajesh Hegde",
+    "reasons": [
+      "Senior job 3 (Project Manager at Dunder Mifflin) started in 2016 before college started in 2019",
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0075053": {
+    "name": "Arnav Sethi",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Pied Piper) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0075106": {
+    "name": "Saanvi Mukherjee",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0075121": {
+    "name": "Dhruv Arora",
+    "reasons": [
+      "Senior job 4 (Project Manager at Stark Industries) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0075144": {
+    "name": "Shaurya Sethi",
+    "reasons": [
+      "Senior job 2 (Marketing Manager at Infosys) started in 2014 before college started in 2018",
+      "Senior job 3 (HR Manager at Globex Inc) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0075272": {
+    "name": "Pari Joshi",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0075313": {
+    "name": "Pranav Arora",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2014 before college started in 2018",
+      "Senior job 5 (Operations Manager at Infosys) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0075375": {
+    "name": "Kabir Chowdary",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0075388": {
+    "name": "Aadhya Verma",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0075442": {
+    "name": "Sunil Hegde",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Stark Industries) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0075470": {
+    "name": "Dhruv Chopra",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0075519": {
+    "name": "Om Menon",
+    "reasons": [
+      "Senior job 2 (Project Manager at Infosys) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0075803": {
+    "name": "Nisha Iyer",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0075901": {
+    "name": "Aadhya Subramanian",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2014 before college started in 2017",
+      "Senior job 4 (HR Manager at Infosys) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0075969": {
+    "name": "Jay Krishnan",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0075982": {
+    "name": "Vikram Arora",
+    "reasons": [
+      "Senior job 3 (HR Manager at Initech) started in 2014 before college started in 2018",
+      "Senior job 4 (Operations Manager at TCS) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0075988": {
+    "name": "Pari Dutta",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0076086": {
+    "name": "Anjali Pillai",
+    "reasons": [
+      "Senior job 3 (Project Manager at Dunder Mifflin) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0076202": {
+    "name": "Rahul Sharma",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0076205": {
+    "name": "Ishaan Chatterjee",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2015 before college started in 2019",
+      "Senior job 5 (Project Manager at Wayne Enterprises) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0076340": {
+    "name": "Zara Tiwari",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0076363": {
+    "name": "Amit Chopra",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0076471": {
+    "name": "Anil Arora",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0076600": {
+    "name": "Advik Mukherjee",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wipro) started in 2014 before college started in 2017",
+      "Senior job 6 (Project Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0076603": {
+    "name": "Meera Chopra",
+    "reasons": [
+      "Senior job 5 (Project Manager at Hooli) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0076690": {
+    "name": "Pooja Banerjee",
+    "reasons": [
+      "Senior job 6 (Project Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0076710": {
+    "name": "Diya Sethi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0076733": {
+    "name": "Om Chopra",
+    "reasons": [
+      "Senior job 5 (HR Manager at Acme Corp) started in 2012 before college started in 2016",
+      "Senior job 6 (Project Manager at Stark Industries) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0076849": {
+    "name": "Ved Malhotra",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0077002": {
+    "name": "Pooja Krishnan",
+    "reasons": [
+      "Senior job 5 (HR Manager at TCS) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0077014": {
+    "name": "Nisha Sethi",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Hooli) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0077051": {
+    "name": "Atharv Chatterjee",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at TCS) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0077197": {
+    "name": "Rahul Shah",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0077206": {
+    "name": "Ela Sen",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0077239": {
+    "name": "Ritu Bose",
+    "reasons": [
+      "Job 0 (Dunder Mifflin) duration 139 exceeds span 49 months"
+    ]
+  },
+  "CAND_0077250": {
+    "name": "Shaurya Nair",
+    "reasons": [
+      "YoE mismatch: profile YoE 13.1 vs history YoE 1.50"
+    ]
+  },
+  "CAND_0077435": {
+    "name": "Aanya Reddy",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wayne Enterprises) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0077574": {
+    "name": "Aarohi Pillai",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Acme Corp) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0077603": {
+    "name": "Rohan Dutta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0077783": {
+    "name": "Aryan Iyengar",
+    "reasons": [
+      "Senior job 4 (Project Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0077800": {
+    "name": "Nikhil Joshi",
+    "reasons": [
+      "Senior job 5 (Operations Manager at TCS) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0077820": {
+    "name": "Sanjay Menon",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Stark Industries) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0077946": {
+    "name": "Kavya Malhotra",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0077953": {
+    "name": "Mira Agarwal",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wipro) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0078200": {
+    "name": "Om Pandey",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Globex Inc) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0078239": {
+    "name": "Sai Dalal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0078372": {
+    "name": "Neha Vora",
+    "reasons": [
+      "Senior job 5 (Project Manager at Infosys) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0078465": {
+    "name": "Anil Sethi",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0078660": {
+    "name": "Ritu Goyal",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0078665": {
+    "name": "Aarohi Iyengar",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0078808": {
+    "name": "Rohan Reddy",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0078992": {
+    "name": "Sunil Goyal",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0079156": {
+    "name": "Mira Naidu",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0079217": {
+    "name": "Kiara Tiwari",
+    "reasons": [
+      "Senior job 6 (Project Manager at Globex Inc) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0079279": {
+    "name": "Kavya Gupta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0079502": {
+    "name": "Tanya Mehta",
+    "reasons": [
+      "Senior job 3 (HR Manager at Pied Piper) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0079570": {
+    "name": "Nikhil Joshi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Infosys) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0079668": {
+    "name": "Atharv Saxena",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0079715": {
+    "name": "Neha Pandey",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Hooli) started in 2012 before college started in 2015",
+      "Senior job 6 (Marketing Manager at Dunder Mifflin) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0079880": {
+    "name": "Nisha Banerjee",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Pied Piper) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0079915": {
+    "name": "Deepak Goyal",
+    "reasons": [
+      "Senior job 3 (Project Manager at Infosys) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0080357": {
+    "name": "Vikram Joshi",
+    "reasons": [
+      "Senior job 4 (Project Manager at Stark Industries) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0080384": {
+    "name": "Diya Pillai",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0080387": {
+    "name": "Ishaan Singh",
+    "reasons": [
+      "Senior job 2 (HR Manager at Acme Corp) started in 2016 before college started in 2019",
+      "Senior job 3 (Operations Manager at TCS) started in 2013 before college started in 2019",
+      "Senior job 4 (Operations Manager at Infosys) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0080639": {
+    "name": "Ishaan Nair",
+    "reasons": [
+      "Senior job 3 (HR Manager at Initech) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0080736": {
+    "name": "Riya Nair",
+    "reasons": [
+      "Senior job 4 (Project Manager at Hooli) started in 2013 before college started in 2016",
+      "Senior job 5 (Marketing Manager at Pied Piper) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0080820": {
+    "name": "Manish Reddy",
+    "reasons": [
+      "Senior job 2 (Marketing Manager at Wipro) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0080948": {
+    "name": "Ira Kumar",
+    "reasons": [
+      "Senior job 4 (HR Manager at Pied Piper) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0081080": {
+    "name": "Diya Singh",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wayne Enterprises) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0081085": {
+    "name": "Rahul Menon",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wipro) started in 2016 before college started in 2019",
+      "Senior job 4 (Operations Manager at Initech) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0081109": {
+    "name": "Shaurya Ghosh",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0081155": {
+    "name": "Ved Bose",
+    "reasons": [
+      "Senior job 6 (Project Manager at Pied Piper) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0081166": {
+    "name": "Sanjay Saxena",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0081270": {
+    "name": "Kabir Pandey",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0081399": {
+    "name": "Sneha Chopra",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2013 before college started in 2017",
+      "Senior job 5 (HR Manager at Globex Inc) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0081656": {
+    "name": "Arjun Mishra",
+    "reasons": [
+      "Senior job 5 (HR Manager at Stark Industries) started in 2014 before college started in 2017",
+      "Senior job 6 (HR Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0081700": {
+    "name": "Anil Menon",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Dunder Mifflin) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0081712": {
+    "name": "Ayaan Iyer",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0081714": {
+    "name": "Om Trivedi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0081773": {
+    "name": "Zara Naidu",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Acme Corp) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0081985": {
+    "name": "Suresh Mukherjee",
+    "reasons": [
+      "Senior job 3 (HR Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0082013": {
+    "name": "Sanjay Iyengar",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Pied Piper) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0082132": {
+    "name": "Mira Naidu",
+    "reasons": [
+      "Senior job 4 (Project Manager at Hooli) started in 2014 before college started in 2018",
+      "Senior job 5 (Marketing Manager at Hooli) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0082186": {
+    "name": "Deepak Mishra",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Infosys) started in 2012 before college started in 2015",
+      "Senior job 6 (Marketing Manager at Stark Industries) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0082297": {
+    "name": "Arjun Vora",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0082405": {
+    "name": "Siya Gupta",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wipro) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0082407": {
+    "name": "Advaith Mittal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0082429": {
+    "name": "Diya Sen",
+    "reasons": [
+      "Senior job 5 (HR Manager at TCS) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0082473": {
+    "name": "Tanvi Kumar",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0082596": {
+    "name": "Arjun Trivedi",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Pied Piper) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0082695": {
+    "name": "Yash Mittal",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0082791": {
+    "name": "Sneha Krishnan",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0082991": {
+    "name": "Karan Pillai",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Dunder Mifflin) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0083039": {
+    "name": "Pari Krishnan",
+    "reasons": [
+      "Senior job 4 (Project Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0083066": {
+    "name": "Reyansh Gupta",
+    "reasons": [
+      "Senior job 4 (Project Manager at Pied Piper) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0083084": {
+    "name": "Aisha Malhotra",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0083233": {
+    "name": "Suresh Nair",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Dunder Mifflin) started in 2014 before college started in 2017",
+      "Senior job 4 (Project Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0083376": {
+    "name": "Sneha Khanna",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0083527": {
+    "name": "Vihaan Krishnan",
+    "reasons": [
+      "Senior job 5 (HR Manager at Stark Industries) started in 2012 before college started in 2017",
+      "Senior job 6 (HR Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0083640": {
+    "name": "Arjun Dalal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0083723": {
+    "name": "Pranav Shetty",
+    "reasons": [
+      "Senior job 4 (HR Manager at Hooli) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0083736": {
+    "name": "Aisha Kumar",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0083751": {
+    "name": "Kabir Chowdary",
+    "reasons": [
+      "Senior job 5 (HR Manager at Pied Piper) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0083764": {
+    "name": "Sai Singh",
+    "reasons": [
+      "Senior job 4 (Project Manager at Infosys) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0083774": {
+    "name": "Suresh Arora",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0084182": {
+    "name": "Ved Malhotra",
+    "reasons": [
+      "Job 0 (Hooli) duration 200 exceeds span 51 months"
+    ]
+  },
+  "CAND_0084188": {
+    "name": "Kavya Shetty",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Pied Piper) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0084332": {
+    "name": "Mira Verma",
+    "reasons": [
+      "Senior job 3 (Project Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0084488": {
+    "name": "Ananya Agarwal",
+    "reasons": [
+      "Senior job 4 (Project Manager at Stark Industries) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0084502": {
+    "name": "Ananya Banerjee",
+    "reasons": [
+      "Senior job 3 (Operations Manager at TCS) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0084556": {
+    "name": "Myra Desai",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0084764": {
+    "name": "Arnav Trivedi",
+    "reasons": [
+      "Senior job 2 (HR Manager at Infosys) started in 2014 before college started in 2018",
+      "Senior job 4 (HR Manager at Wipro) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0084848": {
+    "name": "Krishna Patel",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0084904": {
+    "name": "Yash Trivedi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Initech) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0085034": {
+    "name": "Ved Iyer",
+    "reasons": [
+      "Senior job 5 (HR Manager at Acme Corp) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0085151": {
+    "name": "Aarohi Vora",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2015 before college started in 2018",
+      "Senior job 5 (Project Manager at Wipro) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0085212": {
+    "name": "Myra Kumar",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wipro) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0085379": {
+    "name": "Shreya Bansal",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0085595": {
+    "name": "Neha Naidu",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wipro) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0085735": {
+    "name": "Anika Iyer",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0085873": {
+    "name": "Aditya Iyer",
+    "reasons": [
+      "Senior job 6 (Project Manager at Pied Piper) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0086059": {
+    "name": "Aisha Bansal",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Infosys) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0086115": {
+    "name": "Diya Arora",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wayne Enterprises) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0086225": {
+    "name": "Ishaan Malhotra",
+    "reasons": [
+      "Senior job 5 (HR Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0086278": {
+    "name": "Aryan Agarwal",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Globex Inc) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0086279": {
+    "name": "Aditya Subramanian",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0086323": {
+    "name": "Zara Goyal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0086504": {
+    "name": "Anjali Banerjee",
+    "reasons": [
+      "Senior job 4 (HR Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0086529": {
+    "name": "Sunil Dalal",
+    "reasons": [
+      "Senior job 3 (HR Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0086667": {
+    "name": "Saanvi Kapoor",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0086808": {
+    "name": "Ishaan Dutta",
+    "reasons": [
+      "YoE mismatch: profile YoE 11.4 vs history YoE 1.25"
+    ]
+  },
+  "CAND_0087135": {
+    "name": "Arjun Sethi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0087304": {
+    "name": "Aisha Subramanian",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0087398": {
+    "name": "Priya Singh",
+    "reasons": [
+      "Senior job 2 (HR Manager at Dunder Mifflin) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0087415": {
+    "name": "Rahul Joshi",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0087565": {
+    "name": "Jay Trivedi",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0088036": {
+    "name": "Anil Menon",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at TCS) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0088066": {
+    "name": "Om Dutta",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Pied Piper) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0088087": {
+    "name": "Suresh Chatterjee",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wipro) started in 2012 before college started in 2017",
+      "Senior job 5 (Marketing Manager at Globex Inc) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0088093": {
+    "name": "Divya Iyengar",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wipro) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0088280": {
+    "name": "Ira Dalal",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Wipro) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0088296": {
+    "name": "Kavya Kumar",
+    "reasons": [
+      "Senior job 3 (Project Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0088489": {
+    "name": "Priya Krishnan",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Infosys) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0088657": {
+    "name": "Krishna Sethi",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0088722": {
+    "name": "Arnav Nair",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wipro) started in 2014 before college started in 2017",
+      "Senior job 4 (Project Manager at Globex Inc) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0088732": {
+    "name": "Rohan Chopra",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0088813": {
+    "name": "Atharv Dutta",
+    "reasons": [
+      "Senior job 5 (Project Manager at Globex Inc) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0088867": {
+    "name": "Vikram Tiwari",
+    "reasons": [
+      "Senior job 4 (HR Manager at Wayne Enterprises) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0089021": {
+    "name": "Suresh Chowdary",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Initech) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0089138": {
+    "name": "Ishaan Ghosh",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Pied Piper) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0089151": {
+    "name": "Aditya Ghosh",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0089223": {
+    "name": "Arnav Hegde",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wipro) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0089302": {
+    "name": "Mira Malhotra",
+    "reasons": [
+      "Senior job 5 (Project Manager at Hooli) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0089398": {
+    "name": "Nisha Verma",
+    "reasons": [
+      "Senior job 5 (HR Manager at TCS) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0089736": {
+    "name": "Advik Naidu",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Pied Piper) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0089834": {
+    "name": "Shreya Reddy",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Globex Inc) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0089859": {
+    "name": "Ritu Mittal",
+    "reasons": [
+      "Senior job 3 (HR Manager at Dunder Mifflin) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0089904": {
+    "name": "Ira Patel",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2012 before college started in 2015",
+      "Senior job 5 (HR Manager at TCS) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0089921": {
+    "name": "Pranav Bhatia",
+    "reasons": [
+      "Senior job 6 (Operations Manager at Hooli) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0089934": {
+    "name": "Sneha Nair",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0089936": {
+    "name": "Ritu Pillai",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Initech) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0090168": {
+    "name": "Saanvi Shetty",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Acme Corp) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0090501": {
+    "name": "Divya Krishnan",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0090694": {
+    "name": "Jay Pillai",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wipro) started in 2014 before college started in 2017",
+      "Senior job 4 (HR Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0090836": {
+    "name": "Pranav Menon",
+    "reasons": [
+      "Senior job 5 (HR Manager at Stark Industries) started in 2012 before college started in 2017",
+      "Senior job 6 (Marketing Manager at Wayne Enterprises) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0090900": {
+    "name": "Naina Gupta",
+    "reasons": [
+      "YoE mismatch: profile YoE 11.7 vs history YoE 0.75"
+    ]
+  },
+  "CAND_0090922": {
+    "name": "Anil Tiwari",
+    "reasons": [
+      "Senior job 3 (HR Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0090941": {
+    "name": "Amit Sharma",
+    "reasons": [
+      "Senior job 5 (Project Manager at TCS) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0091068": {
+    "name": "Nikhil Agarwal",
+    "reasons": [
+      "YoE mismatch: profile YoE 12.7 vs history YoE 1.00"
+    ]
+  },
+  "CAND_0091203": {
+    "name": "Tanya Subramanian",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0091239": {
+    "name": "Meera Shetty",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0091481": {
+    "name": "Advaith Pillai",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Initech) started in 2013 before college started in 2016",
+      "Senior job 5 (Marketing Manager at Dunder Mifflin) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0091850": {
+    "name": "Karan Subramanian",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Wayne Enterprises) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0091889": {
+    "name": "Sai Shah",
+    "reasons": [
+      "Senior job 4 (HR Manager at Dunder Mifflin) started in 2016 before college started in 2019",
+      "Senior job 6 (Marketing Manager at Acme Corp) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0091929": {
+    "name": "Sanjay Ghosh",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0091971": {
+    "name": "Aditya Krishnan",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0092060": {
+    "name": "Ananya Dutta",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Hooli) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0092168": {
+    "name": "Dhruv Bose",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0092259": {
+    "name": "Aanya Tiwari",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Wayne Enterprises) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0092316": {
+    "name": "Zara Nair",
+    "reasons": [
+      "Senior job 4 (HR Manager at Globex Inc) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0092456": {
+    "name": "Ayaan Arora",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0092495": {
+    "name": "Amit Khanna",
+    "reasons": [
+      "Senior job 5 (Project Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0092514": {
+    "name": "Advaith Mishra",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0092732": {
+    "name": "Vivaan Shetty",
+    "reasons": [
+      "Senior job 4 (Operations Manager at TCS) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0092734": {
+    "name": "Pooja Pandey",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Acme Corp) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0092814": {
+    "name": "Sneha Sen",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Initech) started in 2015 before college started in 2018",
+      "Senior job 4 (Operations Manager at Wayne Enterprises) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0092830": {
+    "name": "Dev Desai",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Acme Corp) started in 2013 before college started in 2018",
+      "Senior job 4 (HR Manager at Pied Piper) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0092859": {
+    "name": "Ritu Bansal",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2011 before college started in 2016"
+    ]
+  },
+  "CAND_0092893": {
+    "name": "Siya Mukherjee",
+    "reasons": [
+      "Senior job 3 (HR Manager at Hooli) started in 2014 before college started in 2019"
+    ]
+  },
+  "CAND_0092933": {
+    "name": "Rahul Bansal",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Globex Inc) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0093073": {
+    "name": "Vihaan Verma",
+    "reasons": [
+      "Senior job 2 (Project Manager at Wipro) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0093364": {
+    "name": "Amit Agarwal",
+    "reasons": [
+      "Job 0 (Globex Inc) duration 142 exceeds span 26 months"
+    ]
+  },
+  "CAND_0093529": {
+    "name": "Aryan Rao",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0093549": {
+    "name": "Rajesh Krishnan",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Hooli) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0093927": {
+    "name": "Rahul Rao",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wipro) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0094027": {
+    "name": "Divya Pandey",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wayne Enterprises) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0094040": {
+    "name": "Arnav Subramanian",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0094051": {
+    "name": "Advaith Naidu",
+    "reasons": [
+      "Senior job 4 (HR Manager at Stark Industries) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0094228": {
+    "name": "Dev Mittal",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Acme Corp) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0094309": {
+    "name": "Vivaan Rao",
+    "reasons": [
+      "Senior job 4 (Project Manager at Dunder Mifflin) started in 2014 before college started in 2018",
+      "Senior job 6 (Operations Manager at Hooli) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0094388": {
+    "name": "Divya Pillai",
+    "reasons": [
+      "Senior job 4 (HR Manager at Initech) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0094399": {
+    "name": "Nisha Iyengar",
+    "reasons": [
+      "Senior job 4 (HR Manager at Pied Piper) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0094509": {
+    "name": "Karan Bansal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Infosys) started in 2015 before college started in 2018",
+      "Senior job 4 (HR Manager at Stark Industries) started in 2013 before college started in 2018",
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0094661": {
+    "name": "Advik Gupta",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0094702": {
+    "name": "Naina Sen",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0094844": {
+    "name": "Ayaan Hegde",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Infosys) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0095062": {
+    "name": "Shaurya Banerjee",
+    "reasons": [
+      "Senior job 5 (Project Manager at Pied Piper) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0095076": {
+    "name": "Aditya Menon",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0095155": {
+    "name": "Advik Mishra",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0095202": {
+    "name": "Reyansh Nair",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0095221": {
+    "name": "Rohan Dalal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0095305": {
+    "name": "Vihaan Bansal",
+    "reasons": [
+      "Senior job 5 (HR Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0095367": {
+    "name": "Tanya Joshi",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Acme Corp) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0095401": {
+    "name": "Ved Mukherjee",
+    "reasons": [
+      "Senior job 5 (Project Manager at Initech) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0095626": {
+    "name": "Ira Shetty",
+    "reasons": [
+      "Senior job 7 (HR Manager at Stark Industries) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0095680": {
+    "name": "Anil Pandey",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Stark Industries) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0095714": {
+    "name": "Anika Iyengar",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Pied Piper) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0095783": {
+    "name": "Ved Reddy",
+    "reasons": [
+      "Senior job 5 (HR Manager at Dunder Mifflin) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0095792": {
+    "name": "Krishna Bhatia",
+    "reasons": [
+      "Senior job 3 (Project Manager at TCS) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0095816": {
+    "name": "Rohan Reddy",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0096137": {
+    "name": "Avni Malhotra",
+    "reasons": [
+      "Senior job 3 (Project Manager at Hooli) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0096150": {
+    "name": "Vikram Pandey",
+    "reasons": [
+      "YoE mismatch: profile YoE 14.7 vs history YoE 0.83"
+    ]
+  },
+  "CAND_0096167": {
+    "name": "Ela Tiwari",
+    "reasons": [
+      "Senior job 5 (Operations Manager at Acme Corp) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0096256": {
+    "name": "Meera Agarwal",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2011 before college started in 2015"
+    ]
+  },
+  "CAND_0096327": {
+    "name": "Arnav Goyal",
+    "reasons": [
+      "Senior job 4 (HR Manager at Hooli) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0096427": {
+    "name": "Deepak Shah",
+    "reasons": [
+      "Senior job 3 (Project Manager at Globex Inc) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0096475": {
+    "name": "Ira Banerjee",
+    "reasons": [
+      "Senior job 2 (Operations Manager at Infosys) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0096489": {
+    "name": "Mira Dutta",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wipro) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0096584": {
+    "name": "Priya Nair",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Acme Corp) started in 2011 before college started in 2014"
+    ]
+  },
+  "CAND_0096769": {
+    "name": "Advaith Dalal",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Hooli) started in 2015 before college started in 2019",
+      "Senior job 4 (Project Manager at TCS) started in 2012 before college started in 2019"
+    ]
+  },
+  "CAND_0096938": {
+    "name": "Karan Bansal",
+    "reasons": [
+      "Senior job 6 (Marketing Manager at Wipro) started in 2012 before college started in 2018"
+    ]
+  },
+  "CAND_0096959": {
+    "name": "Anjali Vora",
+    "reasons": [
+      "Senior job 5 (Project Manager at Acme Corp) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0097175": {
+    "name": "Pranav Tiwari",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0097195": {
+    "name": "Aanya Vora",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Wayne Enterprises) started in 2015 before college started in 2019"
+    ]
+  },
+  "CAND_0097196": {
+    "name": "Naina Nair",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Hooli) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0097224": {
+    "name": "Dev Arora",
+    "reasons": [
+      "Senior job 3 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0097360": {
+    "name": "Rajesh Bose",
+    "reasons": [
+      "Senior job 5 (Project Manager at Initech) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0097541": {
+    "name": "Aisha Singh",
+    "reasons": [
+      "Senior job 4 (Project Manager at Wayne Enterprises) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0097561": {
+    "name": "Tanya Naidu",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Stark Industries) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0097638": {
+    "name": "Aanya Bose",
+    "reasons": [
+      "Senior job 2 (HR Manager at Stark Industries) started in 2016 before college started in 2019"
+    ]
+  },
+  "CAND_0097788": {
+    "name": "Aarohi Krishnan",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at TCS) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0097806": {
+    "name": "Aarohi Sharma",
+    "reasons": [
+      "Senior job 4 (Project Manager at Hooli) started in 2011 before college started in 2017"
+    ]
+  },
+  "CAND_0097844": {
+    "name": "Nisha Bansal",
+    "reasons": [
+      "Senior job 4 (HR Manager at TCS) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0097849": {
+    "name": "Deepak Mittal",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0098159": {
+    "name": "Neha Vora",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0098298": {
+    "name": "Nisha Sen",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Stark Industries) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0098357": {
+    "name": "Manish Goyal",
+    "reasons": [
+      "Senior job 4 (HR Manager at Acme Corp) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0098375": {
+    "name": "Neha Sen",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Dunder Mifflin) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0098549": {
+    "name": "Diya Sharma",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Dunder Mifflin) started in 2014 before college started in 2017"
+    ]
+  },
+  "CAND_0098587": {
+    "name": "Riya Mishra",
+    "reasons": [
+      "Senior job 3 (Marketing Manager at Stark Industries) started in 2013 before college started in 2017"
+    ]
+  },
+  "CAND_0098703": {
+    "name": "Rajesh Vora",
+    "reasons": [
+      "Senior job 4 (Project Manager at Globex Inc) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0098710": {
+    "name": "Suresh Ghosh",
+    "reasons": [
+      "Senior job 4 (Project Manager at Infosys) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0098819": {
+    "name": "Om Verma",
+    "reasons": [
+      "Senior job 3 (Project Manager at Initech) started in 2014 before college started in 2018"
+    ]
+  },
+  "CAND_0098951": {
+    "name": "Jay Menon",
+    "reasons": [
+      "Senior job 3 (HR Manager at Acme Corp) started in 2015 before college started in 2018"
+    ]
+  },
+  "CAND_0099061": {
+    "name": "Meera Kumar",
+    "reasons": [
+      "Senior job 4 (Project Manager at Hooli) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0099079": {
+    "name": "Aryan Menon",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Acme Corp) started in 2015 before college started in 2018",
+      "Senior job 4 (Marketing Manager at Globex Inc) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0099110": {
+    "name": "Arnav Naidu",
+    "reasons": [
+      "Senior job 5 (Marketing Manager at Dunder Mifflin) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0099247": {
+    "name": "Om Menon",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Acme Corp) started in 2016 before college started in 2019",
+      "Senior job 5 (Operations Manager at Dunder Mifflin) started in 2012 before college started in 2019",
+      "Senior job 6 (Project Manager at TCS) started in 2011 before college started in 2019"
+    ]
+  },
+  "CAND_0099499": {
+    "name": "Vivaan Verma",
+    "reasons": [
+      "Senior job 5 (Project Manager at Wayne Enterprises) started in 2013 before college started in 2016"
+    ]
+  },
+  "CAND_0099649": {
+    "name": "Advik Saxena",
+    "reasons": [
+      "Senior job 3 (Project Manager at Stark Industries) started in 2013 before college started in 2018",
+      "Senior job 4 (Operations Manager at Dunder Mifflin) started in 2011 before college started in 2018"
+    ]
+  },
+  "CAND_0099650": {
+    "name": "Atharv Menon",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Wipro) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0099718": {
+    "name": "Ayaan Ghosh",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Stark Industries) started in 2012 before college started in 2017"
+    ]
+  },
+  "CAND_0099728": {
+    "name": "Ira Kapoor",
+    "reasons": [
+      "Senior job 4 (Marketing Manager at Initech) started in 2015 before college started in 2018",
+      "Senior job 5 (Project Manager at Initech) started in 2013 before college started in 2018"
+    ]
+  },
+  "CAND_0099778": {
+    "name": "Tanya Bose",
+    "reasons": [
+      "Senior job 4 (Operations Manager at Acme Corp) started in 2012 before college started in 2016"
+    ]
+  },
+  "CAND_0099877": {
+    "name": "Arnav Dutta",
+    "reasons": [
+      "Senior job 5 (Project Manager at Initech) started in 2012 before college started in 2015"
+    ]
+  },
+  "CAND_0099967": {
+    "name": "Karan Joshi",
+    "reasons": [
+      "Senior job 3 (Operations Manager at Acme Corp) started in 2013 before college started in 2019"
+    ]
+  },
+  "CAND_0099973": {
+    "name": "Rajesh Goyal",
+    "reasons": [
+      "Senior job 5 (HR Manager at Hooli) started in 2011 before college started in 2015"
+    ]
+  }
+}

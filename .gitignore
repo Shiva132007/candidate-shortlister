@@ -1,0 +1,31 @@
+# Python virtual environment
+.venv/
+__pycache__/
+*.pyc
+
+# HuggingFace cache
+.hf_cache/
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Dataset files (large files with brackets escaped)
+\[PUB\]\ India_runs_data_and_ai_challenge/
+candidates.jsonl
+embeddings.npy
+candidate_id_map.json
+
+# Local custom input/output files
+candidates_custom.jsonl
+job_description_custom.txt
+team_submission.csv
+test_submission.csv
+
+# Local model folder (downloaded weights)
+model/
+
+# Logs and environment variables
+.env
+*.log
+debug.txt

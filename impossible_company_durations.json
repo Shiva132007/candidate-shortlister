@@ -1,0 +1,38 @@
+[
+  {
+    "candidate_id": "CAND_0010294",
+    "name": "Reyansh Nair",
+    "company": "Mphasis",
+    "job_index": 0,
+    "duration_months": 144,
+    "company_max_age": 120,
+    "start_date": "2024-11-03"
+  },
+  {
+    "candidate_id": "CAND_0040075",
+    "name": "Aditya Singh",
+    "company": "Pied Piper",
+    "job_index": 0,
+    "duration_months": 228,
+    "company_max_age": 181,
+    "start_date": "2023-03-14"
+  },
+  {
+    "candidate_id": "CAND_0057711",
+    "name": "Vivaan Gupta",
+    "company": "Capgemini",
+    "job_index": 0,
+    "duration_months": 140,
+    "company_max_age": 122,
+    "start_date": "2022-03-19"
+  },
+  {
+    "candidate_id": "CAND_0084182",
+    "name": "Ved Malhotra",
+    "company": "Hooli",
+    "job_index": 0,
+    "duration_months": 200,
+    "company_max_age": 181,
+    "start_date": "2022-03-19"
+  }
+]

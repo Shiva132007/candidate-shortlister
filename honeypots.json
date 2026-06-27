@@ -1,0 +1,92 @@
+[
+  {
+    "candidate_id": "CAND_0007353",
+    "name": "Aarav Subramanian",
+    "reasons": [
+      "Impossible job duration: ['Job at Wayne Enterprises has duration 166 months (~8 years) but span is only 33 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0008960",
+    "name": "Meera Naidu",
+    "reasons": [
+      "Impossible job duration: ['Job at Stark Industries has duration 171 months (~8 years) but span is only 21 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0010294",
+    "name": "Reyansh Nair",
+    "reasons": [
+      "Impossible job duration: ['Job at Mphasis has duration 144 months (~8 years) but span is only 19 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0018515",
+    "name": "Aarohi Dalal",
+    "reasons": [
+      "Impossible job duration: ['Job at Initech has duration 150 months (~8 years) but span is only 39 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0035104",
+    "name": "Ayaan Chopra",
+    "reasons": [
+      "Impossible job duration: ['Job at Cognizant has duration 114 months (~8 years) but span is only 18 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0040075",
+    "name": "Aditya Singh",
+    "reasons": [
+      "Impossible job duration: ['Job at Pied Piper has duration 228 months (~8 years) but span is only 39 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0053734",
+    "name": "Priya Chowdary",
+    "reasons": [
+      "Impossible job duration: ['Job at Globex Inc has duration 151 months (~8 years) but span is only 32 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0065710",
+    "name": "Dhruv Gupta",
+    "reasons": [
+      "Impossible job duration: ['Job at Hooli has duration 100 months (~8 years) but span is only 38 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0070189",
+    "name": "Ananya Arora",
+    "reasons": [
+      "Impossible job duration: ['Job at Wayne Enterprises has duration 130 months (~8 years) but span is only 39 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  },
+  {
+    "candidate_id": "CAND_0093364",
+    "name": "Amit Agarwal",
+    "reasons": [
+      "Impossible job duration: ['Job at Globex Inc has duration 142 months (~8 years) but span is only 26 months (~3 years)']"
+    ],
+    "zero_dur_expert_count": 0,
+    "impossible_job": true
+  }
+]
