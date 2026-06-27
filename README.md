@@ -1,58 +1,88 @@
 # Candidate Shortlister
 
-An AI-powered candidate ranking and intelligence system designed for recruiting teams. It bypasses keyword-stuffing traps and honeypots by understanding career trajectories, company pedigree, notice period bounds, and real-time behavioral signals to deliver a high-signal, trusted shortlist of candidates.
+An AI-powered candidate ranking, filtering, and intelligence system designed for recruitment teams. The engine bypasses keyword-stuffing traps, timeline anomalies, and honeypots by analyzing career trajectories, company pedigree, notice periods, and real-time behavioral signals to deliver a high-signal, trusted shortlist of candidates.
+
+---
+
+## Key Refinement Pillars
+
+Our system is engineered to solve core deficiencies in traditional resume screening:
+
+1. **Honeypot Disqualification**: Automatic filtering of artificial profiles with impossible career timelines (e.g., holding senior engineering roles prior to university graduation, or impossible overlapping dates).
+2. **Anti-Keyword Stuffing**: Detects candidates listing popular buzzwords (e.g., PyTorch, RAG) who only hold unrelated, non-technical histories (e.g., HR, marketing, administrative roles).
+3. **Pedigree Weighting**: Strictly downweights consulting-only histories (e.g., TCS, Wipro, Infosys) as per job specifications while elevating candidates with product-based or high-growth startup history.
+4. **Availability Calibration**: Prioritizes candidates with high interview completion rates, fast recruiter response metrics, open-to-work tags, and active GitHub presence.
+
+---
 
 ## System Architecture
 
-Our solution is divided into a robust, offline-capable ranking engine and a highly interactive, modern web application dashboard.
+The project contains a highly optimized backend ranking service and an interactive, real-time React-based dashboard.
 
 ```mermaid
 graph TD
-    A[Job Description] --> B[Dense Retrieval Vector Query]
-    C[Candidate Pool] --> D[Filters: Blacklist & Non-Tech]
-    D --> E[Semantic Similarity Engine]
+    A[Job Description Text] --> B[all-MiniLM-L6-v2 Semantic Embeddings]
+    C[Candidate Pool JSONL/CSV] --> D[Stage 1: Disqualification & Safety Filters]
+    D --> E[Stage 2: Semantic Similarity Matrix]
     B --> E
-    E --> F[Experience & Pedigree Alignment]
-    F --> G[Availability & Response Modifiers]
-    G --> H[Deterministic Reasoning Generator]
-    H --> I[Shortlist Output CSV]
+    E --> F[Stage 3: Experience & Pedigree Alignment]
+    F --> G[Stage 4: Availability & Response Modifiers]
+    G --> H[Rank & Score Scale Normalization]
+    H --> I[Validated Output CSV]
 ```
 
-### 1. The 4-Stage Hybrid Scoring Model
-*   **Stage 1: Disqualification & Safety Filters**:
-    *   **Timeline Anomalies (Honeypots)**: Profiles starting senior technical jobs years before their undergraduate graduation, or containing impossible overlapping dates, are identified and filtered to the bottom.
-    *   **Keyword Stuffers (Non-Tech)**: Profiles that list hot keywords (like RAG, PyTorch) but have only held unrelated roles (like HR, Sales, or Marketing) with no technical career history are down-graded.
-    *   **Consulting-Only Pedigree**: Candidates who have spent their entire career at IT consulting/service firms (TCS, Wipro, Infosys, etc.) are filtered out, as per the JD specifications, while retaining those with product company experience.
-*   **Stage 2: Semantic Matching**:
-    *   Matches candidate profiles against the job description using a local `all-MiniLM-L6-v2` SentenceTransformer model.
-    *   **Precomputation Index**: Loads precomputed embeddings in `0.1s`.
-    *   **Dynamic Fallback Encoding**: If a candidate isn't in the precomputed index, the engine dynamically encodes the text representation on-the-fly, ensuring compatibility with small custom test sets under 2 seconds.
-*   **Stage 3: Experience & Pedigree Heuristics**:
-    *   **Experience Alignment**: Targets 5–9 years of experience (peak multiplier at 6–8 years), penalizing junior developers (<3 YoE) and principal chasers (>12 YoE).
-    *   **Pedigree Bonus**: Upweights candidates with career history at known product companies (startups or tech firms) and applies a slight penalty to current consulting roles.
-*   **Stage 4: Behavioral Signal Integration**:
-    *   Integrates 23 availability signals, including recruiter response rates, GitHub activity scores, last active dates, and interview completion rates, to prioritize responsive candidates.
+### 1. The 4-Stage Scoring Engine
+
+#### Stage 1: Safety & Pedigree Verification
+- **Timeline Verification**: Detects anomalies by matching academic graduation years against the start dates of senior roles.
+- **Role Alignment Check**: Ensures the candidate has held at least one core engineering/developer role to eliminate non-tech keyword stuffers.
+- **Pedigree Isolation**: Categorizes candidates into product, consulting, or neutral cohorts. Profiles with only IT consulting firms in their entire history are moved to the bottom tier.
+
+#### Stage 2: Dense Semantic Matching
+- Encodes the job description (JD) and compiles candidates' headlines, summaries, and career histories into clean text documents.
+- Evaluates similarity using the local `all-MiniLM-L6-v2` SentenceTransformer.
+- **Precomputed Mode**: Loads pre-normalized NumPy embeddings in `<0.1s`.
+- **Dynamic Fallback**: If a new candidate profile is uploaded dynamically, the engine encodes the profile on-the-fly.
+
+#### Stage 3: Experience & Pedigree Heuristics
+- **Experience Window**: Targets the sweet spot of **5–9 years** of experience (peak multiplier at **6–8 years**). Penalizes junior entries (<3 YoE) and overqualified principal profiles (>12 YoE).
+- **Pedigree Multipliers**: Adds a **+15% bonus** for verified product/startup histories, and a **-15% penalty** for current consulting roles.
+
+#### Stage 4: Availability & Engagement Calibration
+Uses 23 behavioral inputs from the Redrob talent platform:
+- **Recruiter Response Rate**: Scales candidate score linearly based on platform response rate.
+- **Last Active Date**: Applies a **0.40x penalty** for candidates inactive over 180 days; grants a **1.05x bonus** for active outreach (<90 days).
+- **GitHub Activity Score**: Grants a **+10% bonus** for high-activity open-source contributors (score >50).
+- **Interview Completion Rate**: Boosts consistent candidates (completion rate $\ge 80\%$) and heavily penalizes dropouts (<50% completion rate).
 
 ---
 
-## Shortlist Format compliance
+## REST API Documentation
 
-The ranking engine outputs a validated, CSV file matching the format rules:
-- **Zero Honeypots** in the top ranks.
-- **Score Monotonicity**: Scores are strictly non-increasing by rank.
-- **Alphabetical Tie-Breaker**: Candidates with identical scores are sorted by `candidate_id` in ascending order.
-- **Fact-Based Reasonings**: Generates unique, non-templated match justifications indicating actual candidate strengths, locations, and notice period concerns.
+The backend service is powered by FastAPI, exposing a highly structured set of endpoints:
+
+| Endpoint | Method | Description |
+| :--- | :---: | :--- |
+| `/api/status` | `GET` | Returns status of custom JD, custom candidates pool, and total candidate count. |
+| `/api/job-description` | `GET` | Fetches the active job description content. |
+| `/api/job-description` | `POST` | Updates the active job description. |
+| `/api/candidates` | `GET` | Retrieves the top ranked candidates merged with their complete profiles. |
+| `/api/candidate/{id}` | `GET` | Fetches a single candidate's detailed profile, signals, and timeline. |
+| `/api/upload-candidates`| `POST` | Uploads a `.jsonl` or `.csv` dataset file to act as the custom talent pool. |
+| `/api/rank` | `POST` | Re-runs the Python ranking engine locally to regenerate rankings. |
+| `/api/reset` | `POST` | Resets the workspace, restoring the default dataset and JD. |
 
 ---
 
-## Web Application Dashboard
+## Configuration & Portability
 
-Built with a premium dark-themed design system using React, Vite, and FastAPI.
-
-- **Interactive shortlists**: Displays the ranked candidates with interactive searching, filtering by skills, and score indicators.
-- **Recalculator Controls**: Recalculates ranks in real-time by executing the backend ranking script.
-- **Job Description Viewer**: Formats and displays the target JD guidelines.
-- **Profile Deep Dive**: Displays a visual vertical career timeline, verified skills tag cloud, and a grid of behavioral signals (notice period, Git score, response rate).
+The project has been fully professionalized to support run-anywhere execution with zero hardcoded system paths:
+- **Local Resolution**: All paths (caches, models, data uploads) resolve relative to the folder where the backend/script is running.
+- **Environment Variables**: Configure the system by copying `.env.example` to `.env`:
+  ```ini
+  HOST=127.0.0.1
+  PORT=8000
+  ```
 
 ---
 
@@ -60,29 +90,41 @@ Built with a premium dark-themed design system using React, Vite, and FastAPI.
 
 ### Prerequisites
 - Python 3.10 to 3.13
-- Node.js & npm
-- `uv` package manager
+- Node.js & npm (v18+)
+- [uv](https://github.com/astral-sh/uv) (recommended Python package installer)
 
-### 1. Project Initialization
-Install all python dependencies and sync the virtual environment:
+### 1. Installation
+Install all backend dependencies and synchronize the virtual environment:
 ```bash
 uv sync
 ```
 
+Install frontend package dependencies:
+```bash
+cd frontend
+npm install
+cd ..
+```
+
 ### 2. Precomputing Embeddings (Optional)
-To index the full 100,000 candidate pool using parallel multi-processing across all CPU cores:
+To index a massive candidate pool (e.g., 100,000 profiles) using parallel multi-processing across all CPU cores:
 ```bash
 uv run python embed_candidates_multi.py
 ```
 
-### 3. Running the Ranker
-To rank any candidate JSONL file and produce the submission CSV:
-```bash
-uv run python rank.py --candidates <path_to_jsonl> --out submission.csv
-```
-
-### 4. Running the Web Application
-Start the backend FastAPI server (which serves the compiled React app statically at `http://127.0.0.1:8000/`):
+### 3. Run Web App Dashboard
+Run the FastAPI backend, which will automatically bundle and statically serve the compiled React UI:
 ```bash
 uv run python server.py
 ```
+Open **[http://127.0.0.1:8000](http://127.0.0.1:8000)** in your browser.
+
+### 4. Running Frontend in Dev Mode (UI Hot-Reloading)
+To modify the UI with hot-reloading:
+1. Start the FastAPI server (`uv run python server.py`) on port `8000`.
+2. Start the Vite server inside the frontend folder:
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+Vite is pre-configured to proxy all `/api` requests automatically to the FastAPI backend.
