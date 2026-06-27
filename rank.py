@@ -6,8 +6,10 @@ import csv
 from datetime import datetime
 from sentence_transformers import SentenceTransformer
 
+WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # Redirect HF cache to project workspace to avoid permission issues
-os.environ["HF_HOME"] = r"E:\AI-resume\.hf_cache"
+os.environ["HF_HOME"] = os.path.join(WORKSPACE_DIR, ".hf_cache")
 
 def get_job_description_query(jd_path=None):
     if jd_path and os.path.exists(jd_path):
@@ -260,7 +262,7 @@ def main():
     
     # Try loading pre-calculated honeypots lists
     for filename in ["all_detected_honeypots.json", "honeypots.json", "undergrad_anomalies.json"]:
-        path = os.path.join(r"E:\AI-resume", filename)
+        path = os.path.join(WORKSPACE_DIR, filename)
         if os.path.exists(path):
             try:
                 with open(path, "r", encoding="utf-8") as f:
@@ -279,8 +281,8 @@ def main():
     print(f"Loaded blacklist. Total blacklisted candidate IDs: {len(blacklist)}")
     
     # 2. Try loading precomputed embeddings and ID map
-    emb_path = os.path.join(r"E:\AI-resume", "embeddings.npy")
-    map_path = os.path.join(r"E:\AI-resume", "candidate_id_map.json")
+    emb_path = os.path.join(WORKSPACE_DIR, "embeddings.npy")
+    map_path = os.path.join(WORKSPACE_DIR, "candidate_id_map.json")
     
     precomputed_embeddings = None
     candidate_id_map = {}
@@ -296,8 +298,8 @@ def main():
             
     # Fallback to sample embeddings if full ones aren't generated yet (useful for debugging/testing)
     if precomputed_embeddings is None:
-        emb_path_sample = os.path.join(r"E:\AI-resume", "embeddings_sample.npy")
-        map_path_sample = os.path.join(r"E:\AI-resume", "candidate_id_map_sample.json")
+        emb_path_sample = os.path.join(WORKSPACE_DIR, "embeddings_sample.npy")
+        map_path_sample = os.path.join(WORKSPACE_DIR, "candidate_id_map_sample.json")
         if os.path.exists(emb_path_sample) and os.path.exists(map_path_sample):
             try:
                 precomputed_embeddings = np.load(emb_path_sample)
@@ -309,7 +311,7 @@ def main():
                 
     # 3. Load SentenceTransformer model locally (if we need to encode on the fly)
     model = None
-    model_path = os.path.join(r"E:\AI-resume", "model", "all-MiniLM-L6-v2")
+    model_path = os.path.join(WORKSPACE_DIR, "model", "all-MiniLM-L6-v2")
     
     # Encode Query
     query_text = get_job_description_query(args.jd)

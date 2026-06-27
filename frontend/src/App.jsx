@@ -25,7 +25,7 @@ export default function App() {
 
   const fetchStatus = async () => {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/status');
+      const res = await fetch('/api/status');
       const data = await res.json();
       setStatus(data);
     } catch (e) {
@@ -35,7 +35,7 @@ export default function App() {
 
   const fetchJd = async () => {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/job-description');
+      const res = await fetch('/api/job-description');
       const data = await res.json();
       const content = data.content || '';
       setJd(content);
@@ -49,7 +49,7 @@ export default function App() {
     setLoading(true);
     setErrorMsg('');
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/candidates');
+      const res = await fetch('/api/candidates');
       const data = await res.json();
       if (data.status === 'success') {
         setCandidates(data.candidates || []);
@@ -69,7 +69,7 @@ export default function App() {
 
   const saveJd = async () => {
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/job-description', {
+      const res = await fetch('/api/job-description', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ content: jdInput })
@@ -105,7 +105,7 @@ export default function App() {
     formData.append('file', file);
 
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/upload-candidates', {
+      const res = await fetch('/api/upload-candidates', {
         method: 'POST',
         body: formData
       });
@@ -133,7 +133,7 @@ export default function App() {
       return;
     }
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/reset', { method: 'POST' });
+      const res = await fetch('/api/reset', { method: 'POST' });
       const data = await res.json();
       if (res.ok && data.status === 'success') {
         setShowSyncWarning(false);
@@ -155,7 +155,7 @@ export default function App() {
     setRankingInProgress(true);
     setErrorMsg('');
     try {
-      const res = await fetch('http://127.0.0.1:8000/api/rank', { method: 'POST' });
+      const res = await fetch('/api/rank', { method: 'POST' });
       const data = await res.json();
       if (res.ok && data.status === 'success') {
         setShowSyncWarning(false);

@@ -1,6 +1,7 @@
 import json
 import os
-os.environ["HF_HOME"] = r"E:\AI-resume\.hf_cache"
+WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
+os.environ["HF_HOME"] = os.path.join(WORKSPACE_DIR, ".hf_cache")
 import argparse
 import numpy as np
 from sentence_transformers import SentenceTransformer
@@ -41,10 +42,10 @@ def compile_text_profile(cand):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--candidates", type=str, default=r"E:\AI-resume\[PUB] India_runs_data_and_ai_challenge\[PUB] India_runs_data_and_ai_challenge\India_runs_data_and_ai_challenge\candidates.jsonl")
+    parser.add_argument("--candidates", type=str, default=os.path.join(WORKSPACE_DIR, "[PUB] India_runs_data_and_ai_challenge", "[PUB] India_runs_data_and_ai_challenge", "India_runs_data_and_ai_challenge", "candidates.jsonl"))
     args = parser.parse_args()
     
-    out_dir = r"E:\AI-resume"
+    out_dir = WORKSPACE_DIR
     model_save_path = os.path.join(out_dir, "model", "all-MiniLM-L6-v2")
     
     # Load model locally

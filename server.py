@@ -18,7 +18,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-WORKSPACE_DIR = r"E:\AI-resume"
+WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATASET_DIR = os.path.join(WORKSPACE_DIR, "[PUB] India_runs_data_and_ai_challenge", "[PUB] India_runs_data_and_ai_challenge", "India_runs_data_and_ai_challenge")
 
 # Cache candidates data in memory for fast retrieval (only Top 100/sample, or stream from JSONL)
@@ -376,4 +376,6 @@ if os.path.exists(frontend_dist):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    host = os.environ.get("HOST", "127.0.0.1")
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host=host, port=port)
