@@ -101,11 +101,20 @@ def get_ranked_candidates():
                 for line in f:
                     if not line.strip():
                         continue
-                    # Quick pre-filter check
-                    if any(cid in line for cid in cids_to_find):
-                        cand = json.loads(line)
-                        if cand["candidate_id"] in cids_to_find:
-                            matched_profiles[cand["candidate_id"]] = cand
+                    # Fast ID extraction: locate "candidate_id" key
+                    idx = line.find('"candidate_id"')
+                    if idx != -1:
+                        # Find the value quotes starting after "candidate_id"
+                        start = line.find('"', idx + 14)
+                        if start != -1:
+                            end = line.find('"', start + 1)
+                            if end != -1:
+                                cid = line[start+1:end]
+                                if cid in cids_to_find:
+                                    matched_profiles[cid] = json.loads(line)
+                                    # Stop reading if we've found all requested profiles
+                                    if len(matched_profiles) == len(cids_to_find):
+                                        break
                             
         # Merge profile details back into our list
         for item in top_candidates:
