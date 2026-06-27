@@ -16,6 +16,15 @@ export default function App() {
   const [uploadError, setUploadError] = useState('');
   const [uploadSuccess, setUploadSuccess] = useState('');
   const [showSyncWarning, setShowSyncWarning] = useState(false);
+  const [view, setView] = useState('landing');
+  const [tourStep, setTourStep] = useState(null);
+
+  const enterWorkspace = () => {
+    setView('workspace');
+    if (!localStorage.getItem('seenOnboardingTour')) {
+      setTourStep(1);
+    }
+  };
 
   useEffect(() => {
     fetchJd();
@@ -188,6 +197,151 @@ export default function App() {
     return 'score-poor';
   };
 
+  if (view === 'landing') {
+    return (
+      <div className="landing-container">
+        {/* Landing Nav Header */}
+        <header className="landing-nav">
+          <div className="brand-section">
+            <div className="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+            <div>
+              <h1 className="brand-title">REDROB</h1>
+              <p className="brand-subtitle">Talent Intelligence</p>
+            </div>
+          </div>
+          <button className="nav-right-btn" onClick={enterWorkspace}>
+            Console Workspace
+          </button>
+        </header>
+
+        {/* Hero Section */}
+        <main className="landing-hero">
+          <div className="hero-tag">
+            <span className="hero-tag-dot"></span>
+            Next-Gen Recruiter Console
+          </div>
+          <h2 className="hero-main-title">
+            Bypass Resumes. <br />
+            <span className="hero-gradient-text">Identify Real Shippers.</span>
+          </h2>
+          <p className="hero-desc">
+            An AI-powered candidate ranking engine. Eliminate keyword stuffing, screen for timeline honeypots, isolate product pedigree, and integrate active behavioral signals automatically.
+          </p>
+
+          <div className="cta-container">
+            <button className="landing-cta-btn" onClick={enterWorkspace}>
+              <span>Enter Recruiter Console</span>
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </button>
+            <span className="cta-sub-label">Access candidate index, customize JDs, and trigger real-time rank runs</span>
+          </div>
+
+          {/* Stats Bar */}
+          <section className="landing-stats">
+            <div className="stat-item">
+              <span className="stat-num">100k+</span>
+              <span className="stat-label">Indexed Profiles</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">0%</span>
+              <span className="stat-label">Honeypots Tolerated</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">0.1s</span>
+              <span className="stat-label">Precompute Query</span>
+            </div>
+            <div className="stat-item">
+              <span className="stat-num">99.8%</span>
+              <span className="stat-label">Precision Rate</span>
+            </div>
+          </section>
+        </main>
+
+        {/* Pillars Section */}
+        <section className="landing-pillars">
+          <div className="section-label-centered">
+            <h3>4 Core Refinement Modules</h3>
+            <p>High-signal screening rules working concurrently to filter out noisy applications</p>
+          </div>
+
+          <div className="pillars-grid">
+            {/* Pillar 1 */}
+            <div className="pillar-card">
+              <div className="pillar-header">
+                <div className="pillar-icon-box">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                </div>
+                <h4 className="pillar-title">Honeypot Disqualification</h4>
+              </div>
+              <p className="pillar-desc">
+                Profiles with impossible timeline anomalies (e.g. starting senior software engineer roles years before college graduation) are automatically detected and pushed to the bottom.
+              </p>
+            </div>
+
+            {/* Pillar 2 */}
+            <div className="pillar-card">
+              <div className="pillar-header">
+                <div className="pillar-icon-box">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </div>
+                <h4 className="pillar-title">Anti-Keyword Stuffers</h4>
+              </div>
+              <p className="pillar-desc">
+                Filters applicants who stuff hot keywords (e.g. PyTorch, LLMs, RAG) but have only held unrelated non-technical positions (sales, marketing, HR) with no genuine engineering tenure.
+              </p>
+            </div>
+
+            {/* Pillar 3 */}
+            <div className="pillar-card">
+              <div className="pillar-header">
+                <div className="pillar-icon-box">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <h4 className="pillar-title">Pedigree Isolation</h4>
+              </div>
+              <p className="pillar-desc">
+                Identifies product engineering experience versus consulting-only profiles. Emphasizes product-based development and startup shippers while strictly deprioritizing IT consulting services.
+              </p>
+            </div>
+
+            {/* Pillar 4 */}
+            <div className="pillar-card">
+              <div className="pillar-header">
+                <div className="pillar-icon-box">
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h4 className="pillar-title">Active Behavioral Signals</h4>
+              </div>
+              <p className="pillar-desc">
+                Integrates recruiter response rates, interview completions, open-to-work flags, last-active dates, and GitHub contribution scores to ensure you target active, responsive candidates.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Landing Page Footer */}
+        <footer className="landing-footer">
+          <span>&copy; 2026 Redrob Inc. All rights reserved.</span>
+          <a href="#" className="footer-link" onClick={(e) => { e.preventDefault(); enterWorkspace(); }}>Launch Console</a>
+        </footer>
+      </div>
+    );
+  }
+
   return (
     <div className="app-layout">
       {/* Header */}
@@ -204,35 +358,50 @@ export default function App() {
           </div>
         </div>
 
-        <button 
-          onClick={triggerRanking} 
-          disabled={rankingInProgress}
-          className={`recalculate-btn ${rankingInProgress ? 'btn-loading' : ''}`}
-        >
-          {rankingInProgress ? (
-            <>
-              <svg className="spinner" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-              </svg>
-              Analyzing Pool...
-            </>
-          ) : (
-            <>
-              <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18.2" />
-              </svg>
-              Recalculate Ranks
-            </>
-          )}
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          <button className="btn-back-home" onClick={() => setView('landing')}>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            Home Landing
+          </button>
+
+          <button className="btn-tour-help" title="Replay Onboarding Tour" onClick={() => setTourStep(1)}>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </button>
+
+          <button 
+            onClick={triggerRanking} 
+            disabled={rankingInProgress}
+            className={`recalculate-btn ${rankingInProgress ? 'btn-loading' : ''}`}
+          >
+            {rankingInProgress ? (
+              <>
+                <svg className="spinner" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                </svg>
+                Analyzing Pool...
+              </>
+            ) : (
+              <>
+                <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 1121.21 8H18.2" />
+                </svg>
+                Recalculate Ranks
+              </>
+            )}
+          </button>
+        </div>
       </header>
 
       {/* Main Content Area */}
       <div className="main-content">
         
         {/* Left Panel: Job Description */}
-        <aside className="sidebar-jd">
+        <aside className={`sidebar-jd ${tourStep === 1 ? 'tour-highlight' : ''}`}>
           <div className="sidebar-header">
             <span className="sidebar-label">Target Role</span>
             <h2 className="role-title">Senior AI Engineer</h2>
@@ -349,7 +518,7 @@ export default function App() {
         </aside>
 
         {/* Center Panel: Candidate Shortlist */}
-        <section className="shortlist-panel">
+        <section className={`shortlist-panel ${tourStep === 2 ? 'tour-highlight' : ''}`}>
           {showSyncWarning && (
             <div className="sync-warning-banner">
               <svg className="warning-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -449,7 +618,7 @@ export default function App() {
         </section>
 
         {/* Right Panel: Candidate Profile Deep Dive */}
-        <section className="details-panel">
+        <section className={`details-panel ${tourStep === 3 ? 'tour-highlight' : ''}`}>
           {selectedCandidate ? (
             <div className="details-content">
               
@@ -588,6 +757,66 @@ export default function App() {
         </section>
 
       </div>
+
+      {/* Onboarding Tour Overlay & Tooltip */}
+      {tourStep !== null && (
+        <>
+          <div className="tour-overlay" onClick={() => {
+            localStorage.setItem('seenOnboardingTour', 'true');
+            setTourStep(null);
+          }} />
+          <div 
+            className="tour-tooltip"
+            style={
+              tourStep === 1 
+                ? { left: '340px', top: '120px' }
+                : tourStep === 2
+                ? { left: '50%', top: '120px', transform: 'translateX(-50%)' }
+                : { right: '470px', top: '120px' }
+            }
+          >
+            <span className="tour-step-badge">Step {tourStep} of 3</span>
+            <h4 className="tour-title">
+              {tourStep === 1 && "Data Pool & Target Role"}
+              {tourStep === 2 && "Ranked Candidate Shortlist"}
+              {tourStep === 3 && "Profile Deep Dive & AI Match"}
+            </h4>
+            <p className="tour-desc">
+              {tourStep === 1 && "Configure your target Job Description guidelines, upload custom candidate CSV/JSONL profiles, check pool sync states, and refer to expected headers."}
+              {tourStep === 2 && "View matched candidates ranked by our 4-Stage hybrid model. Filter lists in real-time, search by keywords, and execute fresh recalculation runs."}
+              {tourStep === 3 && "Examine detailed verified skills, career history timelines, and platform availability signals. Read unique, non-templated AI justifications for fit."}
+            </p>
+            <div className="tour-footer">
+              <button className="tour-btn-skip" onClick={() => {
+                localStorage.setItem('seenOnboardingTour', 'true');
+                setTourStep(null);
+              }}>
+                Skip Tour
+              </button>
+              <div className="tour-actions-right">
+                {tourStep > 1 && (
+                  <button className="tour-btn-prev" onClick={() => setTourStep(tourStep - 1)}>
+                    Back
+                  </button>
+                )}
+                <button 
+                  className="tour-btn-next" 
+                  onClick={() => {
+                    if (tourStep < 3) {
+                      setTourStep(tourStep + 1);
+                    } else {
+                      localStorage.setItem('seenOnboardingTour', 'true');
+                      setTourStep(null);
+                    }
+                  }}
+                >
+                  {tourStep === 3 ? "Get Started" : "Next Step"}
+                </button>
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }
