@@ -1,6 +1,147 @@
 import React, { useState, useEffect } from 'react';
 
+// Custom inline Markdown parser for AI Chat bubbles
+const parseInlineFormatting = (text) => {
+  const parts = text.split('**');
+  return parts.map((part, index) => {
+    if (index % 2 === 1) {
+      return <strong key={index} style={{ color: '#fff', fontWeight: 700 }}>{part}</strong>;
+    }
+    return part;
+  });
+};
+
+const renderMarkdown = (text) => {
+  if (!text) return null;
+  const lines = text.split('\n');
+  return lines.map((line, idx) => {
+    if (line.startsWith('### ')) {
+      return <h4 key={idx} style={{ fontSize: '13px', fontWeight: 'bold', color: '#fff', margin: '12px 0 6px 0' }}>{line.substring(4)}</h4>;
+    }
+    if (line.startsWith('## ')) {
+      return <h3 key={idx} style={{ fontSize: '14px', fontWeight: 'bold', color: '#fff', margin: '14px 0 8px 0' }}>{line.substring(3)}</h3>;
+    }
+    if (line.startsWith('# ')) {
+      return <h2 key={idx} style={{ fontSize: '16px', fontWeight: 'bold', color: '#fff', margin: '16px 0 10px 0' }}>{line.substring(2)}</h2>;
+    }
+    if (line.startsWith('- ') || line.startsWith('* ')) {
+      return <li key={idx} style={{ marginLeft: '12px', listStyleType: 'disc', marginBottom: '4px' }}>{parseInlineFormatting(line.substring(2))}</li>;
+    }
+    if (/^\d+\.\s/.test(line)) {
+      const content = line.replace(/^\d+\.\s/, '');
+      return <li key={idx} style={{ marginLeft: '12px', listStyleType: 'decimal', marginBottom: '4px' }}>{parseInlineFormatting(content)}</li>;
+    }
+    if (line.startsWith('|')) {
+      const cols = line.split('|').map(c => c.trim()).filter(c => c !== '');
+      if (line.includes('---')) return null;
+      return (
+        <div key={idx} style={{ display: 'flex', borderBottom: '1px solid rgba(255,255,255,0.05)', padding: '6px 0', fontSize: '10.5px' }}>
+          {cols.map((col, cIdx) => (
+            <span key={cIdx} style={{ flex: 1, padding: '2px 4px', fontWeight: line.includes('Parameter') ? 'bold' : 'normal' }}>
+              {parseInlineFormatting(col)}
+            </span>
+          ))}
+        </div>
+      );
+    }
+    return <p key={idx} style={{ marginBottom: '8px' }}>{parseInlineFormatting(line)}</p>;
+  });
+};
+
+// SVG Donut Chart Component
+const DonutChart = ({ data }) => {
+  const total = data.reduce((sum, item) => sum + item.value, 0);
+  let accumulatedPercent = 0;
+  
+  return (
+    <svg width="220" height="150" viewBox="0 0 220 150">
+      <circle cx="70" cy="75" r="45" fill="transparent" stroke="rgba(255,255,255,0.05)" strokeWidth="16" />
+      {data.map((item, idx) => {
+        if (total === 0) return null;
+        const percent = item.value / total;
+        const strokeDash = 2 * Math.PI * 45;
+        const strokeDasharray = `${percent * strokeDash} ${strokeDash}`;
+        const strokeDashoffset = -accumulatedPercent * strokeDash;
+        accumulatedPercent += percent;
+        
+        return (
+          <circle
+            key={idx}
+            cx="70"
+            cy="75"
+            r="45"
+            fill="transparent"
+            stroke={item.color}
+            strokeWidth="16"
+            strokeDasharray={strokeDasharray}
+            strokeDashoffset={strokeDashoffset}
+            transform="rotate(-90 70 75)"
+          />
+        );
+      })}
+      {/* Legend */}
+      <g transform="translate(130, 25)" style={{ fontSize: '10px', fill: '#9CA3AF', fontFamily: 'sans-serif' }}>
+        {data.map((item, idx) => (
+          <g key={idx} transform={`translate(0, ${idx * 22})`}>
+            <rect width="10" height="10" rx="2" fill={item.color} />
+            <text x="16" y="9" fontWeight="600">{item.label}</text>
+            <text x="16" y="20" fill="var(--text-muted)" fontSize="8.5px">{item.value} candidates</text>
+          </g>
+        ))}
+      </g>
+    </svg>
+  );
+};
+
+// SVG Bar Chart Component
+const BarChart = ({ data }) => {
+  const maxVal = Math.max(...data.map(d => d.value), 1);
+  return (
+    <svg width="320" height="150" viewBox="0 0 320 150">
+      {data.map((item, idx) => {
+        const height = (item.value / maxVal) * 90;
+        const x = 30 + idx * 60;
+        const y = 120 - height;
+        return (
+          <g key={idx}>
+            <text x={x + 15} y={y - 6} fill="#F3F4F6" fontSize="9" textAnchor="middle" fontWeight="bold">{item.value}</text>
+            <rect x={x} y={y} width="30" height={height} fill="url(#barGradient)" rx="4" />
+            <text x={x + 15} y={136} fill="#9CA3AF" fontSize="8.5px" textAnchor="middle" fontWeight="600">{item.label}</text>
+          </g>
+        );
+      })}
+      <defs>
+        <linearGradient id="barGradient" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stopColor="#8B5CF6" />
+          <stop offset="100%" stopColor="#6366F1" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
 export default function App() {
+  // Session Authentication
+  const [token, setToken] = useState(localStorage.getItem('token'));
+  const [username, setUsername] = useState(localStorage.getItem('username'));
+  const [authView, setAuthView] = useState('login'); // 'login' | 'register'
+  const [authUsername, setAuthUsername] = useState('');
+  const [authPassword, setAuthPassword] = useState('');
+  const [authError, setAuthError] = useState('');
+  const [authSuccess, setAuthSuccess] = useState('');
+
+  // Workspace View
+  const [view, setView] = useState('landing'); // 'landing' | 'auth' | 'workspace'
+  const [activeTab, setActiveTab] = useState('shortlist'); // 'shortlist' | 'compare' | 'analytics'
+  const [rightPanelTab, setRightPanelTab] = useState('details'); // 'details' | 'ai_assistant'
+  
+  // Roles Management
+  const [roles, setRoles] = useState(['default']);
+  const [activeRoleId, setActiveRoleId] = useState('default');
+  const [showCreateRoleModal, setShowCreateRoleModal] = useState(false);
+  const [newRoleInput, setNewRoleInput] = useState('');
+
+  // Candidate Shortlist Data
   const [candidates, setCandidates] = useState([]);
   const [selectedCandidate, setSelectedCandidate] = useState(null);
   const [jd, setJd] = useState('');
@@ -9,6 +150,7 @@ export default function App() {
   const [rankingInProgress, setRankingInProgress] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
 
+  // Status & Custom Imports
   const [status, setStatus] = useState({ has_custom_jd: false, has_custom_candidates: false, candidates_count: 0 });
   const [editJd, setEditJd] = useState(false);
   const [jdInput, setJdInput] = useState('');
@@ -16,61 +158,189 @@ export default function App() {
   const [uploadError, setUploadError] = useState('');
   const [uploadSuccess, setUploadSuccess] = useState('');
   const [showSyncWarning, setShowSyncWarning] = useState(false);
-  const [view, setView] = useState('landing');
   const [tourStep, setTourStep] = useState(null);
 
+  // Side-by-Side Comparison
+  const [selectedForComparison, setSelectedForComparison] = useState([]);
+
+  // AI Assistant Chat state
+  const [chatMessages, setChatMessages] = useState([
+    { sender: 'bot', text: 'Hello! I am your AI Recruiter Assistant. I can help analyze, search, compare, or write candidate emails. Feel free to ask me anything!' }
+  ]);
+  const [chatInput, setChatInput] = useState('');
+  const [chatLoading, setChatLoading] = useState(false);
+  const [geminiApiKey, setGeminiApiKey] = useState(localStorage.getItem('geminiApiKey') || '');
+
+  // Custom API fetch wrapper with Auth Token and auto logout
+  const apiFetch = async (url, options = {}) => {
+    const headers = { ...options.headers };
+    if (token) {
+      headers['Authorization'] = `Bearer ${token}`;
+    }
+    const res = await fetch(url, { ...options, headers });
+    if (res.status === 401) {
+      handleClientLogout();
+      throw new Error("Unauthorized");
+    }
+    return res;
+  };
+
+  const handleClientLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    setToken(null);
+    setUsername(null);
+    setView('landing');
+  };
+
   const enterWorkspace = () => {
-    setView('workspace');
-    if (!localStorage.getItem('seenOnboardingTour')) {
-      setTourStep(1);
+    if (!token) {
+      setAuthView('login');
+      setView('auth');
+    } else {
+      setView('workspace');
+      if (!localStorage.getItem('seenOnboardingTour')) {
+        setTourStep(1);
+      }
     }
   };
 
+  // Auth Operations
+  const handleAuthSubmit = async (e) => {
+    e.preventDefault();
+    setAuthError('');
+    setAuthSuccess('');
+
+    const endpoint = authView === 'login' ? '/api/auth/login' : '/api/auth/register';
+    try {
+      const res = await fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ username: authUsername, password: authPassword })
+      });
+      const data = await res.json();
+      if (!res.ok) {
+        setAuthError(data.detail || 'Authentication failed.');
+        return;
+      }
+
+      if (authView === 'register') {
+        setAuthSuccess('Registration successful! Please login.');
+        setAuthView('login');
+        setAuthPassword('');
+      } else {
+        localStorage.setItem('token', data.token);
+        localStorage.setItem('username', data.username);
+        setToken(data.token);
+        setUsername(data.username);
+        setAuthUsername('');
+        setAuthPassword('');
+        setView('workspace');
+        if (!localStorage.getItem('seenOnboardingTour')) {
+          setTourStep(1);
+        }
+      }
+    } catch (e) {
+      setAuthError('Connection error.');
+    }
+  };
+
+  const handleLogout = async () => {
+    try {
+      await apiFetch('/api/auth/logout', { method: 'POST' });
+    } catch (e) {}
+    handleClientLogout();
+  };
+
+  // Load backend details
   useEffect(() => {
-    fetchJd();
-    fetchCandidates();
-    fetchStatus();
-  }, []);
+    if (token) {
+      fetchRoles();
+      fetchJd();
+      fetchCandidates();
+      fetchStatus();
+    }
+  }, [token, activeRoleId]);
+
+  const fetchRoles = async () => {
+    try {
+      const res = await apiFetch('/api/roles');
+      const data = await res.json();
+      if (data.roles) {
+        setRoles(data.roles);
+      }
+    } catch (e) {}
+  };
+
+  const createRole = async () => {
+    const name = newRoleInput.trim().toLowerCase().replace(/\s+/g, '_');
+    if (!name) return;
+    try {
+      const res = await apiFetch('/api/roles', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ role_id: name })
+      });
+      const data = await res.json();
+      if (res.ok) {
+        await fetchRoles();
+        setActiveRoleId(name);
+        setNewRoleInput('');
+        setShowCreateRoleModal(false);
+      } else {
+        alert(data.detail || 'Failed to create role.');
+      }
+    } catch (e) {}
+  };
+
+  const deleteRole = async (roleName) => {
+    if (roleName === 'default') return;
+    if (!window.confirm(`Are you sure you want to delete the role workspace: "${roleName}"?`)) return;
+    try {
+      const res = await apiFetch(`/api/roles/${roleName}`, { method: 'DELETE' });
+      if (res.ok) {
+        setActiveRoleId('default');
+        await fetchRoles();
+      }
+    } catch (e) {}
+  };
 
   const fetchStatus = async () => {
     try {
-      const res = await fetch('/api/status');
+      const res = await apiFetch(`/api/status?role_id=${activeRoleId}`);
       const data = await res.json();
       setStatus(data);
-    } catch (e) {
-      console.error("Error fetching status", e);
-    }
+    } catch (e) {}
   };
 
   const fetchJd = async () => {
     try {
-      const res = await fetch('/api/job-description');
+      const res = await apiFetch(`/api/job-description?role_id=${activeRoleId}`);
       const data = await res.json();
       const content = data.content || '';
       setJd(content);
       setJdInput(content);
-    } catch (e) {
-      console.error("Error fetching JD", e);
-    }
+    } catch (e) {}
   };
 
   const fetchCandidates = async () => {
     setLoading(true);
     setErrorMsg('');
     try {
-      const res = await fetch('/api/candidates');
+      const res = await apiFetch(`/api/candidates?role_id=${activeRoleId}`);
       const data = await res.json();
       if (data.status === 'success') {
         setCandidates(data.candidates || []);
         if (data.candidates && data.candidates.length > 0) {
           setSelectedCandidate(data.candidates[0]);
+        } else {
+          setSelectedCandidate(null);
         }
       } else {
         setErrorMsg(data.message || 'Failed to load candidates.');
       }
     } catch (e) {
       setErrorMsg('Failed to connect to backend server.');
-      console.error("Error fetching candidates", e);
     } finally {
       setLoading(false);
     }
@@ -78,10 +348,10 @@ export default function App() {
 
   const saveJd = async () => {
     try {
-      const res = await fetch('/api/job-description', {
+      const res = await apiFetch('/api/job-description', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ content: jdInput })
+        body: JSON.stringify({ content: jdInput, role_id: activeRoleId })
       });
       const data = await res.json();
       if (res.ok && data.status === 'success') {
@@ -114,7 +384,7 @@ export default function App() {
     formData.append('file', file);
 
     try {
-      const res = await fetch('/api/upload-candidates', {
+      const res = await apiFetch(`/api/upload-candidates?role_id=${activeRoleId}`, {
         method: 'POST',
         body: formData
       });
@@ -138,11 +408,11 @@ export default function App() {
   };
 
   const handleReset = async () => {
-    if (!window.confirm('Are you sure you want to restore the default dataset and job description? All custom edits will be deleted.')) {
+    if (!window.confirm('Are you sure you want to restore the default dataset and job description? All custom edits for this role will be deleted.')) {
       return;
     }
     try {
-      const res = await fetch('/api/reset', { method: 'POST' });
+      const res = await apiFetch(`/api/reset?role_id=${activeRoleId}`, { method: 'POST' });
       const data = await res.json();
       if (res.ok && data.status === 'success') {
         setShowSyncWarning(false);
@@ -164,7 +434,7 @@ export default function App() {
     setRankingInProgress(true);
     setErrorMsg('');
     try {
-      const res = await fetch('/api/rank', { method: 'POST' });
+      const res = await apiFetch(`/api/rank?role_id=${activeRoleId}`, { method: 'POST' });
       const data = await res.json();
       if (res.ok && data.status === 'success') {
         setShowSyncWarning(false);
@@ -180,6 +450,62 @@ export default function App() {
     }
   };
 
+  // AI Chat integration
+  const handleSendChatMessage = async (e) => {
+    e.preventDefault();
+    if (!chatInput.trim()) return;
+
+    const userMsg = chatInput.trim();
+    setChatMessages(prev => [...prev, { sender: 'user', text: userMsg }]);
+    setChatInput('');
+    setChatLoading(true);
+
+    try {
+      const headers = { 'Content-Type': 'application/json' };
+      if (geminiApiKey) {
+        headers['X-Gemini-Key'] = geminiApiKey;
+      }
+      
+      const res = await apiFetch('/api/ai/chat', {
+        method: 'POST',
+        headers,
+        body: JSON.stringify({
+          message: userMsg,
+          role_id: activeRoleId,
+          gemini_api_key: geminiApiKey || null
+        })
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setChatMessages(prev => [...prev, { sender: 'bot', text: data.response, engine: data.engine }]);
+      } else {
+        setChatMessages(prev => [...prev, { sender: 'bot', text: 'Sorry, I failed to generate an answer. Check your connection.' }]);
+      }
+    } catch (err) {
+      setChatMessages(prev => [...prev, { sender: 'bot', text: 'Error contacting AI backend.' }]);
+    } finally {
+      setChatLoading(false);
+    }
+  };
+
+  const saveGeminiKey = (key) => {
+    setGeminiApiKey(key);
+    localStorage.setItem('geminiApiKey', key);
+  };
+
+  // Compare candidates matrix toggles
+  const toggleComparisonSelection = (id) => {
+    if (selectedForComparison.includes(id)) {
+      setSelectedForComparison(prev => prev.filter(item => item !== id));
+    } else {
+      if (selectedForComparison.length >= 4) {
+        alert("You can compare up to 4 candidates at a time.");
+        return;
+      }
+      setSelectedForComparison(prev => [...prev, id]);
+    }
+  };
+
   const filteredCandidates = candidates.filter(c => {
     const query = search.toLowerCase();
     const name = (c.details?.profile?.anonymized_name || '').toLowerCase();
@@ -190,6 +516,63 @@ export default function App() {
     return name.includes(query) || title.includes(query) || skills.includes(query) || reason.includes(query);
   });
 
+  // Calculate statistics for Analytics Dashboard
+  const getAnalyticsData = () => {
+    const yoeCounts = { '< 3': 0, '3-5': 0, '5-9': 0, '9-12': 0, '> 12': 0 };
+    const noticeCounts = { 'Immediate (<=30d)': 0, 'Standard (31-60d)': 0, 'Extended (61-90d)': 0, 'Long (>90d)': 0 };
+    const pedigreeCounts = { 'Product': 0, 'Consulting': 0, 'Neutral': 0 };
+
+    candidates.forEach(cand => {
+      const profile = cand.details?.profile || {};
+      const signals = cand.details?.redrob_signals || {};
+      
+      // YoE distribution
+      const yoe = profile.years_of_experience || 0;
+      if (yoe < 3) yoeCounts['< 3']++;
+      else if (yoe < 5) yoeCounts['3-5']++;
+      else if (yoe <= 9) yoeCounts['5-9']++;
+      else if (yoe <= 12) yoeCounts['9-12']++;
+      else yoeCounts['> 12']++;
+
+      // Notice period distribution
+      const notice = signals.notice_period_days || 0;
+      if (notice <= 30) noticeCounts['Immediate (<=30d)']++;
+      else if (notice <= 60) noticeCounts['Standard (31-60d)']++;
+      else if (notice <= 90) noticeCounts['Extended (61-90d)']++;
+      else noticeCounts['Long (>90d)']++;
+
+      // Pedigree distribution
+      const history = cand.details?.career_history || [];
+      const consulting_firms = ["tcs", "infosys", "wipro", "accenture", "cognizant", "capgemini", "tech mahindra", "mphasis", "mindtree", "hcl", "genpact"];
+      const product_firms = ["hooli", "pied piper", "wayne enterprises", "stark industries", "initech", "globex inc", "tyrell corp", "cyberdyne systems", "acme corp", "razorpay", "cred", "flipkart", "zomato", "swiggy", "paytm", "meesho", "nykaa", "freshworks", "ola", "phonepe"];
+      
+      const companies = history.map(j => (j.company || '').toLowerCase());
+      const all_consulting = companies.length > 0 && companies.every(comp => consulting_firms.some(cf => comp.includes(cf)));
+      const has_product = companies.some(comp => product_firms.some(pf => comp.includes(pf)));
+      
+      if (has_product) pedigreeCounts['Product']++;
+      else if (all_consulting) pedigreeCounts['Consulting']++;
+      else pedigreeCounts['Neutral']++;
+    });
+
+    const yoeData = Object.keys(yoeCounts).map(k => ({ label: k, value: yoeCounts[k] }));
+    const noticeData = [
+      { label: 'Immediate (<=30d)', value: noticeCounts['Immediate (<=30d)'], color: '#10B981' },
+      { label: 'Standard (31-60d)', value: noticeCounts['Standard (31-60d)'], color: '#6366F1' },
+      { label: 'Extended (61-90d)', value: noticeCounts['Extended (61-90d)'], color: '#F59E0B' },
+      { label: 'Long (>90d)', value: noticeCounts['Long (>90d)'], color: '#F43F5E' },
+    ];
+    const pedigreeData = [
+      { label: 'Product Tech', value: pedigreeCounts['Product'], color: '#06B6D4' },
+      { label: 'Consulting-Only', value: pedigreeCounts['Consulting'], color: '#F43F5E' },
+      { label: 'Neutral Cohort', value: pedigreeCounts['Neutral'], color: '#8B5CF6' }
+    ];
+
+    return { yoeData, noticeData, pedigreeData };
+  };
+
+  const { yoeData, noticeData, pedigreeData } = getAnalyticsData();
+
   const getScoreColorClass = (score) => {
     if (score >= 0.8) return 'score-high';
     if (score >= 0.6) return 'score-medium';
@@ -197,10 +580,10 @@ export default function App() {
     return 'score-poor';
   };
 
+  // Rendering of Landing Page
   if (view === 'landing') {
     return (
       <div className="landing-container">
-        {/* Landing Nav Header */}
         <header className="landing-nav">
           <div className="brand-section">
             <div className="brand-icon">
@@ -213,12 +596,22 @@ export default function App() {
               <p className="brand-subtitle">Talent Intelligence</p>
             </div>
           </div>
-          <button className="nav-right-btn" onClick={enterWorkspace}>
-            Console Workspace
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            {token ? (
+              <>
+                <span style={{ fontSize: '12.5px', color: 'var(--text-secondary)' }}>Welcome, <strong>{username}</strong></span>
+                <button className="nav-right-btn" onClick={() => setView('workspace')}>Go to Console</button>
+                <button className="nav-right-btn" style={{ background: 'transparent' }} onClick={handleLogout}>Logout</button>
+              </>
+            ) : (
+              <>
+                <button className="nav-right-btn" style={{ background: 'transparent' }} onClick={() => { setAuthView('login'); setView('auth'); }}>Sign In</button>
+                <button className="nav-right-btn" onClick={() => { setAuthView('register'); setView('auth'); }}>Register</button>
+              </>
+            )}
+          </div>
         </header>
 
-        {/* Hero Section */}
         <main className="landing-hero">
           <div className="hero-tag">
             <span className="hero-tag-dot"></span>
@@ -242,7 +635,6 @@ export default function App() {
             <span className="cta-sub-label">Access candidate index, customize JDs, and trigger real-time rank runs</span>
           </div>
 
-          {/* Stats Bar */}
           <section className="landing-stats">
             <div className="stat-item">
               <span className="stat-num">100k+</span>
@@ -263,7 +655,6 @@ export default function App() {
           </section>
         </main>
 
-        {/* Pillars Section */}
         <section className="landing-pillars">
           <div className="section-label-centered">
             <h3>4 Core Refinement Modules</h3>
@@ -271,7 +662,6 @@ export default function App() {
           </div>
 
           <div className="pillars-grid">
-            {/* Pillar 1 */}
             <div className="pillar-card">
               <div className="pillar-header">
                 <div className="pillar-icon-box">
@@ -286,7 +676,6 @@ export default function App() {
               </p>
             </div>
 
-            {/* Pillar 2 */}
             <div className="pillar-card">
               <div className="pillar-header">
                 <div className="pillar-icon-box">
@@ -301,7 +690,6 @@ export default function App() {
               </p>
             </div>
 
-            {/* Pillar 3 */}
             <div className="pillar-card">
               <div className="pillar-header">
                 <div className="pillar-icon-box">
@@ -316,7 +704,6 @@ export default function App() {
               </p>
             </div>
 
-            {/* Pillar 4 */}
             <div className="pillar-card">
               <div className="pillar-header">
                 <div className="pillar-icon-box">
@@ -333,7 +720,6 @@ export default function App() {
           </div>
         </section>
 
-        {/* Landing Page Footer */}
         <footer className="landing-footer">
           <span>&copy; 2026 Redrob Inc. All rights reserved.</span>
           <a href="#" className="footer-link" onClick={(e) => { e.preventDefault(); enterWorkspace(); }}>Launch Console</a>
@@ -342,6 +728,72 @@ export default function App() {
     );
   }
 
+  // Rendering of Login/Register View
+  if (view === 'auth') {
+    return (
+      <div className="auth-container">
+        <div className="auth-card">
+          <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+            <div className="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+            </div>
+          </div>
+          <h2 className="auth-title">{authView === 'login' ? 'Welcome Back' : 'Create Account'}</h2>
+          <p className="auth-subtitle">
+            {authView === 'login' ? 'Sign in to access your talent console' : 'Register to get started with Redrob'}
+          </p>
+
+          {authError && <div style={{ color: 'var(--accent-rose)', background: 'rgba(244,63,94,0.1)', padding: '10px', borderRadius: '8px', fontSize: '12px', marginBottom: '16px', fontWeight: 600 }}>{authError}</div>}
+          {authSuccess && <div style={{ color: 'var(--accent-emerald)', background: 'rgba(16,185,129,0.1)', padding: '10px', borderRadius: '8px', fontSize: '12px', marginBottom: '16px', fontWeight: 600 }}>{authSuccess}</div>}
+
+          <form className="auth-form" onSubmit={handleAuthSubmit}>
+            <div className="form-group">
+              <label className="form-label">Username</label>
+              <input 
+                type="text" 
+                className="auth-input" 
+                value={authUsername}
+                onChange={e => setAuthUsername(e.target.value)}
+                placeholder="Enter username" 
+                required 
+              />
+            </div>
+            <div className="form-group">
+              <label className="form-label">Password</label>
+              <input 
+                type="password" 
+                className="auth-input" 
+                value={authPassword}
+                onChange={e => setAuthPassword(e.target.value)}
+                placeholder="Enter password" 
+                required 
+              />
+            </div>
+            <button type="submit" className="auth-submit-btn">
+              {authView === 'login' ? 'Sign In' : 'Register Account'}
+            </button>
+          </form>
+
+          <p className="auth-switch-prompt">
+            {authView === 'login' ? "Don't have an account?" : "Already have an account?"}
+            <span className="auth-link" onClick={() => { setAuthView(authView === 'login' ? 'register' : 'login'); setAuthError(''); setAuthSuccess(''); }}>
+              {authView === 'login' ? 'Register Now' : 'Sign In'}
+            </span>
+          </p>
+
+          <p className="auth-switch-prompt" style={{ marginTop: '16px' }}>
+            <span className="auth-link" style={{ color: 'var(--text-muted)' }} onClick={() => setView('landing')}>
+              &larr; Back to Landing Page
+            </span>
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  // Rendering of Main Recruiter Console Workspace View
   return (
     <div className="app-layout">
       {/* Header */}
@@ -355,6 +807,33 @@ export default function App() {
           <div>
             <h1 className="brand-title">REDROB</h1>
             <p className="brand-subtitle">Talent Intelligence</p>
+          </div>
+          
+          {/* Multi-Role Selector */}
+          <div className="role-selector-container" style={{ marginLeft: '24px' }}>
+            <select 
+              className="role-select" 
+              value={activeRoleId} 
+              onChange={e => setActiveRoleId(e.target.value)}
+            >
+              {roles.map(r => (
+                <option key={r} value={r}>Role: {r.toUpperCase().replace(/_/g, ' ')}</option>
+              ))}
+            </select>
+            <div className="role-actions">
+              <button className="role-btn" title="Create New Role" onClick={() => setShowCreateRoleModal(true)}>
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: 14, height: 14 }}>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+                </svg>
+              </button>
+              {activeRoleId !== 'default' && (
+                <button className="role-btn delete" title="Delete Active Role" onClick={() => deleteRole(activeRoleId)}>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: 14, height: 14 }}>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                  </svg>
+                </button>
+              )}
+            </div>
           </div>
         </div>
 
@@ -394,6 +873,12 @@ export default function App() {
               </>
             )}
           </button>
+
+          {/* User profile details */}
+          <div className="user-avatar-btn" onClick={handleLogout} title="Logout of console">
+            <span className="user-initials">{username ? username.substring(0,2).toUpperCase() : 'UR'}</span>
+            <span>Sign Out</span>
+          </div>
         </div>
       </header>
 
@@ -403,25 +888,27 @@ export default function App() {
         {/* Left Panel: Job Description */}
         <aside className={`sidebar-jd ${tourStep === 1 ? 'tour-highlight' : ''}`}>
           <div className="sidebar-header">
-            <span className="sidebar-label">Target Role</span>
-            <h2 className="role-title">Senior AI Engineer</h2>
-            <p className="team-label">Founding Team</p>
+            <span className="sidebar-label">Active Target Role</span>
+            <h2 className="role-title" style={{ fontSize: '14px', textTransform: 'capitalize' }}>
+              {activeRoleId.replace(/_/g, ' ')}
+            </h2>
+            <p className="team-label">Founding Recruiter Space</p>
           </div>
           
           <div className="sidebar-scrollable">
             {/* Custom Input Configuration Card */}
             <div className="focus-card glass dataset-card">
-              <h3 className="card-title">Data Pool Config</h3>
+              <h3 className="card-title">Role Pool Config</h3>
               
               <div className="status-indicator">
                 <div className="status-row">
-                  <span>Job Description:</span>
+                  <span>JD Parameters:</span>
                   <span className={`status-badge-inline ${status.has_custom_jd ? 'status-custom' : 'status-default'}`}>
                     {status.has_custom_jd ? 'Custom (Active)' : 'Default'}
                   </span>
                 </div>
                 <div className="status-row">
-                  <span>Candidates Pool:</span>
+                  <span>Talent Pool:</span>
                   <span className={`status-badge-inline ${status.has_custom_candidates ? 'status-custom' : 'status-default'}`}>
                     {status.has_custom_candidates ? `Custom (${status.candidates_count} items)` : 'Default (100k)'}
                   </span>
@@ -455,10 +942,10 @@ export default function App() {
                 <div className="csv-guide-content" style={{ fontSize: '9.5px', color: 'var(--text-secondary)', marginTop: 4, lineHeight: '1.4', background: 'rgba(0,0,0,0.15)', padding: 6, borderRadius: 4 }}>
                   <strong>Supported CSV Headers:</strong>
                   <ul style={{ paddingLeft: 12, marginTop: 2 }}>
-                    <li><code>name</code> (or <code>anonymized_name</code>)</li>
-                    <li><code>title</code> (or <code>current_title</code>)</li>
-                    <li><code>company</code> (or <code>current_company</code>)</li>
-                    <li><code>yoe</code> (or <code>years_of_experience</code>)</li>
+                    <li><code>name</code></li>
+                    <li><code>title</code></li>
+                    <li><code>company</code></li>
+                    <li><code>yoe</code> (Years of Experience)</li>
                     <li><code>skills</code> (comma-separated list)</li>
                     <li><code>location</code></li>
                     <li><code>notice_period_days</code></li>
@@ -474,12 +961,12 @@ export default function App() {
             </div>
 
             <div className="focus-card glass">
-              <h3 className="card-title">Key Focus Areas</h3>
+              <h3 className="card-title">Key Core Pillars</h3>
               <ul className="focus-list">
-                <li><span className="bullet" />Applied ML & Evaluation</li>
-                <li><span className="bullet" />Embeddings-based Retrieval</li>
-                <li><span className="bullet" />Search/Retrieval Systems</li>
-                <li><span className="bullet" />Evaluations (NDCG, MAP, MRR)</li>
+                <li><span className="bullet" />Stage 1: Safety Check & Pedigree</li>
+                <li><span className="bullet" />Stage 2: Dense Semantic Score</li>
+                <li><span className="bullet" />Stage 3: YoE & Growth Boosters</li>
+                <li><span className="bullet" />Stage 4: Active Platform Signals</li>
               </ul>
             </div>
             
@@ -517,246 +1004,587 @@ export default function App() {
           </div>
         </aside>
 
-        {/* Center Panel: Candidate Shortlist */}
-        <section className={`shortlist-panel ${tourStep === 2 ? 'tour-highlight' : ''}`}>
-          {showSyncWarning && (
-            <div className="sync-warning-banner">
-              <svg className="warning-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        {/* Center Panel Tabs */}
+        <section className={`shortlist-panel ${tourStep === 2 ? 'tour-highlight' : ''}`} style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="tabs-container">
+            <button 
+              className={`tab-btn ${activeTab === 'shortlist' ? 'active' : ''}`}
+              onClick={() => setActiveTab('shortlist')}
+            >
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
               </svg>
-              <div>
-                <span className="warning-title">Ranks Out of Sync</span>
-                <p className="warning-desc">Source data has changed. Please click <strong>Recalculate Ranks</strong> to update rankings.</p>
+              Ranked Shortlist
+            </button>
+            <button 
+              className={`tab-btn ${activeTab === 'compare' ? 'active' : ''}`}
+              onClick={() => setActiveTab('compare')}
+            >
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2zm9 0v-8a2 2 0 00-2-2h-2a2 2 0 00-2 2v8a2 2 0 002 2h2a2 2 0 002-2z" />
+              </svg>
+              Comparison Matrix
+            </button>
+            <button 
+              className={`tab-btn ${activeTab === 'analytics' ? 'active' : ''}`}
+              onClick={() => setActiveTab('analytics')}
+            >
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" />
+              </svg>
+              Pool Analytics
+            </button>
+          </div>
+
+          {/* TAB 1: Ranked Shortlist */}
+          {activeTab === 'shortlist' && (
+            <>
+              {showSyncWarning && (
+                <div className="sync-warning-banner">
+                  <svg className="warning-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                  <div>
+                    <span className="warning-title">Ranks Out of Sync</span>
+                    <p className="warning-desc">Source data has changed. Please click <strong>Recalculate Ranks</strong> to update rankings.</p>
+                  </div>
+                </div>
+              )}
+              
+              <div className="toolbar">
+                <div className="search-bar">
+                  <svg className="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                  <input 
+                    type="text" 
+                    placeholder="Search by name, skill, title..." 
+                    value={search}
+                    onChange={e => setSearch(e.target.value)}
+                  />
+                </div>
+                <div className="count-label">
+                  Shortlisted: <span className="highlight">{filteredCandidates.length}</span> / {candidates.length}
+                </div>
+              </div>
+
+              <div className="candidates-list">
+                {loading ? (
+                  <div className="centered-state">
+                    <svg className="spinner-large" viewBox="0 0 24 24" fill="none">
+                      <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                      <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                    </svg>
+                    <p>Loading candidate index...</p>
+                  </div>
+                ) : errorMsg ? (
+                  <div className="centered-state error-state">
+                    <div className="error-icon-box">
+                      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                      </svg>
+                    </div>
+                    <h3>No Candidate Index Found</h3>
+                    <p>{errorMsg}</p>
+                    <button onClick={triggerRanking} className="action-btn">
+                      Generate Index Now
+                    </button>
+                  </div>
+                ) : candidates.length === 0 ? (
+                  <div className="centered-state empty-state" style={{ flexDirection: 'column', gap: '16px', maxWidth: '420px', margin: '40px auto', textAlign: 'center', display: 'flex', alignItems: 'center' }}>
+                    <div className="error-icon-box" style={{ background: 'rgba(99, 102, 241, 0.1)', color: 'var(--accent-indigo)' }}>
+                      <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: 32, height: 32 }}>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                      </svg>
+                    </div>
+                    <h3 style={{ color: '#fff', fontSize: '15px', fontWeight: 800 }}>Workspace Setup Pending</h3>
+                    <p style={{ fontSize: '12px', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                      No candidate shortlist has been calculated for this role space yet. To get started:
+                    </p>
+                    <ul style={{ textAlign: 'left', fontSize: '11.5px', color: 'var(--text-secondary)', display: 'flex', flexDirection: 'column', gap: '6px', paddingLeft: '16px' }}>
+                      <li>1. Type and save a target <strong>Job Description</strong> on the left panel.</li>
+                      <li>2. Upload a candidates pool CSV or JSONL file using the config card.</li>
+                      <li>3. Click the <strong>Recalculate Ranks</strong> button in the header.</li>
+                    </ul>
+                    <div style={{ fontSize: '11.5px', color: 'var(--text-muted)', marginTop: '8px' }}>
+                      Or, click <strong>Restore Default Dataset</strong> on the left to instantly load the Demo Sandbox data to try it out!
+                    </div>
+                  </div>
+                ) : filteredCandidates.length === 0 ? (
+                  <div className="centered-state empty-state">
+                    No candidates match your search filter.
+                  </div>
+                ) : (
+                  <div className="list-container">
+                    {filteredCandidates.map((cand) => {
+                      const isSelected = selectedCandidate?.candidate_id === cand.candidate_id;
+                      const profile = cand.details?.profile || {};
+                      const isCompared = selectedForComparison.includes(cand.candidate_id);
+                      return (
+                        <div 
+                          key={cand.candidate_id}
+                          onClick={() => setSelectedCandidate(cand)}
+                          className={`candidate-item glow-on-hover ${isSelected ? 'selected' : ''}`}
+                        >
+                          <div className="item-left" onClick={(e) => e.stopPropagation()}>
+                            <input 
+                              type="checkbox" 
+                              title="Select to compare"
+                              checked={isCompared}
+                              onChange={() => toggleComparisonSelection(cand.candidate_id)}
+                              style={{ marginRight: 4, cursor: 'pointer' }}
+                            />
+                            <div className={`rank-badge ${cand.rank <= 3 ? 'top-rank' : ''}`}>
+                              #{cand.rank}
+                            </div>
+                            <div className="item-meta" onClick={() => setSelectedCandidate(cand)} style={{ cursor: 'pointer' }}>
+                              <div className="name-row">
+                                <span className="candidate-name">{profile.anonymized_name || cand.candidate_id}</span>
+                                {cand.details?.redrob_signals?.open_to_work_flag && (
+                                  <span className="open-badge">OPEN</span>
+                                )}
+                              </div>
+                              <p className="headline-text">{profile.headline || 'Software Engineer'}</p>
+                            </div>
+                          </div>
+
+                          <div className="item-right">
+                            <div className="demographics">
+                              <span>{profile.years_of_experience || 0} YoE</span>
+                              <span className="divider">•</span>
+                              <span className="loc-text">{profile.location || 'India'}</span>
+                            </div>
+                            <div className={`score-badge ${getScoreColorClass(cand.score)}`}>
+                              {cand.score.toFixed(4)}
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            </>
+          )}
+
+          {/* TAB 2: Comparison Matrix */}
+          {activeTab === 'compare' && (
+            <div className="comparison-view">
+              <div className="comparison-selector-panel">
+                <span className="chart-title">Select Candidates to Compare (Max 4)</span>
+                <div className="selector-grid">
+                  {candidates.slice(0, 15).map(c => {
+                    const isChecked = selectedForComparison.includes(c.candidate_id);
+                    const name = c.details?.profile?.anonymized_name || c.candidate_id;
+                    return (
+                      <label key={c.candidate_id} className={`cand-checkbox-label ${isChecked ? 'checked' : ''}`}>
+                        <input 
+                          type="checkbox" 
+                          checked={isChecked}
+                          onChange={() => toggleComparisonSelection(c.candidate_id)}
+                          style={{ display: 'none' }}
+                        />
+                        <span>#{c.rank} - {name.substring(0, 16)}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {selectedForComparison.length === 0 ? (
+                <div className="centered-state glass" style={{ padding: '40px', borderRadius: '16px' }}>
+                  Please check the boxes above or in the list view to select candidates for comparison.
+                </div>
+              ) : (
+                <div className="comparison-table-wrapper">
+                  <table className="comparison-table">
+                    <thead>
+                      <tr>
+                        <th className="parameter-col">Parameter</th>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          return (
+                            <th key={cid}>
+                              #{cand?.rank} - {cand?.details?.profile?.anonymized_name || cid}
+                            </th>
+                          );
+                        })}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="parameter-col">Ranking Score</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          return (
+                            <td key={cid} style={{ fontWeight: 'bold' }}>
+                              <span className={`score-badge ${getScoreColorClass(cand?.score || 0)}`} style={{ padding: '3px 8px', borderRadius: '6px' }}>
+                                {cand?.score.toFixed(4)}
+                              </span>
+                            </td>
+                          );
+                        })}
+                      </tr>
+                      <tr>
+                        <td className="parameter-col">Current Role</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          return <td key={cid}>{cand?.details?.profile?.current_title || 'N/A'}</td>;
+                        })}
+                      </tr>
+                      <tr>
+                        <td className="parameter-col">Current Company</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          return <td key={cid}>{cand?.details?.profile?.current_company || 'N/A'}</td>;
+                        })}
+                      </tr>
+                      <tr>
+                        <td className="parameter-col">Years of Exp (YoE)</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          const yoe = cand?.details?.profile?.years_of_experience || 0;
+                          return (
+                            <td key={cid} className={yoe >= 5 && yoe <= 9 ? 'diff-high' : ''}>
+                              {yoe} Years
+                            </td>
+                          );
+                        })}
+                      </tr>
+                      <tr>
+                        <td className="parameter-col">Notice Period</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          const notice = cand?.details?.redrob_signals?.notice_period_days || 0;
+                          return (
+                            <td key={cid} className={notice <= 30 ? 'diff-high' : notice > 60 ? 'diff-low' : ''}>
+                              {notice} Days
+                            </td>
+                          );
+                        })}
+                      </tr>
+                      <tr>
+                        <td className="parameter-col">Recruiter Response</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          const rate = Math.round((cand?.details?.redrob_signals?.recruiter_response_rate || 0) * 100);
+                          return <td key={cid}>{rate}%</td>;
+                        })}
+                      </tr>
+                      <tr>
+                        <td className="parameter-col">GitHub Score</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          const git = cand?.details?.redrob_signals?.github_activity_score;
+                          return (
+                            <td key={cid} className={git > 40 ? 'diff-high' : ''}>
+                              {git !== -1 ? git : 'N/A'}
+                            </td>
+                          );
+                        })}
+                      </tr>
+                      <tr>
+                        <td className="parameter-col">Location</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          return <td key={cid}>{cand?.details?.profile?.location || 'N/A'}</td>;
+                        })}
+                      </tr>
+                      <tr>
+                        <td className="parameter-col">Top Skills</td>
+                        {selectedForComparison.map(cid => {
+                          const cand = candidates.find(c => c.candidate_id === cid);
+                          const skills = (cand?.details?.skills || []).slice(0, 3).map(s => s.name).join(', ');
+                          return <td key={cid}>{skills || 'N/A'}</td>;
+                        })}
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* TAB 3: Pool Analytics */}
+          {activeTab === 'analytics' && (
+            <div className="analytics-view">
+              <div className="analytics-grid">
+                
+                {/* Chart 1: Experience Bands */}
+                <div className="analytics-card">
+                  <span className="chart-title">Years of Experience (YoE) Distribution</span>
+                  <div className="chart-container">
+                    <BarChart data={yoeData} />
+                  </div>
+                </div>
+
+                {/* Chart 2: Notice Period */}
+                <div className="analytics-card">
+                  <span className="chart-title">Notice Period Breakdown</span>
+                  <div className="chart-container">
+                    <DonutChart data={noticeData} />
+                  </div>
+                </div>
+
+                {/* Chart 3: Pedigree Breakdown */}
+                <div className="analytics-card">
+                  <span className="chart-title">Pedigree Cohorts Breakdown</span>
+                  <div className="chart-container">
+                    <DonutChart data={pedigreeData} />
+                  </div>
+                </div>
+
+                {/* Stat Box Summary */}
+                <div className="analytics-card" style={{ justifyContent: 'center', gap: '12px' }}>
+                  <span className="chart-title" style={{ color: 'var(--accent-indigo)' }}>Core Insights Summary</span>
+                  <p style={{ fontSize: '12.5px', color: 'var(--text-secondary)', lineHeight: '1.5' }}>
+                    - **Peak sweet spot**: Candidates with 5-9 years of experience are boosted, helping you find developers in their highest shipping capacity.
+                    <br />
+                    - **Pedigree Calibrator**: Product company engineering tenures are highlighted with a 15% score multiplier, whereas consulting histories are downweighted.
+                    <br />
+                    - **Immediate Joiners**: {noticeData[0].value} candidates have under 30 days notice period, representing immediate pipeline conversions.
+                  </p>
+                </div>
               </div>
             </div>
           )}
-          <div className="toolbar">
-            <div className="search-bar">
-              <svg className="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <input 
-                type="text" 
-                placeholder="Search by name, skill, title..." 
-                value={search}
-                onChange={e => setSearch(e.target.value)}
-              />
-            </div>
-            <div className="count-label">
-              Shortlisted: <span className="highlight">{filteredCandidates.length}</span> / {candidates.length}
-            </div>
-          </div>
-
-          <div className="candidates-list">
-            {loading ? (
-              <div className="centered-state">
-                <svg className="spinner-large" viewBox="0 0 24 24" fill="none">
-                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                  <path fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                </svg>
-                <p>Loading candidate index...</p>
-              </div>
-            ) : errorMsg ? (
-              <div className="centered-state error-state">
-                <div className="error-icon-box">
-                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                  </svg>
-                </div>
-                <h3>No Candidate Index Found</h3>
-                <p>{errorMsg}</p>
-                <button onClick={triggerRanking} className="action-btn">
-                  Generate Index Now
-                </button>
-              </div>
-            ) : filteredCandidates.length === 0 ? (
-              <div className="centered-state empty-state">
-                No candidates match your search filter.
-              </div>
-            ) : (
-              <div className="list-container">
-                {filteredCandidates.map((cand) => {
-                  const isSelected = selectedCandidate?.candidate_id === cand.candidate_id;
-                  const profile = cand.details?.profile || {};
-                  return (
-                    <div 
-                      key={cand.candidate_id}
-                      onClick={() => setSelectedCandidate(cand)}
-                      className={`candidate-item glow-on-hover ${isSelected ? 'selected' : ''}`}
-                    >
-                      <div className="item-left">
-                        <div className={`rank-badge ${cand.rank <= 3 ? 'top-rank' : ''}`}>
-                          #{cand.rank}
-                        </div>
-                        <div className="item-meta">
-                          <div className="name-row">
-                            <span className="candidate-name">{profile.anonymized_name || cand.candidate_id}</span>
-                            {cand.details?.redrob_signals?.open_to_work_flag && (
-                              <span className="open-badge">OPEN</span>
-                            )}
-                          </div>
-                          <p className="headline-text">{profile.headline || 'Software Engineer'}</p>
-                        </div>
-                      </div>
-
-                      <div className="item-right">
-                        <div className="demographics">
-                          <span>{profile.years_of_experience || 0} YoE</span>
-                          <span className="divider">•</span>
-                          <span className="loc-text">{profile.location || 'India'}</span>
-                        </div>
-                        <div className={`score-badge ${getScoreColorClass(cand.score)}`}>
-                          {cand.score.toFixed(4)}
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-          </div>
         </section>
 
-        {/* Right Panel: Candidate Profile Deep Dive */}
+        {/* Right Panel: Tabbed Details & AI Assistant */}
         <section className={`details-panel ${tourStep === 3 ? 'tour-highlight' : ''}`}>
-          {selectedCandidate ? (
-            <div className="details-content">
-              
-              {/* Profile Header Card */}
-              <div className="details-header">
-                <div className="header-meta">
-                  <h2 className="detail-name">{selectedCandidate.details?.profile?.anonymized_name || selectedCandidate.candidate_id}</h2>
-                  <p className="detail-title">{selectedCandidate.details?.profile?.current_title || 'Software Engineer'}</p>
-                  <p className="detail-company">at {selectedCandidate.details?.profile?.current_company || 'Product Company'}</p>
-                </div>
-                <div className={`detail-score-box ${getScoreColorClass(selectedCandidate.score)}`}>
-                  <span className="score-label">Score</span>
-                  <span className="score-val">{selectedCandidate.score.toFixed(4)}</span>
-                </div>
-              </div>
+          
+          <div className="right-drawer-header">
+            <button 
+              className={`drawer-tab ${rightPanelTab === 'details' ? 'active' : ''}`}
+              onClick={() => setRightPanelTab('details')}
+            >
+              Candidate Details
+            </button>
+            <button 
+              className={`drawer-tab ${rightPanelTab === 'ai_assistant' ? 'active' : ''}`}
+              onClick={() => setRightPanelTab('ai_assistant')}
+            >
+              AI Recruiter Assistant
+            </button>
+          </div>
 
-              {/* Match Justification Box */}
-              <div className="justification-box">
-                <h3 className="box-header">
-                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
-                  AI Match Justification
-                </h3>
-                <p className="box-content">
-                  {selectedCandidate.reasoning}
-                </p>
-              </div>
-
-              {/* Skills cloud */}
-              <div className="details-section">
-                <h3 className="section-heading">Verified Skills</h3>
-                <div className="skills-cloud">
-                  {(selectedCandidate.details?.skills || []).map((skill, i) => (
-                    <span key={i} className="skill-tag">
-                      {skill.name}
-                    </span>
-                  ))}
-                  {(!selectedCandidate.details?.skills || selectedCandidate.details.skills.length === 0) && (
-                    <span className="empty-italic">No verified skills listed</span>
-                  )}
-                </div>
-              </div>
-
-              {/* Behavioral Availability Signals */}
-              <div className="details-section">
-                <h3 className="section-heading">Behavioral Availability Signals</h3>
-                <div className="signals-grid">
-                  
-                  <div className="signal-card glass">
-                    <span className="signal-label">Recruiter Response</span>
-                    <div className="signal-value-row">
-                      <span className="value-num">{Math.round((selectedCandidate.details?.redrob_signals?.recruiter_response_rate || 0) * 100)}%</span>
-                      <span className="value-unit">rate</span>
-                    </div>
-                    <div className="progress-bar-bg">
-                      <div 
-                        className="progress-bar-fill indigo-fill" 
-                        style={{ width: `${(selectedCandidate.details?.redrob_signals?.recruiter_response_rate || 0) * 100}%` }}
-                      />
-                    </div>
+          {rightPanelTab === 'details' ? (
+            selectedCandidate ? (
+              <div className="details-content">
+                <div className="details-header">
+                  <div className="header-meta">
+                    <h2 className="detail-name">{selectedCandidate.details?.profile?.anonymized_name || selectedCandidate.candidate_id}</h2>
+                    <p className="detail-title">{selectedCandidate.details?.profile?.current_title || 'Software Engineer'}</p>
+                    <p className="detail-company">at {selectedCandidate.details?.profile?.current_company || 'Product Company'}</p>
                   </div>
-
-                  <div className="signal-card glass">
-                    <span className="signal-label">Interview Completion</span>
-                    <div className="signal-value-row">
-                      <span className="value-num">{Math.round((selectedCandidate.details?.redrob_signals?.interview_completion_rate || 0) * 100)}%</span>
-                      <span className="value-unit">rate</span>
-                    </div>
-                    <div className="progress-bar-bg">
-                      <div 
-                        className="progress-bar-fill violet-fill" 
-                        style={{ width: `${(selectedCandidate.details?.redrob_signals?.interview_completion_rate || 0) * 100}%` }}
-                      />
-                    </div>
-                  </div>
-
-                  <div className="signal-card glass">
-                    <span className="signal-label">GitHub Activity</span>
-                    <div className="value-num value-offset">
-                      {selectedCandidate.details?.redrob_signals?.github_activity_score !== -1 
-                        ? selectedCandidate.details?.redrob_signals?.github_activity_score 
-                        : 'No Account'}
-                    </div>
-                    <span className="sub-unit">Open-source score</span>
-                  </div>
-
-                  <div className="signal-card glass">
-                    <span className="signal-label">Notice Period</span>
-                    <div className="value-num value-offset">
-                      {selectedCandidate.details?.redrob_signals?.notice_period_days || 0} Days
-                    </div>
-                    <span className="sub-unit">Lead availability time</span>
+                  <div className={`detail-score-box ${getScoreColorClass(selectedCandidate.score)}`}>
+                    <span className="score-label">Score</span>
+                    <span className="score-val">{selectedCandidate.score.toFixed(4)}</span>
                   </div>
                 </div>
-              </div>
 
-              {/* Career History timeline */}
-              <div className="details-section">
-                <h3 className="section-heading">Career History</h3>
-                <div className="timeline-container">
-                  {(selectedCandidate.details?.career_history || []).map((job, idx) => (
-                    <div key={idx} className="timeline-item">
-                      <div className="timeline-node" />
-                      <div className="timeline-body">
-                        <h4 className="job-title">{job.title}</h4>
-                        <div className="job-meta">
-                          <span className="company-text">{job.company}</span>
-                          <span className="job-divider">•</span>
-                          <span>{job.duration_months} mos</span>
-                        </div>
-                        {job.description && (
-                          <p className="job-desc">
-                            {job.description}
-                          </p>
-                        )}
+                <div className="justification-box">
+                  <h3 className="box-header">
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                    </svg>
+                    AI Match Justification
+                  </h3>
+                  <p className="box-content">
+                    {selectedCandidate.reasoning}
+                  </p>
+                </div>
+
+                <div className="details-section">
+                  <h3 className="section-heading">Verified Skills</h3>
+                  <div className="skills-cloud">
+                    {(selectedCandidate.details?.skills || []).map((skill, i) => (
+                      <span key={i} className="skill-tag">
+                        {skill.name}
+                      </span>
+                    ))}
+                    {(!selectedCandidate.details?.skills || selectedCandidate.details.skills.length === 0) && (
+                      <span className="empty-italic">No verified skills listed</span>
+                    )}
+                  </div>
+                </div>
+
+                <div className="details-section">
+                  <h3 className="section-heading">Behavioral Availability Signals</h3>
+                  <div className="signals-grid">
+                    
+                    <div className="signal-card glass">
+                      <span className="signal-label">Recruiter Response</span>
+                      <div className="signal-value-row">
+                        <span className="value-num">{Math.round((selectedCandidate.details?.redrob_signals?.recruiter_response_rate || 0) * 100)}%</span>
+                        <span className="value-unit">rate</span>
+                      </div>
+                      <div className="progress-bar-bg">
+                        <div 
+                          className="progress-bar-fill indigo-fill" 
+                          style={{ width: `${(selectedCandidate.details?.redrob_signals?.recruiter_response_rate || 0) * 100}%` }}
+                        />
                       </div>
                     </div>
-                  ))}
-                  {(!selectedCandidate.details?.career_history || selectedCandidate.details.career_history.length === 0) && (
-                    <p className="empty-italic pl-4">No career history listed</p>
-                  )}
+
+                    <div className="signal-card glass">
+                      <span className="signal-label">Interview Completion</span>
+                      <div className="signal-value-row">
+                        <span className="value-num">{Math.round((selectedCandidate.details?.redrob_signals?.interview_completion_rate || 0) * 100)}%</span>
+                        <span className="value-unit">rate</span>
+                      </div>
+                      <div className="progress-bar-bg">
+                        <div 
+                          className="progress-bar-fill violet-fill" 
+                          style={{ width: `${(selectedCandidate.details?.redrob_signals?.interview_completion_rate || 0) * 100}%` }}
+                        />
+                      </div>
+                    </div>
+
+                    <div className="signal-card glass">
+                      <span className="signal-label">GitHub Activity</span>
+                      <div className="value-num value-offset">
+                        {selectedCandidate.details?.redrob_signals?.github_activity_score !== -1 
+                          ? selectedCandidate.details?.redrob_signals?.github_activity_score 
+                          : 'No Account'}
+                      </div>
+                      <span className="sub-unit">Open-source score</span>
+                    </div>
+
+                    <div className="signal-card glass">
+                      <span className="signal-label">Notice Period</span>
+                      <div className="value-num value-offset">
+                        {selectedCandidate.details?.redrob_signals?.notice_period_days || 0} Days
+                      </div>
+                      <span className="sub-unit">Lead availability time</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="details-section">
+                  <h3 className="section-heading">Career History</h3>
+                  <div className="timeline-container">
+                    {(selectedCandidate.details?.career_history || []).map((job, idx) => (
+                      <div key={idx} className="timeline-item">
+                        <div className="timeline-node" />
+                        <div className="timeline-body">
+                          <h4 className="job-title">{job.title}</h4>
+                          <div className="job-meta">
+                            <span className="company-text">{job.company}</span>
+                            <span className="job-divider">•</span>
+                            <span>{job.duration_months} mos</span>
+                          </div>
+                          {job.description && (
+                            <p className="job-desc">
+                              {job.description}
+                            </p>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                    {(!selectedCandidate.details?.career_history || selectedCandidate.details.career_history.length === 0) && (
+                      <p className="empty-italic pl-4">No career history listed</p>
+                    )}
+                  </div>
                 </div>
               </div>
-
-            </div>
+            ) : (
+              <div className="centered-state details-placeholder">
+                <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                </svg>
+                <p>Select a candidate to view timeline and platform signals</p>
+              </div>
+            )
           ) : (
-            <div className="centered-state details-placeholder">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-              </svg>
-              <p>Select a candidate to view timeline and platform signals</p>
+            // TAB: AI Recruiter Assistant
+            <div className="ai-assistant-container">
+              <div className="ai-key-config">
+                <span className="form-label" style={{ fontSize: '9px', whiteSpace: 'nowrap' }}>Gemini Key:</span>
+                <input 
+                  type="password" 
+                  className="ai-key-input" 
+                  value={geminiApiKey}
+                  onChange={e => saveGeminiKey(e.target.value)}
+                  placeholder="Enter Gemini API Key (optional)" 
+                />
+              </div>
+
+              <div className="chat-messages">
+                {chatMessages.map((msg, i) => (
+                  <div key={i} className={`chat-bubble ${msg.sender}`}>
+                    {renderMarkdown(msg.text)}
+                    {msg.engine && (
+                      <span className={`ai-engine-badge ${msg.engine.includes('gemini') ? 'gemini' : 'local'}`}>
+                        Engine: {msg.engine.toUpperCase().replace(/_/g, ' ')}
+                      </span>
+                    )}
+                  </div>
+                ))}
+                {chatLoading && (
+                  <div className="chat-bubble bot" style={{ display: 'flex', alignItems: 'center' }}>
+                    <div className="typing-indicator">
+                      <div className="typing-dot" />
+                      <div className="typing-dot" />
+                      <div className="typing-dot" />
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              <form className="chat-input-area" onSubmit={handleSendChatMessage}>
+                <input 
+                  type="text" 
+                  className="chat-input"
+                  value={chatInput}
+                  onChange={e => setChatInput(e.target.value)}
+                  disabled={chatLoading}
+                  placeholder="Ask about candidates or draft emails..."
+                />
+                <button type="submit" className="chat-send-btn" disabled={chatLoading || !chatInput.trim()}>
+                  <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: 16, height: 16 }}>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </button>
+              </form>
             </div>
           )}
         </section>
 
       </div>
+
+      {/* CREATE ROLE MODAL */}
+      {showCreateRoleModal && (
+        <div className="modal-overlay">
+          <div className="modal-card">
+            <h3 className="modal-header">Create Target Role Space</h3>
+            <p style={{ fontSize: '12px', color: 'var(--text-secondary)', marginBottom: '16px' }}>
+              Create a new isolated role space with its own target job description and custom talent pool.
+            </p>
+            <div className="form-group">
+              <label className="form-label">Role Name</label>
+              <input 
+                type="text" 
+                className="auth-input"
+                value={newRoleInput}
+                onChange={e => setNewRoleInput(e.target.value)}
+                placeholder="e.g. Founding ML Lead"
+                required
+              />
+            </div>
+            <div className="modal-actions">
+              <button className="modal-btn secondary" onClick={() => { setShowCreateRoleModal(false); setNewRoleInput(''); }}>
+                Cancel
+              </button>
+              <button className="modal-btn primary" onClick={createRole} disabled={!newRoleInput.trim()}>
+                Create Space
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Onboarding Tour Overlay & Tooltip */}
       {tourStep !== null && (
