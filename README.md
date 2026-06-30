@@ -60,7 +60,7 @@ graph TD
 - **Pedigree Multipliers**: Adds a **+15% bonus** for verified product/startup histories, and a **-15% penalty** for current consulting roles.
 
 #### Stage 4: Availability & Engagement Calibration
-Uses 23 behavioral inputs from the Redrob talent platform:
+Uses 23 behavioral inputs from the Candidate-Shortlister talent platform:
 - **Recruiter Response Rate**: Scales candidate score linearly based on platform response rate.
 - **Last Active Date**: Applies a **0.40x penalty** for candidates inactive over 180 days; grants a **1.05x bonus** for active outreach (<90 days).
 - **GitHub Activity Score**: Grants a **+10% bonus** for high-activity open-source contributors (score >50).
@@ -141,3 +141,39 @@ To modify the UI with hot-reloading:
    npm run dev
    ```
 Vite is pre-configured to proxy all `/api` requests automatically to the FastAPI backend.
+
+---
+
+## Docker Deployment (Cloud & PaaS)
+
+This project is configured for cloud deployment using a multi-stage Docker build, which packages both the compiled React frontend and the FastAPI backend into a single production-ready container.
+
+### 1. Build & Run Locally with Docker
+Ensure you have Docker installed, then build the image:
+```bash
+docker build -t candidate-shortlister .
+```
+
+Run the container locally:
+```bash
+docker run -p 8000:8000 \
+  -e GEMINI_API_KEY="your_api_key_here" \
+  -v candidate_shortlister_data:/app/roles \
+  candidate-shortlister
+```
+Open **[http://localhost:8000](http://localhost:8000)** in your browser.
+
+### 2. Cloud Deployment (Render / Railway / Fly.io)
+
+For platforms like **Render** or **Railway**:
+1. Create a new **Web Service** and link your Git repository.
+2. Select **Docker** as the environment/runtime.
+3. Configure the following environment variables:
+   * `PORT`: `8000`
+   * `HOST`: `0.0.0.0`
+   * `SQLITE_DB_PATH`: `/app/roles/auth.db`
+   * `GEMINI_API_KEY`: *(Optional)* Your Gemini API key for the AI Recruiter Chat Assistant.
+4. **Attach a Persistent Volume (CRITICAL)**:
+   * **Mount Path**: `/app/roles`
+   * **Size**: 1GB (or more)
+   * This volume ensures that SQLite user databases, customized job description files, uploaded candidates data, and generated ranking reports are preserved across server restarts and new builds.

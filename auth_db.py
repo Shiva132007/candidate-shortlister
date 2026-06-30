@@ -4,7 +4,7 @@ import hashlib
 import uuid
 from datetime import datetime, timedelta
 
-DB_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "auth.db")
+DB_FILE = os.environ.get("SQLITE_DB_PATH", os.path.join(os.path.dirname(os.path.abspath(__file__)), "auth.db"))
 
 def get_db():
     conn = sqlite3.connect(DB_FILE)
