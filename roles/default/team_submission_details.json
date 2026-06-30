@@ -1,0 +1,5102 @@
+{
+  "CAND_0801": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 100.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.0 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (99%)",
+        "Active contributor on GitHub (Score: 87.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0171": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 99.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.3 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 78.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0071": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 99.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.4 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 94.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0652": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 99.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.4 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 90.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0961": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 99.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.0 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 87.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0282": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 99.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 92.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0742": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 99.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 88.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0082": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 99.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.6 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (99%)",
+        "Active contributor on GitHub (Score: 81.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0112": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 98.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.5 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (99%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0491": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 98.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 77.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0922": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 98.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.3 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 79.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0312": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 98.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 96.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0902": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 98.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 91.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0381": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 98.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.0 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 91.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0261": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 98.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.9 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 85.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0591": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 98.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.5 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 97.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0911": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 98.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 78.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0582": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.6 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 89.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0222": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 97.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.1 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 100.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0592": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.0 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 94.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0781": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 80.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0412": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 97.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.6 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (91%)",
+        "Active contributor on GitHub (Score: 91.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0542": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 78.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0452": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.0 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 98.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0341": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.5 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 75.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0192": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.5 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 80.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0052": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.9 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 89.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0502": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.9 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 91.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0882": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.3 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 89.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0642": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 97.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (90%)",
+        "Active contributor on GitHub (Score: 76.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0662": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 97.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.0 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (90%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0271": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (92%)",
+        "Active contributor on GitHub (Score: 90.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0522": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 97.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.2 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 88.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0122": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 97.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.4 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 86.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0722": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (8.0 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (93%)",
+        "Active contributor on GitHub (Score: 100.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0771": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 96.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0242": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 96.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (91%)",
+        "Active contributor on GitHub (Score: 96.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0382": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 96.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (91%)",
+        "Active contributor on GitHub (Score: 80.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0331": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 96.5,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (91%)",
+        "Active contributor on GitHub (Score: 86.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0012": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 96.5,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.4 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 77.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0362": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 96.5,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.1 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (91%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0691": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 96.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 100.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0432": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 96.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.9 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (93%)",
+        "Active contributor on GitHub (Score: 76.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0191": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 96.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.5 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (93%)",
+        "Active contributor on GitHub (Score: 80.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0602": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 95.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (99%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0132": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 95.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.6 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (99%)",
+        "Active contributor on GitHub (Score: 100.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0731": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 95.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.2 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (90%)",
+        "Active contributor on GitHub (Score: 98.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0872": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 95.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.5 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 78.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0511": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 95.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.3 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 79.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0941": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 95.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.3 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 98.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0352": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 95.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.9 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 80.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0821": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 95.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0041": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.3 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 88.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0092": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.3 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 77.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0891": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.8 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 97.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0332": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0232": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.6 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (99%)",
+        "Active contributor on GitHub (Score: 77.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0512": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.2 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 98.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0832": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 83.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0402": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.9 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (99%)",
+        "Active contributor on GitHub (Score: 100.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0852": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.5 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 79.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0551": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 89.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0752": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 94.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.6 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 81.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0951": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 94.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.6 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 94.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0291": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 94.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.5 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 77.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0442": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 97.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0251": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.2 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 97.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0411": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.4 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0782": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.6 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 77.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0501": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 79.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0421": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 83.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0862": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (93%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0621": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (8.0 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 93.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0281": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.9 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 97.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0241": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.5,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.5 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 75.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0462": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.5,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.9 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 78.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0022": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.5,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.3 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 98.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0042": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.5,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.8 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (92%)",
+        "Active contributor on GitHub (Score: 85.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0392": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.9 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 88.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0831": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.4 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (92%)",
+        "Active contributor on GitHub (Score: 87.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0632": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 79.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0711": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.4,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.9 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (92%)",
+        "Active contributor on GitHub (Score: 97.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0562": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.6 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0101": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 97.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0181": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 93.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (91%)",
+        "Active contributor on GitHub (Score: 84.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0061": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 81.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0901": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.2,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.2 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0532": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (95%)",
+        "Active contributor on GitHub (Score: 91.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0111": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.3 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 76.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0952": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.9 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 94.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0552": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 93.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.7 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 94.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0121": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 97
+      }
+    ],
+    "confidence_score": 93.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.6 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (90%)",
+        "Active contributor on GitHub (Score: 86.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0482": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.0 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 81.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0932": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 92.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.4 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 85.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0702": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 92.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.4 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (93%)",
+        "Active contributor on GitHub (Score: 75.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0342": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 92.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.7 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0581": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 92.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (93%)",
+        "Active contributor on GitHub (Score: 89.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0612": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 92.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.3 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (92%)",
+        "Active contributor on GitHub (Score: 97.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0762": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 92.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.9 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 98.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0861": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 92.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.2 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (92%)",
+        "Active contributor on GitHub (Score: 99.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  }
+}

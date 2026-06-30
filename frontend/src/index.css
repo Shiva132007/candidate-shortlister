@@ -2370,4 +2370,392 @@ body {
 }
 
 
+/* ==========================================================================
+   INTELLIGENCE DASHBOARD ADDITIONS (HONEYPOTS, PARSED JD, CONFIDENCE, SKILL GAP)
+   ========================================================================== */
 
+/* Parsed JD Insights Panel in Sidebar */
+.parsed-jd-panel {
+  margin-top: 16px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background: rgba(17, 24, 39, 0.45);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.parsed-jd-panel:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.parsed-jd-header {
+  padding: 12px 14px;
+  background: rgba(99, 102, 241, 0.05);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.parsed-jd-title-text {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--accent-indigo);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-parsed-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.toggle-parsed-btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.parsed-jd-content {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.parsed-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.parsed-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.parsed-value {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.parsed-value.highlight {
+  color: var(--accent-indigo);
+  font-weight: 600;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+  font-weight: 700 !important;
+}
+
+.parsed-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.parsed-chip {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+.parsed-chip.tech {
+  background-color: rgba(99, 102, 241, 0.1);
+  color: #a5a6f6;
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.parsed-chip.ir {
+  background-color: rgba(6, 182, 212, 0.1);
+  color: #67e8f9;
+  border-color: rgba(6, 182, 212, 0.2);
+}
+
+.parsed-chip.behavioral {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.2);
+}
+
+/* Fraud badges in candidate list items */
+.fraud-badge-list {
+  font-size: 9px;
+  font-weight: 800;
+  background: rgba(244, 63, 94, 0.15);
+  color: var(--accent-rose);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+  padding: 2px 6px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  animation: pulse-border 2s infinite ease-in-out;
+}
+
+@keyframes pulse-border {
+  0%, 100% { border-color: rgba(244, 63, 94, 0.3); box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.2); }
+  50% { border-color: rgba(244, 63, 94, 0.8); box-shadow: 0 0 8px 1px rgba(244, 63, 94, 0.25); }
+}
+
+.confidence-badge-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.score-badge.confidence {
+  min-width: 52px;
+  font-size: 11.5px;
+}
+
+.score-badge-label {
+  font-size: 8px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+/* Fraud warning banner in candidate details */
+.fraud-alert-banner {
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(244, 63, 94, 0.15) 0%, rgba(245, 158, 11, 0.1) 100%);
+  border: 1px solid rgba(244, 63, 94, 0.4);
+  box-shadow: 0 4px 15px rgba(244, 63, 94, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.alert-banner-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alert-icon {
+  font-size: 18px;
+}
+
+.alert-banner-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.alert-body {
+  font-size: 11.5px;
+  color: #fca5a5;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Why Ranked Here Pros & Cons */
+.why-ranked-section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.pros-cons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.why-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.column-title {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.column-title.strengths {
+  color: var(--accent-emerald);
+}
+
+.column-title.risks {
+  color: var(--accent-amber);
+}
+
+.why-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.why-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 11.5px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.why-item .icon {
+  font-size: 12px;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.pro-item {
+  color: #d1d5db;
+}
+
+.pro-item .icon {
+  color: var(--accent-emerald);
+}
+
+.con-item {
+  color: #d1d5db;
+}
+
+.con-item .icon {
+  color: var(--accent-amber);
+}
+
+/* Skill Gap Tracker styles */
+.skill-gap-section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.gap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.gap-half {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.gap-title {
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.gap-title.matching {
+  color: var(--accent-emerald);
+}
+
+.gap-title.missing {
+  color: #9ca3af;
+}
+
+.gap-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.gap-chip {
+  font-size: 10.5px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+.matching-chip {
+  background-color: rgba(16, 185, 129, 0.08);
+  color: var(--accent-emerald);
+  border-color: rgba(16, 185, 129, 0.15);
+}
+
+.missing-chip {
+  background-color: rgba(156, 163, 175, 0.08);
+  color: #d1d5db;
+  border-color: rgba(156, 163, 175, 0.15);
+}
+
+.all-matched-chip {
+  background-color: rgba(16, 185, 129, 0.12);
+  color: #34d399;
+  border-color: rgba(16, 185, 129, 0.25);
+  font-weight: 700;
+}
+
+/* Match Requirements Breakdown section */
+.breakdown-section {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.breakdown-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.breakdown-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.breakdown-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breakdown-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #d1d5db;
+}
+
+.breakdown-val {
+  font-size: 11.5px;
+  font-weight: 700;
+}
+
+.emerald-fill { background-color: var(--accent-emerald); }
+.amber-fill { background-color: var(--accent-amber); }
+.rose-fill { background-color: var(--accent-rose); }

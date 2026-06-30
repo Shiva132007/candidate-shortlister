@@ -1,0 +1,19 @@
+{
+  "title": "Senior Backend Engineer",
+  "experience_min": 5,
+  "experience_max": 9,
+  "tech_skills": [
+    "python",
+    "fastapi",
+    "django",
+    "docker",
+    "kubernetes",
+    "aws"
+  ],
+  "ir_skills": [
+    "vector database"
+  ],
+  "behavioral_priorities": [
+    "github contributions"
+  ]
+}

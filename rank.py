@@ -3,6 +3,8 @@ import json
 import argparse
 import numpy as np
 import csv
+import re
+import httpx
 from datetime import datetime
 from sentence_transformers import SentenceTransformer
 
@@ -158,94 +160,260 @@ def compile_text_profile(cand):
         
     return "\n".join(parts)
 
-def generate_reasoning(cand, rank):
-    # Generates a highly customized, fact-based, non-templated reasoning
+def detect_honeypot_runtime(cand):
+    """
+    Returns (is_honeypot, reason) if any fraud or timeline anomaly is detected dynamically.
+    """
+    profile = cand.get("profile", {})
+    history = cand.get("career_history", [])
+    education = cand.get("education", [])
+    skills = [s.get("name", "").lower() for s in cand.get("skills", [])]
+    
+    # 1. Academic Timeline Mismatch
+    grad_years = []
+    for edu in education:
+        end_yr = edu.get("end_year")
+        if end_yr and isinstance(end_yr, int):
+            grad_years.append(end_yr)
+        elif end_yr and isinstance(end_yr, str) and end_yr.isdigit():
+            grad_years.append(int(end_yr))
+            
+    if grad_years:
+        earliest_grad_year = min(grad_years)
+        senior_keywords = ["senior", "lead", "architect", "manager", "director", "head", "cto", "vp", "president", "principal"]
+        for job in history:
+            title = job.get("title", "").lower()
+            start_date = job.get("start_date", "")
+            if start_date:
+                try:
+                    start_year = int(start_date.split("-")[0])
+                    # Flag senior roles held more than 1 year prior to college graduation
+                    if any(sk in title for sk in senior_keywords) and start_year < (earliest_grad_year - 1):
+                        if not any(x in title for x in ["student", "representative", "volunteer", "intern", "trainee", "freshman"]):
+                            return True, f"Timeline Anomaly: Held senior role '{job.get('title')}' at {job.get('company')} in {start_year} before graduation in {earliest_grad_year}"
+                except Exception:
+                    pass
+
+    # 2. Overlapping Positions
+    parsed_jobs = []
+    for job in history:
+        company = job.get("company", "").lower()
+        title = job.get("title", "").lower()
+        if any(x in title or x in company for x in ["intern", "freelance", "contractor", "volunteer", "student"]):
+            continue
+        s_date = job.get("start_date")
+        e_date = job.get("end_date")
+        try:
+            if s_date:
+                s_dt = datetime.strptime(s_date, "%Y-%m-%d")
+                if e_date:
+                    e_dt = datetime.strptime(e_date, "%Y-%m-%d")
+                else:
+                    e_dt = datetime(2026, 6, 27)
+                parsed_jobs.append((s_dt, e_dt, job.get("company")))
+        except Exception:
+            pass
+            
+    for i in range(len(parsed_jobs)):
+        for j in range(i + 1, len(parsed_jobs)):
+            s1, e1, c1 = parsed_jobs[i]
+            s2, e2, c2 = parsed_jobs[j]
+            if c1 == c2 or not c1 or not c2:
+                continue
+            latest_start = max(s1, s2)
+            earliest_end = min(e1, e2)
+            if latest_start < earliest_end:
+                overlap_days = (earliest_end - latest_start).days
+                if overlap_days > 180:
+                    return True, f"Timeline Anomaly: Impossible overlap of {overlap_days // 30} months in full-time roles at {c1} and {c2}"
+
+    # 3. Keyword Stuffing without Tech Tenure
+    headline_lower = profile.get("headline", "").lower()
+    current_title_lower = profile.get("current_title", "").lower()
+    banned_roles = ["hr manager", "hr specialist", "recruiter", "human resources",
+                    "accountant", "bookkeeper", "finance specialist", "finance manager",
+                    "sales executive", "sales manager", "marketing manager", "marketing specialist",
+                    "content writer", "copywriter", "graphic designer", "brand designer",
+                    "customer support", "support specialist", "operations manager"]
+    
+    current_is_banned = any(role in current_title_lower or role in headline_lower for role in banned_roles)
+    
+    tech_keywords = ["engineer", "developer", "scientist", "architect", "programmer", 
+                     "coder", "tech lead", "technical lead", "cto", "data analyst", "product manager"]
+    has_tech_job = False
+    for job in history:
+        title = job.get("title", "").lower()
+        if any(kw in title for kw in tech_keywords):
+            if not any(br in title for br in banned_roles):
+                has_tech_job = True
+                break
+                
+    ml_keywords = ["pytorch", "tensorflow", "rag", "fine-tuning", "lora", "embeddings", "milvus", "weaviate", "qdrant", "vector database", "sentence-transformers"]
+    stuffed_skills = [s for s in skills if any(mk in s for mk in ml_keywords)]
+    
+    if current_is_banned and not has_tech_job and len(stuffed_skills) >= 2:
+        return True, f"Fraud Alert: Operations/non-tech role ('{profile.get('current_title')}') with zero technical tenure listing advanced skills ({', '.join(stuffed_skills)})"
+        
+    return False, ""
+
+def parse_job_description(jd_text, api_key=None):
+    if api_key:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+        prompt = (
+            "You are an expert technical recruiter. Parse the following Job Description into a clean JSON structure.\n\n"
+            "JOB DESCRIPTION:\n"
+            f"{jd_text}\n\n"
+            "Return ONLY a JSON object (no markdown, no backticks, no other text) with the following structure:\n"
+            "{\n"
+            "  \"title\": \"Exact job title\",\n"
+            "  \"experience_min\": 5,\n"
+            "  \"experience_max\": 9,\n"
+            "  \"tech_skills\": [\"python\", \"pytorch\", ...],\n"
+            "  \"ir_skills\": [\"embeddings\", \"vector database\", ...],\n"
+            "  \"behavioral_priorities\": [\"github activity\", ...]\n"
+            "}"
+        )
+        try:
+            res = httpx.post(url, json={
+                "contents": [{"parts": [{"text": prompt}]}]
+            }, timeout=10.0)
+            if res.status_code == 200:
+                text_res = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+                if text_res.startswith("```"):
+                    text_res = text_res.split("```")[1]
+                    if text_res.startswith("json"):
+                        text_res = text_res[4:]
+                return json.loads(text_res.strip())
+        except Exception as e:
+            print(f"Warning: Gemini JD parser failed: {e}. Falling back to rule-based parser.")
+            
+    # Local Fallback
+    jd_lower = jd_text.lower()
+    title = "Senior AI Engineer"
+    for line in jd_text.split("\n"):
+        if "title:" in line.lower() or "role:" in line.lower() or "position:" in line.lower():
+            title = line.split(":")[-1].strip()
+            break
+        elif "engineer" in line.lower() or "developer" in line.lower():
+            if len(line.strip()) < 55:
+                title = line.strip()
+                break
+                
+    exp_min, exp_max = 5, 9
+    yoe_matches = re.findall(r'(\d+)\s*[-to]+\s*(\d+)\s*(?:years|yoe)', jd_lower)
+    if yoe_matches:
+        try:
+            exp_min, exp_max = int(yoe_matches[0][0]), int(yoe_matches[0][1])
+        except Exception:
+            pass
+            
+    tech_candidates = ["python", "pytorch", "tensorflow", "scikit-learn", "numpy", "pandas", "fastapi", "django", "flask", "docker", "kubernetes", "aws", "gcp"]
+    tech_skills = [t for t in tech_candidates if t in jd_lower]
+    if not tech_skills:
+        tech_skills = ["python", "pytorch"]
+        
+    ir_candidates = ["embeddings", "vector database", "pinecone", "weaviate", "qdrant", "milvus", "faiss", "hybrid search", "rag", "retrieval", "semantic search", "ndcg", "mrr", "map", "learning-to-rank"]
+    ir_skills = [c for c in ir_candidates if c in jd_lower]
+    if not ir_skills:
+        ir_skills = ["embeddings", "vector database", "rag"]
+        
+    behavioral = []
+    if "github" in jd_lower:
+        behavioral.append("github contributions")
+    if "notice" in jd_lower or "availability" in jd_lower:
+        behavioral.append("immediate availability")
+    if "active" in jd_lower or "response" in jd_lower:
+        behavioral.append("high response rate")
+    if not behavioral:
+        behavioral = ["immediate availability", "high response rate"]
+        
+    return {
+        "title": title,
+        "experience_min": exp_min,
+        "experience_max": exp_max,
+        "tech_skills": tech_skills,
+        "ir_skills": ir_skills,
+        "behavioral_priorities": behavioral
+    }
+
+def generate_llm_reasoning_batch(top_candidates, jd_text, api_key):
+    cand_details_list = []
+    for cand in top_candidates:
+        c_id = cand["candidate_id"]
+        profile = cand["record"].get("profile", {})
+        skills = ", ".join([s.get("name", "") for s in cand["record"].get("skills", [])])
+        signals = cand["record"].get("redrob_signals", {})
+        cand_details_list.append(
+            f"Candidate ID: {c_id}\n"
+            f"Current Title: {profile.get('current_title')} at {profile.get('current_company')}\n"
+            f"YoE: {profile.get('years_of_experience')} years\n"
+            f"Skills: {skills}\n"
+            f"Notice Period: {signals.get('notice_period_days')} days | Response Rate: {int(signals.get('recruiter_response_rate', 0)*100)}%\n"
+        )
+    candidates_context = "\n---\n".join(cand_details_list)
+    prompt = (
+        "You are an expert technical recruiter analyzing candidates for a job role.\n\n"
+        f"JOB ROLE DESCRIPTION:\n{jd_text}\n\n"
+        f"TOP RANKED CANDIDATES:\n{candidates_context}\n\n"
+        "INSTRUCTIONS:\n"
+        "Generate a highly specific, professional 2-sentence match justification for each of the candidates listed above.\n"
+        "Highlight their experience, pedigree alignment, core skills, and note any availability or relocation constraints if relevant.\n"
+        "Keep the tone professional and fact-based.\n"
+        "Return ONLY a JSON object (no markdown, no backticks, no other text) mapping each candidate_id to their reasoning text, like this:\n"
+        "{\n"
+        "  \"CAND_0000001\": \"Exceptional candidate with 7 years of ML experience. Has strong vector search skills and product pedigree, but has a 60-day notice period.\",\n"
+        "  ...\n"
+        "}"
+    )
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
+    try:
+        res = httpx.post(url, json={
+            "contents": [{"parts": [{"text": prompt}]}]
+        }, timeout=25.0)
+        if res.status_code == 200:
+            text_res = res.json()["candidates"][0]["content"]["parts"][0]["text"].strip()
+            if text_res.startswith("```"):
+                text_res = text_res.split("```")[1]
+                if text_res.startswith("json"):
+                    text_res = text_res[4:]
+            return json.loads(text_res.strip())
+    except Exception as e:
+        print(f"Warning: Gemini batch reasoning failed: {e}. Falling back to local reasoning.")
+    return {}
+
+def generate_reasoning_improved(cand, parsed_jd, skill_gap, pedigree):
     profile = cand.get("profile", {})
     history = cand.get("career_history", [])
     signals = cand.get("redrob_signals", {})
-    skills = cand.get("skills", [])
     
-    name = profile.get("anonymized_name", "Candidate")
     yoe = profile.get("years_of_experience", 0)
     current_title = profile.get("current_title", "Engineer")
     last_company = history[0].get("company", "previous employer") if history else "previous employer"
+    notice = signals.get("notice_period_days", 30)
     
-    # Extract matching skills
-    skill_names = [s.get("name", "").lower() for s in skills]
-    key_ml_skills = []
-    if any("embed" in s or "transformer" in s for s in skill_names):
-        key_ml_skills.append("embeddings")
-    if any("vector" in s or "database" in s or "db" in s or "search" in s for s in skill_names):
-        key_ml_skills.append("vector databases")
-    if any("rag" in s or "retrieval" in s for s in skill_names):
-        key_ml_skills.append("RAG")
-    if any("eval" in s or "ndcg" in s or "mrr" in s or "map" in s for s in skill_names):
-        key_ml_skills.append("eval frameworks")
-    if any("fine" in s or "lora" in s or "peft" in s for s in skill_names):
-        key_ml_skills.append("fine-tuning")
-        
-    main_skill_str = ", ".join(key_ml_skills[:2]) if key_ml_skills else "applied ML"
+    intro = f"Candidate is a {current_title} with {yoe} years of experience, recently at {last_company}."
     
-    # 1. Deterministic template selection based on candidate ID hash to ensure variation
-    h = hash(cand["candidate_id"])
-    
-    # 2. Intro sentence templates
-    if rank <= 15:
-        intros = [
-            f"Exceptional Senior AI Engineer with {yoe} years of experience, demonstrating strong competence in {main_skill_str}.",
-            f"Top-tier ML practitioner with {yoe} years shipping production retrieval and ranking systems.",
-            f"Strong founding-team fit with {yoe} years of experience building scalable AI features at product companies.",
-            f"Excellent profile matching the 'shipper' mindset, with {yoe} years of hands-on NLP and embedding search experience."
-        ]
-    elif rank <= 50:
-        intros = [
-            f"Competent AI Engineer with {yoe} years of experience, currently working at {last_company}.",
-            f"Solid ML Engineer with {yoe} years of experience in data-infra and search system implementation.",
-            f"Strong software and ML background with {yoe} years building backend pipelines and AI integrations.",
-            f"Backend-heavy developer with {yoe} years of experience and growing applied AI expertise."
-        ]
+    matching = skill_gap.get("matching", [])
+    if matching:
+        tech_clause = f"Demonstrates core competency in {', '.join(matching[:3])}."
     else:
-        intros = [
-            f"Relevant developer with {yoe} years of experience, showing good foundations in software engineering.",
-            f"Applied engineer with {yoe} years of experience and adjacent experience in vector search/data pipelines.",
-            f"Experienced backend engineer with {yoe} years of experience looking to focus on AI/ML applications.",
-            f"Backend and data engineer with {yoe} years of experience, showing good skill overlap for AI-infra."
-        ]
-    intro = intros[h % len(intros)]
-    
-    # 3. Body sentence templates (JD connection & signals)
+        tech_clause = "Possesses solid engineering fundamentals, looking to expand their technical stack."
+        
+    if pedigree == "has_product":
+        pedigree_clause = f"Brings high-value product pedigree from history with {last_company}."
+    elif pedigree == "only_consulting":
+        pedigree_clause = "Experience is concentrated in consulting-only services."
+    else:
+        pedigree_clause = f"Shows a stable career trajectory at {last_company}."
+        
     resp_rate = int(signals.get("recruiter_response_rate", 0) * 100)
-    git_score = signals.get("github_activity_score", -1)
+    signal_clause = f"Active with a {resp_rate}% response rate and {notice}-day notice availability."
     
-    bodies = []
-    if git_score > 40:
-        bodies.append(f"Strong open-source pedigree (GitHub score: {git_score}) and active platform response rate of {resp_rate}%.")
-    else:
-        bodies.append(f"Highly responsive candidate ({resp_rate}% response rate) with solid engineering details in their career history.")
-        
-    bodies.append(f"Production experience includes {main_skill_str} with {len(skills)} verified skills and strong platform assessment scores.")
-    bodies.append(f"Career history at {last_company} demonstrates experience building backend systems and handling embedding search indexes.")
-    
-    body = bodies[(h >> 2) % len(bodies)]
-    
-    # 4. Concern sentence templates (honest gaps/concerns)
-    notice = signals.get("notice_period_days", 60)
-    loc = profile.get("location", "")
-    is_local = any(c in loc.lower() for c in ["noida", "pune", "delhi", "ncr"])
-    
-    concerns = []
-    if notice > 60:
-        concerns.append(f"Note: Notice period is {notice} days, which requires buyout coordination.")
-    if not is_local:
-        concerns.append(f"Will require hybrid relocation to Noida or Pune office.")
-    if len(key_ml_skills) < 2:
-        concerns.append("May require slight ramp-up on vector DBs, but core Python and ML foundations are strong.")
-    if resp_rate < 30:
-        concerns.append(f"Responsiveness is low ({resp_rate}% response rate), but profile strength justifies outreach.")
-        
-    concern = concerns[(h >> 4) % len(concerns)] if concerns else "Matches core experience band and hybrid work cadence."
-    
-    return f"{intro} {body} {concern}"
+    return f"{intro} {tech_clause} {pedigree_clause} {signal_clause}"
+
+def generate_reasoning(cand, rank):
+    # Backward compatible fallback wrapper
+    return generate_reasoning_improved(cand, {}, {"matching": []}, "neutral")
 
 def main():
     parser = argparse.ArgumentParser()
@@ -330,7 +498,30 @@ def main():
         query_vector = np.ones((384,), dtype=np.float32) / np.sqrt(384)
         print("Warning: constructed fallback query vector.")
         
-    # 4. Stream Candidates and Compute Scores
+    # 4. Parse JD requirements
+    api_key = os.environ.get("GEMINI_API_KEY")
+    
+    # Load raw JD content
+    jd_content = ""
+    if args.jd and os.path.exists(args.jd):
+        try:
+            with open(args.jd, "r", encoding="utf-8") as f:
+                jd_content = f.read().strip()
+        except Exception:
+            pass
+            
+    parsed_jd = parse_job_description(jd_content or query_text, api_key)
+    
+    # Cache parsed JD in the role directory
+    if args.jd:
+        parsed_jd_path = os.path.join(os.path.dirname(args.jd), "job_description_parsed.json")
+        try:
+            with open(parsed_jd_path, "w", encoding="utf-8") as f:
+                json.dump(parsed_jd, f, indent=2)
+        except Exception as e:
+            print(f"Warning: failed to write parsed JD: {e}")
+            
+    # 5. Stream Candidates and Compute Scores
     print(f"Processing and scoring candidates from {args.candidates}...")
     tier1_qualified = []
     tier2_fillers = []
@@ -343,8 +534,10 @@ def main():
             cand = json.loads(line)
             cand_id = cand["candidate_id"]
             
-            # Categorize into Tiers
-            is_honeypot = cand_id in blacklist
+            # Dynamic Runtime Honeypot/Fraud Audit
+            is_honeypot_runtime, honeypot_reason = detect_honeypot_runtime(cand)
+            is_honeypot = (cand_id in blacklist) or is_honeypot_runtime
+            
             is_tech = is_technical_profile(cand)
             pedigree = analyze_pedigree(cand)
             is_consulting_only = pedigree == "only_consulting"
@@ -447,10 +640,130 @@ def main():
             final_score = semantic_score * multipliers
             final_score = max(0.0, final_score)
             
+            # Calculate requirements scoring breakdown (0-100)
+            cand_skills = [s.get("name", "").lower() for s in cand.get("skills", [])]
+            required_tech = [s.lower() for s in parsed_jd.get("tech_skills", [])]
+            matching_tech = [s for s in required_tech if any(s in cs or cs in s for cs in cand_skills)]
+            missing_tech = [s for s in required_tech if s not in matching_tech]
+            
+            tech_score = 30
+            if required_tech:
+                tech_score = int((len(matching_tech) / len(required_tech)) * 70 + 30)
+                
+            required_ir = [s.lower() for s in parsed_jd.get("ir_skills", [])]
+            cand_text_lower = compile_text_profile(cand).lower()
+            matching_ir = [s for s in required_ir if s in cand_text_lower or any(s in cs for cs in cand_skills)]
+            missing_ir = [s for s in required_ir if s not in matching_ir]
+            
+            ir_score = 30
+            if required_ir:
+                ir_score = int((len(matching_ir) / len(required_ir)) * 70 + 30)
+                
+            exp_min = parsed_jd.get("experience_min", 5)
+            exp_max = parsed_jd.get("experience_max", 9)
+            if exp_min <= yoe <= exp_max:
+                exp_score = 100
+            elif yoe < exp_min:
+                exp_score = max(20, int(100 - (exp_min - yoe) * 20))
+            else:
+                exp_score = max(30, int(100 - (yoe - exp_max) * 10))
+                
+            if pedigree == "has_product":
+                ped_score = 100
+            elif pedigree == "neutral":
+                ped_score = 75
+            else:
+                ped_score = 20
+                
+            notice_period = signals.get("notice_period_days", 60)
+            if notice_period <= 30:
+                ns = 100
+            elif notice_period <= 60:
+                ns = 80
+            elif notice_period <= 90:
+                ns = 50
+            else:
+                ns = 20
+            rs = int(signals.get("recruiter_response_rate", 0.5) * 100)
+            as_score = 70
+            if active_str:
+                try:
+                    act_dt = datetime.strptime(active_str, "%Y-%m-%d")
+                    curr_dt = datetime(2026, 6, 27)
+                    diff_days = (curr_dt - act_dt).days
+                    if diff_days <= 90:
+                        as_score = 100
+                    elif diff_days > 180:
+                        as_score = 40
+                except Exception:
+                    pass
+            gs = 100 if git_score > 50 else (50 if git_score == -1 else 75)
+            avail_score = int((ns + rs + as_score + gs) / 4)
+            
+            requirements_breakdown = [
+                {"label": "Technical Depth", "score": tech_score},
+                {"label": "Retrieval & AI Search", "score": ir_score},
+                {"label": "Experience Fit", "score": exp_score},
+                {"label": "Pedigree Alignment", "score": ped_score},
+                {"label": "Availability & Signals", "score": avail_score}
+            ]
+            
+            skill_gap = {
+                "matching": matching_tech + matching_ir,
+                "missing": missing_tech + missing_ir
+            }
+            
+            # Pros and Cons
+            pros = []
+            cons = []
+            if pedigree == "has_product":
+                pros.append("Product company pedigree (high-growth focus)")
+            elif pedigree == "only_consulting":
+                cons.append("Consulting-only history (may lack product experience)")
+                
+            if exp_min <= yoe <= exp_max:
+                pros.append(f"Ideal experience range ({yoe} years)")
+            elif yoe < 3:
+                cons.append(f"More junior level of experience ({yoe} years)")
+            elif yoe > 12:
+                cons.append(f"Highly senior/overqualified for this band ({yoe} years)")
+                
+            if len(matching_tech) >= 2:
+                pros.append(f"Strong overlap in tech skills ({', '.join(matching_tech[:2])})")
+            if len(missing_tech) >= 2:
+                cons.append(f"Missing core technical stack: {', '.join(missing_tech[:2])}")
+                
+            if notice_period <= 30:
+                pros.append(f"Short notice period ({notice_period} days)")
+            elif notice_period > 60:
+                cons.append(f"Extended notice period ({notice_period} days)")
+                
+            if signals.get("recruiter_response_rate", 0.0) >= 0.7:
+                pros.append(f"Excellent platform response rate ({int(signals.get('recruiter_response_rate', 0)*100)}%)")
+            elif signals.get("recruiter_response_rate", 0.0) < 0.3:
+                cons.append(f"Low platform response rate ({int(signals.get('recruiter_response_rate', 0)*100)}%)")
+                
+            if git_score > 50:
+                pros.append(f"Active contributor on GitHub (Score: {git_score})")
+                
+            if not pros:
+                pros.append("Demonstrates solid general software development experience")
+            if not cons:
+                cons.append("Matches the target requirements with no major risk factors")
+                
+            why_cards = {
+                "pros": pros,
+                "cons": cons
+            }
+            
             cand_info = {
                 "candidate_id": cand_id,
                 "score": final_score,
-                "record": cand
+                "record": cand,
+                "honeypot_reason": honeypot_reason if is_honeypot_runtime else None,
+                "requirements_breakdown": requirements_breakdown,
+                "skill_gap": skill_gap,
+                "why_cards": why_cards
             }
             
             if is_honeypot:
@@ -471,7 +784,7 @@ def main():
                 item["score"] = 0.66 + 0.34 * ratio
             else:
                 item["score"] = 1.0
-
+ 
     # Scale Tier 2 (Fillers) scores to [0.33, 0.66]
     if tier2_fillers:
         max_f = max(x["score"] for x in tier2_fillers)
@@ -483,7 +796,7 @@ def main():
                 item["score"] = 0.33 + 0.33 * ratio
             else:
                 item["score"] = 0.66
-
+ 
     # Scale Tier 3 (Honeypots) scores to [0.0, 0.33]
     if tier3_honeypots:
         max_h = max(x["score"] for x in tier3_honeypots)
@@ -495,7 +808,7 @@ def main():
                 item["score"] = 0.0 + 0.33 * ratio
             else:
                 item["score"] = 0.33
-
+ 
     # Combine the tiers in priority order
     candidate_scores = tier1_qualified + tier2_fillers + tier3_honeypots
     
@@ -506,11 +819,17 @@ def main():
     # Sort the combined list: score descending, then candidate_id ascending
     candidate_scores.sort(key=lambda x: (-x["score"], x["candidate_id"]))
     
-    # 5. Output Top 100 (or total candidates if less than 100)
+    # 6. Output Top 100 (or total candidates if less than 100)
     limit = min(100, len(candidate_scores))
     top_100 = candidate_scores[:limit]
     print(f"Top candidate score: {top_100[0]['score']:.4f} if candidates found, total count: {len(top_100)}")
     
+    # Call Gemini batch reasoning for top 15 candidates if API key is provided
+    llm_reasons = {}
+    if api_key and len(top_100) > 0:
+        print(f"Calling Gemini batch reasoning for top {min(15, len(top_100))} candidates...")
+        llm_reasons = generate_llm_reasoning_batch(top_100[:15], jd_content or query_text, api_key)
+        
     with open(args.out, "w", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["candidate_id", "rank", "score", "reasoning"])
@@ -519,10 +838,33 @@ def main():
             rank = i + 1
             cid = item["candidate_id"]
             score = item["score"]
-            reason = generate_reasoning(item["record"], rank)
+            
+            reason = llm_reasons.get(cid)
+            if not reason:
+                reason = generate_reasoning_improved(item["record"], parsed_jd, item["skill_gap"], analyze_pedigree(item["record"]))
+            
             writer.writerow([cid, rank, f"{score:.4f}", reason])
             
+    # Write metadata JSON details file
+    details_out_path = args.out.replace(".csv", "_details.json")
+    details_output = {}
+    for i, item in enumerate(top_100):
+        cid = item["candidate_id"]
+        details_output[cid] = {
+            "requirements_breakdown": item["requirements_breakdown"],
+            "confidence_score": round(item["score"] * 100, 1),
+            "why_cards": item["why_cards"],
+            "skill_gap": item["skill_gap"],
+            "honeypot_reason": item["honeypot_reason"]
+        }
+    try:
+        with open(details_out_path, "w", encoding="utf-8") as f:
+            json.dump(details_output, f, indent=2)
+        print(f"Successfully generated detailed metadata JSON: {details_out_path}")
+    except Exception as e:
+        print(f"Warning: failed to write detailed metadata JSON: {e}")
+        
     print(f"Successfully generated ranked CSV: {args.out}")
-
+ 
 if __name__ == '__main__':
     main()

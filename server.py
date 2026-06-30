@@ -173,6 +173,75 @@ def get_job_description(role_id: str = "default", username: str = Depends(get_cu
             raise HTTPException(status_code=500, detail=str(e))
     return {"content": ""}
 
+@app.get("/api/job-description/parsed")
+def get_parsed_job_description(role_id: str = "default", username: str = Depends(get_current_user)):
+    paths = get_role_paths(role_id)
+    parsed_path = os.path.join(os.path.dirname(paths["jd"]), "job_description_parsed.json")
+    if os.path.exists(parsed_path):
+        try:
+            with open(parsed_path, "r", encoding="utf-8") as f:
+                return json.load(f)
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"Failed to read parsed JD: {str(e)}")
+            
+    # If not parsed yet, parse it on the fly using a simple regex/rule-based fallback
+    if os.path.exists(paths["jd"]):
+        try:
+            with open(paths["jd"], "r", encoding="utf-8") as f:
+                text = f.read()
+            jd_lower = text.lower()
+            title = "Senior AI Engineer"
+            for line in text.split("\n"):
+                if "title:" in line.lower() or "role:" in line.lower() or "position:" in line.lower():
+                    title = line.split(":")[-1].strip()
+                    break
+                elif "engineer" in line.lower() or "developer" in line.lower():
+                    if len(line.strip()) < 55:
+                        title = line.strip()
+                        break
+                        
+            import re
+            exp_min, exp_max = 5, 9
+            yoe_matches = re.findall(r'(\d+)\s*[-to]+\s*(\d+)\s*(?:years|yoe)', jd_lower)
+            if yoe_matches:
+                try:
+                    exp_min = int(yoe_matches[0][0])
+                    exp_max = int(yoe_matches[0][1])
+                except Exception:
+                    pass
+                
+            tech_candidates = ["python", "pytorch", "tensorflow", "scikit-learn", "numpy", "pandas", "fastapi", "django", "flask", "docker", "kubernetes", "aws", "gcp"]
+            tech_skills = [t for t in tech_candidates if t in jd_lower]
+            if not tech_skills:
+                tech_skills = ["python", "pytorch"]
+                
+            ir_candidates = ["embeddings", "vector database", "pinecone", "weaviate", "qdrant", "milvus", "faiss", "hybrid search", "rag", "retrieval", "semantic search", "ndcg", "mrr", "map", "learning-to-rank"]
+            ir_skills = [c for c in ir_candidates if c in jd_lower]
+            if not ir_skills:
+                ir_skills = ["embeddings", "vector database", "rag"]
+                
+            behavioral = ["immediate availability", "high response rate"]
+            
+            return {
+                "title": title,
+                "experience_min": exp_min,
+                "experience_max": exp_max,
+                "tech_skills": tech_skills,
+                "ir_skills": ir_skills,
+                "behavioral_priorities": behavioral
+            }
+        except Exception:
+            pass
+            
+    return {
+        "title": "Senior AI Engineer",
+        "experience_min": 5,
+        "experience_max": 9,
+        "tech_skills": ["python", "pytorch"],
+        "ir_skills": ["embeddings", "vector database", "rag"],
+        "behavioral_priorities": ["immediate availability", "high response rate"]
+    }
+
 @app.get("/api/candidates")
 def get_ranked_candidates(role_id: str = "default", username: str = Depends(get_current_user)):
     paths = get_role_paths(role_id)
@@ -195,6 +264,16 @@ def get_ranked_candidates(role_id: str = "default", username: str = Depends(get_
                     "score": float(row["score"]),
                     "reasoning": row["reasoning"]
                 })
+                
+        # Load extra details JSON metadata
+        details_path = submission_path.replace(".csv", "_details.json")
+        extra_details = {}
+        if os.path.exists(details_path):
+            try:
+                with open(details_path, "r", encoding="utf-8") as f:
+                    extra_details = json.load(f)
+            except Exception:
+                pass
                 
         # Populate full candidate profile details by scanning candidates.jsonl
         cids_to_find = {item["candidate_id"] for item in top_candidates}
@@ -228,6 +307,14 @@ def get_ranked_candidates(role_id: str = "default", username: str = Depends(get_
             else:
                 item["details"] = {"candidate_id": cid, "profile": {"anonymized_name": "Unknown Candidate", "headline": "Unavailable"}}
                 
+            # Merge extra details metadata
+            if cid in extra_details:
+                item["requirements_breakdown"] = extra_details[cid].get("requirements_breakdown", [])
+                item["confidence_score"] = extra_details[cid].get("confidence_score", item["score"] * 100)
+                item["why_cards"] = extra_details[cid].get("why_cards", {"pros": [], "cons": []})
+                item["skill_gap"] = extra_details[cid].get("skill_gap", {"matching": [], "missing": []})
+                item["honeypot_reason"] = extra_details[cid].get("honeypot_reason", None)
+                
         return {"status": "success", "candidates": top_candidates}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
@@ -243,8 +330,13 @@ def get_candidate_details(candidate_id: str, role_id: str = "default", username:
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/api/rank")
-def trigger_ranking(role_id: str = "default", username: str = Depends(get_current_user)):
+def trigger_ranking(
+    role_id: str = "default", 
+    username: str = Depends(get_current_user),
+    x_gemini_key: Optional[str] = Header(None)
+):
     import subprocess
+    import sys
     paths = get_role_paths(role_id)
     
     if not os.path.exists(paths["candidates"]):
@@ -257,15 +349,21 @@ def trigger_ranking(role_id: str = "default", username: str = Depends(get_curren
         candidates_file = paths["candidates"]
         out_file = paths["submission"]
         
+        # Pass Gemini API key via environment variable to rank.py subprocess
+        api_key = x_gemini_key or os.environ.get("GEMINI_API_KEY")
+        env = os.environ.copy()
+        if api_key:
+            env["GEMINI_API_KEY"] = api_key
+        
         # Execute rank.py using subprocess
         cmd = [
-            "python", "rank.py",
+            sys.executable, "rank.py",
             "--candidates", candidates_file,
             "--out", out_file,
             "--jd", paths["jd"]
         ]
             
-        res = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        res = subprocess.run(cmd, capture_output=True, text=True, check=True, env=env)
         return {"status": "success", "message": f"Ranking calculated successfully for role '{role_id}'."}
     except Exception as e:
         stderr = getattr(e, "stderr", "")

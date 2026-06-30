@@ -170,6 +170,8 @@ export default function App() {
   const [chatInput, setChatInput] = useState('');
   const [chatLoading, setChatLoading] = useState(false);
   const [geminiApiKey, setGeminiApiKey] = useState(localStorage.getItem('geminiApiKey') || '');
+  const [parsedJd, setParsedJd] = useState(null);
+  const [showParsedJd, setShowParsedJd] = useState(true);
 
   // Custom API fetch wrapper with Auth Token and auto logout
   const apiFetch = async (url, options = {}) => {
@@ -259,6 +261,7 @@ export default function App() {
       fetchJd();
       fetchCandidates();
       fetchStatus();
+      fetchParsedJd();
     }
   }, [token, activeRoleId]);
 
@@ -323,6 +326,14 @@ export default function App() {
     } catch (e) {}
   };
 
+  const fetchParsedJd = async () => {
+    try {
+      const res = await apiFetch(`/api/job-description/parsed?role_id=${activeRoleId}`);
+      const data = await res.json();
+      setParsedJd(data);
+    } catch (e) {}
+  };
+
   const fetchCandidates = async () => {
     setLoading(true);
     setErrorMsg('');
@@ -359,6 +370,7 @@ export default function App() {
         setEditJd(false);
         setShowSyncWarning(true);
         await fetchStatus();
+        await fetchParsedJd();
       } else {
         alert(data.detail || 'Failed to save job description.');
       }
@@ -422,6 +434,7 @@ export default function App() {
         await fetchJd();
         await fetchStatus();
         await fetchCandidates();
+        await fetchParsedJd();
       } else {
         alert(data.detail || 'Failed to reset workspace.');
       }
@@ -434,12 +447,20 @@ export default function App() {
     setRankingInProgress(true);
     setErrorMsg('');
     try {
-      const res = await apiFetch(`/api/rank?role_id=${activeRoleId}`, { method: 'POST' });
+      const headers = {};
+      if (geminiApiKey) {
+        headers['X-Gemini-Key'] = geminiApiKey;
+      }
+      const res = await apiFetch(`/api/rank?role_id=${activeRoleId}`, { 
+        method: 'POST',
+        headers
+      });
       const data = await res.json();
       if (res.ok && data.status === 'success') {
         setShowSyncWarning(false);
         await fetchCandidates();
         await fetchStatus();
+        await fetchParsedJd();
       } else {
         setErrorMsg(data.detail || data.message || 'Ranking failed.');
       }
@@ -1001,6 +1022,58 @@ export default function App() {
                 </div>
               )}
             </div>
+
+            {parsedJd && !editJd && (
+              <div className="parsed-jd-panel glass">
+                <div className="parsed-jd-header" onClick={() => setShowParsedJd(!showParsedJd)}>
+                  <h4 className="parsed-jd-title-text">
+                    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{width: 14, height: 14, marginRight: 6}}>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    Parsed JD Insights
+                  </h4>
+                  <button className="toggle-parsed-btn">
+                    {showParsedJd ? 'Hide' : 'Show'}
+                  </button>
+                </div>
+                {showParsedJd && (
+                  <div className="parsed-jd-content">
+                    <div className="parsed-field">
+                      <span className="parsed-label">Extracted Role:</span>
+                      <span className="parsed-value text-glow">{parsedJd.title}</span>
+                    </div>
+                    <div className="parsed-field">
+                      <span className="parsed-label">Experience Band:</span>
+                      <span className="parsed-value">{parsedJd.experience_min} - {parsedJd.experience_max} Years</span>
+                    </div>
+                    <div className="parsed-field">
+                      <span className="parsed-label">Core Tech Stack:</span>
+                      <div className="parsed-chips">
+                        {(parsedJd.tech_skills || []).map((skill, idx) => (
+                          <span key={idx} className="parsed-chip tech">{skill}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="parsed-field">
+                      <span className="parsed-label">AI & Search Concepts:</span>
+                      <div className="parsed-chips">
+                        {(parsedJd.ir_skills || []).map((skill, idx) => (
+                          <span key={idx} className="parsed-chip ir">{skill}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="parsed-field">
+                      <span className="parsed-label">Behavioral Signals:</span>
+                      <div className="parsed-chips">
+                        {(parsedJd.behavioral_priorities || []).map((priority, idx) => (
+                          <span key={idx} className="parsed-chip behavioral">{priority}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </aside>
 
@@ -1155,8 +1228,16 @@ export default function App() {
                               <span className="divider">•</span>
                               <span className="loc-text">{profile.location || 'India'}</span>
                             </div>
-                            <div className={`score-badge ${getScoreColorClass(cand.score)}`}>
-                              {cand.score.toFixed(4)}
+                            
+                            {cand.honeypot_reason && (
+                              <span className="fraud-badge-list" title={cand.honeypot_reason}>⚠️ FRAUD</span>
+                            )}
+                            
+                            <div className="confidence-badge-container">
+                              <div className={`score-badge confidence ${getScoreColorClass(cand.score)}`}>
+                                {cand.confidence_score ? `${Math.round(cand.confidence_score)}%` : `${Math.round(cand.score * 100)}%`}
+                              </div>
+                              <span className="score-badge-label">confidence</span>
                             </div>
                           </div>
                         </div>
@@ -1372,6 +1453,16 @@ export default function App() {
           {rightPanelTab === 'details' ? (
             selectedCandidate ? (
               <div className="details-content">
+                {selectedCandidate.honeypot_reason && (
+                  <div className="fraud-alert-banner">
+                    <div className="alert-banner-header">
+                      <span className="alert-icon">⚠️</span>
+                      <h4 className="alert-banner-title">Dynamic Safety Alert: Potential Fraud / Anomaly</h4>
+                    </div>
+                    <p className="alert-body">{selectedCandidate.honeypot_reason}</p>
+                  </div>
+                )}
+
                 <div className="details-header">
                   <div className="header-meta">
                     <h2 className="detail-name">{selectedCandidate.details?.profile?.anonymized_name || selectedCandidate.candidate_id}</h2>
@@ -1379,8 +1470,10 @@ export default function App() {
                     <p className="detail-company">at {selectedCandidate.details?.profile?.current_company || 'Product Company'}</p>
                   </div>
                   <div className={`detail-score-box ${getScoreColorClass(selectedCandidate.score)}`}>
-                    <span className="score-label">Score</span>
-                    <span className="score-val">{selectedCandidate.score.toFixed(4)}</span>
+                    <span className="score-label">Match Confidence</span>
+                    <span className="score-val">
+                      {selectedCandidate.confidence_score ? `${Math.round(selectedCandidate.confidence_score)}%` : `${Math.round(selectedCandidate.score * 100)}%`}
+                    </span>
                   </div>
                 </div>
 
@@ -1395,6 +1488,90 @@ export default function App() {
                     {selectedCandidate.reasoning}
                   </p>
                 </div>
+
+                {selectedCandidate.why_cards && (
+                  <div className="details-section why-ranked-section">
+                    <h3 className="section-heading">Why Ranked Here?</h3>
+                    <div className="pros-cons-grid">
+                      <div className="why-column pros-column">
+                        <h4 className="column-title strengths">Strengths / Positive Signals</h4>
+                        <ul className="why-list pro-list">
+                          {(selectedCandidate.why_cards.pros || []).map((pro, index) => (
+                            <li key={index} className="why-item pro-item">
+                              <span className="icon">✓</span>
+                              <span className="text">{pro}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                      <div className="why-column cons-column">
+                        <h4 className="column-title risks">Risk Factors / Gaps</h4>
+                        <ul className="why-list con-list">
+                          {(selectedCandidate.why_cards.cons || []).map((con, index) => (
+                            <li key={index} className="why-item con-item">
+                              <span className="icon">⚠</span>
+                              <span className="text">{con}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {selectedCandidate.skill_gap && (
+                  <div className="details-section skill-gap-section">
+                    <h3 className="section-heading">Skill Gap Analysis</h3>
+                    <div className="gap-grid">
+                      <div className="gap-half">
+                        <span className="gap-title matching">Matching Stack Skills</span>
+                        <div className="gap-chips">
+                          {(selectedCandidate.skill_gap.matching || []).map((skill, index) => (
+                            <span key={index} className="gap-chip matching-chip">{skill}</span>
+                          ))}
+                          {(!selectedCandidate.skill_gap.matching || selectedCandidate.skill_gap.matching.length === 0) && (
+                            <span className="empty-italic">No matching core stack skills found</span>
+                          )}
+                        </div>
+                      </div>
+                      <div className="gap-half">
+                        <span className="gap-title missing">Missing Required Skills</span>
+                        <div className="gap-chips">
+                          {(selectedCandidate.skill_gap.missing || []).map((skill, index) => (
+                            <span key={index} className="gap-chip missing-chip">{skill}</span>
+                          ))}
+                          {(!selectedCandidate.skill_gap.missing || selectedCandidate.skill_gap.missing.length === 0) && (
+                            <span className="gap-chip all-matched-chip">✓ All Core Skills Matched</span>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {selectedCandidate.requirements_breakdown && (
+                  <div className="details-section breakdown-section">
+                    <h3 className="section-heading">Match Requirements Breakdown</h3>
+                    <div className="breakdown-grid">
+                      {selectedCandidate.requirements_breakdown.map((req, index) => (
+                        <div key={index} className="breakdown-item">
+                          <div className="breakdown-info">
+                            <span className="breakdown-label">{req.label}</span>
+                            <span className="breakdown-val">{req.score}%</span>
+                          </div>
+                          <div className="progress-bar-bg">
+                            <div 
+                              className={`progress-bar-fill ${
+                                req.score >= 80 ? 'emerald-fill' : (req.score >= 50 ? 'amber-fill' : 'rose-fill')
+                              }`}
+                              style={{ width: `${req.score}%` }}
+                            />
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
                 <div className="details-section">
                   <h3 className="section-heading">Verified Skills</h3>
