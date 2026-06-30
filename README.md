@@ -8,7 +8,7 @@ An AI-powered candidate ranking, filtering, and intelligence system designed for
 ![Redrob Landing Page](docs/landing_page.png)
 
 ### 2. Recruiter Console Dashboard
-![Redrob Dashboard Console](docs/dashboard_console.png)
+![Redrob Dashboard Console]
 
 ---
 
