@@ -329,6 +329,22 @@ def get_candidate_details(candidate_id: str, role_id: str = "default", username:
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/api/download-csv")
+def download_submission_csv(role_id: str = "default", username: str = Depends(get_current_user)):
+    from fastapi.responses import FileResponse
+    paths = get_role_paths(role_id)
+    submission_path = paths["submission"]
+    if not os.path.exists(submission_path):
+        raise HTTPException(status_code=404, detail="No submission CSV generated yet. Please run the ranker first.")
+    
+    filename = f"team_submission_{role_id}.csv"
+    return FileResponse(
+        path=submission_path, 
+        media_type="text/csv", 
+        filename=filename
+    )
+
+
 @app.post("/api/rank")
 def trigger_ranking(
     role_id: str = "default", 

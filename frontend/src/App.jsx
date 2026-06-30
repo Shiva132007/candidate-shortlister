@@ -471,6 +471,31 @@ export default function App() {
     }
   };
 
+  const handleExportCsv = async () => {
+    try {
+      const res = await apiFetch(`/api/download-csv?role_id=${activeRoleId}`);
+      if (!res.ok) {
+        if (res.status === 404) {
+          alert("No submission CSV generated yet. Please click 'Recalculate Ranks' first.");
+          return;
+        }
+        alert("Failed to export CSV.");
+        return;
+      }
+      const blob = await res.blob();
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `team_submission_${activeRoleId}.csv`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(url);
+    } catch (e) {
+      alert("Error exporting CSV.");
+    }
+  };
+
   // AI Chat integration
   const handleSendChatMessage = async (e) => {
     e.preventDefault();
@@ -894,6 +919,20 @@ export default function App() {
               </>
             )}
           </button>
+
+          {candidates.length > 0 && (
+            <button 
+              onClick={handleExportCsv}
+              className="recalculate-btn"
+              style={{ background: 'var(--accent-emerald)', borderColor: 'var(--accent-emerald)' }}
+              title="Export ranked list to Excel-compatible CSV file"
+            >
+              <svg className="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Export to Excel
+            </button>
+          )}
 
           {/* User profile details */}
           <div className="user-avatar-btn" onClick={handleLogout} title="Logout of console">

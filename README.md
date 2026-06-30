@@ -2,7 +2,16 @@
 
 An AI-powered candidate ranking, filtering, and intelligence system designed for recruitment teams. The engine bypasses keyword-stuffing traps, timeline anomalies, and honeypots by analyzing career trajectories, company pedigree, notice periods, and real-time behavioral signals to deliver a high-signal, trusted shortlist of candidates.
 
+## Screenshots
+
+### 1. Landing Page
+![Redrob Landing Page](docs/images/landing_page.png)
+
+### 2. Recruiter Console Dashboard
+![Redrob Dashboard Console](docs/images/dashboard_console.png)
+
 ---
+
 
 ## Key Refinement Pillars
 
@@ -70,7 +79,9 @@ The backend service is powered by FastAPI, exposing a highly structured set of e
 | `/api/candidate/{id}` | `GET` | Fetches a single candidate's detailed profile, signals, and timeline. |
 | `/api/upload-candidates`| `POST` | Uploads a `.jsonl` or `.csv` dataset file to act as the custom talent pool. |
 | `/api/rank` | `POST` | Re-runs the Python ranking engine locally to regenerate rankings. |
+| `/api/download-csv` | `GET` | Exports and downloads the active role workspace's ranked shortlist as an Excel-compatible `.csv` file. |
 | `/api/reset` | `POST` | Resets the workspace, restoring the default dataset and JD. |
+
 
 ---
 
