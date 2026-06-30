@@ -5,10 +5,10 @@ An AI-powered candidate ranking, filtering, and intelligence system designed for
 ## Screenshots
 
 ### 1. Landing Page
-![Redrob Landing Page](docs/images/landing_page.png)
+![Redrob Landing Page](docs/landing_page.png)
 
 ### 2. Recruiter Console Dashboard
-![Redrob Dashboard Console](docs/images/dashboard_console.png)
+![Redrob Dashboard Console](docs/dashboard_console.png)
 
 ---
 

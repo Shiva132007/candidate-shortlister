@@ -1,3 +1,0 @@
-Please place the following screenshots in this directory:
-1. landing_page.png - Screenshot of the Redrob Landing page.
-2. dashboard_console.png - Screenshot of the Recruiter Console with the 'Export to Excel' button.
