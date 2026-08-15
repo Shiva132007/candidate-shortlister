@@ -517,7 +517,7 @@
         "score": 61
       }
     ],
-    "confidence_score": 69.8,
+    "confidence_score": 69.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1065,7 +1065,7 @@
         "score": 50
       }
     ],
-    "confidence_score": 68.7,
+    "confidence_score": 68.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1150,6 +1150,59 @@
     },
     "honeypot_reason": null
   },
+  "CAND_0000036": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 77
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 52
+      }
+    ],
+    "confidence_score": 68.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)"
+      ],
+      "cons": [
+        "Matches the target requirements with no major risk factors"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
   "CAND_0000001": {
     "requirements_breakdown": [
       {
@@ -1204,7 +1257,7 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000036": {
+  "CAND_0000029": {
     "requirements_breakdown": [
       {
         "label": "Technical Depth",
@@ -1216,7 +1269,7 @@
       },
       {
         "label": "Experience Fit",
-        "score": 77
+        "score": 100
       },
       {
         "label": "Pedigree Alignment",
@@ -1224,16 +1277,71 @@
       },
       {
         "label": "Availability & Signals",
-        "score": 52
+        "score": 51
       }
     ],
     "confidence_score": 68.3,
     "why_cards": {
       "pros": [
-        "Product company pedigree (high-growth focus)"
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.2 years)"
       ],
       "cons": [
-        "Matches the target requirements with no major risk factors"
+        "Low platform response rate (12%)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0000055": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 60
+      }
+    ],
+    "confidence_score": 68.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.3 years)"
+      ],
+      "cons": [
+        "Extended notice period (150 days)"
       ]
     },
     "skill_gap": {
@@ -1312,7 +1420,7 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000055": {
+  "CAND_0000051": {
     "requirements_breakdown": [
       {
         "label": "Technical Depth",
@@ -1335,14 +1443,15 @@
         "score": 60
       }
     ],
-    "confidence_score": 68.3,
+    "confidence_score": 68.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
-        "Ideal experience range (7.3 years)"
+        "Ideal experience range (6.2 years)",
+        "Excellent platform response rate (73%)"
       ],
       "cons": [
-        "Extended notice period (150 days)"
+        "Extended notice period (90 days)"
       ]
     },
     "skill_gap": {
@@ -1389,7 +1498,7 @@
         "score": 82
       }
     ],
-    "confidence_score": 68.3,
+    "confidence_score": 68.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1420,7 +1529,7 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000029": {
+  "CAND_0000048": {
     "requirements_breakdown": [
       {
         "label": "Technical Depth",
@@ -1432,7 +1541,7 @@
       },
       {
         "label": "Experience Fit",
-        "score": 100
+        "score": 93
       },
       {
         "label": "Pedigree Alignment",
@@ -1440,72 +1549,16 @@
       },
       {
         "label": "Availability & Signals",
-        "score": 51
+        "score": 58
       }
     ],
-    "confidence_score": 68.3,
+    "confidence_score": 68.1,
     "why_cards": {
       "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (7.2 years)"
+        "Product company pedigree (high-growth focus)"
       ],
       "cons": [
-        "Low platform response rate (12%)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0000051": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 60
-      }
-    ],
-    "confidence_score": 68.2,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (6.2 years)",
-        "Excellent platform response rate (73%)"
-      ],
-      "cons": [
-        "Extended notice period (90 days)"
+        "Extended notice period (120 days)"
       ]
     },
     "skill_gap": {
@@ -1583,59 +1636,6 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000048": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 93
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 58
-      }
-    ],
-    "confidence_score": 68.1,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)"
-      ],
-      "cons": [
-        "Extended notice period (120 days)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
   "CAND_0000091": {
     "requirements_breakdown": [
       {
@@ -1659,7 +1659,7 @@
         "score": 62
       }
     ],
-    "confidence_score": 68.1,
+    "confidence_score": 68.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1800,6 +1800,61 @@
     },
     "honeypot_reason": null
   },
+  "CAND_0000046": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 71
+      }
+    ],
+    "confidence_score": 67.9,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.8 years)",
+        "Short notice period (30 days)"
+      ],
+      "cons": [
+        "Matches the target requirements with no major risk factors"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
   "CAND_0000078": {
     "requirements_breakdown": [
       {
@@ -1908,61 +1963,6 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000046": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 71
-      }
-    ],
-    "confidence_score": 67.9,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (7.8 years)",
-        "Short notice period (30 days)"
-      ],
-      "cons": [
-        "Matches the target requirements with no major risk factors"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
   "CAND_0000060": {
     "requirements_breakdown": [
       {
@@ -1986,7 +1986,7 @@
         "score": 48
       }
     ],
-    "confidence_score": 67.8,
+    "confidence_score": 67.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2064,60 +2064,6 @@
         "weaviate",
         "qdrant",
         "milvus",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0000058": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 89
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 60
-      }
-    ],
-    "confidence_score": 67.7,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Excellent platform response rate (70%)"
-      ],
-      "cons": [
-        "Extended notice period (90 days)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
         "hybrid search",
         "retrieval",
         "ndcg",
@@ -2236,6 +2182,60 @@
     },
     "honeypot_reason": null
   },
+  "CAND_0000058": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 89
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 60
+      }
+    ],
+    "confidence_score": 67.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Excellent platform response rate (70%)"
+      ],
+      "cons": [
+        "Extended notice period (90 days)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
   "CAND_0000053": {
     "requirements_breakdown": [
       {
@@ -2259,7 +2259,7 @@
         "score": 50
       }
     ],
-    "confidence_score": 67.6,
+    "confidence_score": 67.5,
     "why_cards": {
       "pros": [
         "Demonstrates solid general software development experience"
@@ -2312,7 +2312,7 @@
         "score": 61
       }
     ],
-    "confidence_score": 67.6,
+    "confidence_score": 67.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
@@ -2529,7 +2529,7 @@
         "score": 51
       }
     ],
-    "confidence_score": 67.4,
+    "confidence_score": 67.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
@@ -2667,61 +2667,6 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000041": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 53
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 44
-      }
-    ],
-    "confidence_score": 67.3,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)"
-      ],
-      "cons": [
-        "Highly senior/overqualified for this band (13.7 years)",
-        "Extended notice period (90 days)",
-        "Low platform response rate (7%)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
   "CAND_0000002": {
     "requirements_breakdown": [
       {
@@ -2776,7 +2721,7 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000009": {
+  "CAND_0000041": {
     "requirements_breakdown": [
       {
         "label": "Technical Depth",
@@ -2788,7 +2733,7 @@
       },
       {
         "label": "Experience Fit",
-        "score": 80
+        "score": 53
       },
       {
         "label": "Pedigree Alignment",
@@ -2796,16 +2741,18 @@
       },
       {
         "label": "Availability & Signals",
-        "score": 48
+        "score": 44
       }
     ],
-    "confidence_score": 67.2,
+    "confidence_score": 67.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
       ],
       "cons": [
-        "Extended notice period (150 days)"
+        "Highly senior/overqualified for this band (13.7 years)",
+        "Extended notice period (90 days)",
+        "Low platform response rate (7%)"
       ]
     },
     "skill_gap": {
@@ -2884,7 +2831,7 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000052": {
+  "CAND_0000009": {
     "requirements_breakdown": [
       {
         "label": "Technical Depth",
@@ -2896,25 +2843,24 @@
       },
       {
         "label": "Experience Fit",
-        "score": 28
+        "score": 80
       },
       {
         "label": "Pedigree Alignment",
-        "score": 75
+        "score": 100
       },
       {
         "label": "Availability & Signals",
-        "score": 54
+        "score": 48
       }
     ],
     "confidence_score": 67.1,
     "why_cards": {
       "pros": [
-        "Demonstrates solid general software development experience"
+        "Product company pedigree (high-growth focus)"
       ],
       "cons": [
-        "More junior level of experience (1.4 years)",
-        "Extended notice period (90 days)"
+        "Extended notice period (150 days)"
       ]
     },
     "skill_gap": {
@@ -2969,6 +2915,115 @@
       "cons": [
         "Extended notice period (90 days)",
         "Low platform response rate (5%)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0000052": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 28
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 75
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 54
+      }
+    ],
+    "confidence_score": 67.1,
+    "why_cards": {
+      "pros": [
+        "Demonstrates solid general software development experience"
+      ],
+      "cons": [
+        "More junior level of experience (1.4 years)",
+        "Extended notice period (90 days)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0000037": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 46
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 67
+      }
+    ],
+    "confidence_score": 67.1,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Short notice period (30 days)",
+        "Excellent platform response rate (78%)"
+      ],
+      "cons": [
+        "Highly senior/overqualified for this band (14.3 years)"
       ]
     },
     "skill_gap": {
@@ -3078,61 +3133,6 @@
         "Highly senior/overqualified for this band (14.5 years)",
         "Extended notice period (90 days)",
         "Low platform response rate (15%)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0000037": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 46
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 67
-      }
-    ],
-    "confidence_score": 67.0,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Short notice period (30 days)",
-        "Excellent platform response rate (78%)"
-      ],
-      "cons": [
-        "Highly senior/overqualified for this band (14.3 years)"
       ]
     },
     "skill_gap": {
@@ -3374,60 +3374,6 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000011": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 40
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 62
-      }
-    ],
-    "confidence_score": 66.9,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)"
-      ],
-      "cons": [
-        "More junior level of experience (2.0 years)",
-        "Extended notice period (90 days)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
   "CAND_0000090": {
     "requirements_breakdown": [
       {
@@ -3482,7 +3428,7 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000012": {
+  "CAND_0000011": {
     "requirements_breakdown": [
       {
         "label": "Technical Depth",
@@ -3494,7 +3440,7 @@
       },
       {
         "label": "Experience Fit",
-        "score": 22
+        "score": 40
       },
       {
         "label": "Pedigree Alignment",
@@ -3502,17 +3448,17 @@
       },
       {
         "label": "Availability & Signals",
-        "score": 46
+        "score": 62
       }
     ],
-    "confidence_score": 66.8,
+    "confidence_score": 66.9,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
       ],
       "cons": [
-        "More junior level of experience (1.1 years)",
-        "Low platform response rate (16%)"
+        "More junior level of experience (2.0 years)",
+        "Extended notice period (90 days)"
       ]
     },
     "skill_gap": {
@@ -3559,7 +3505,7 @@
         "score": 68
       }
     ],
-    "confidence_score": 66.7,
+    "confidence_score": 66.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3568,6 +3514,115 @@
       "cons": [
         "More junior level of experience (1.1 years)",
         "Low platform response rate (28%)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0000012": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 22
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 46
+      }
+    ],
+    "confidence_score": 66.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)"
+      ],
+      "cons": [
+        "More junior level of experience (1.1 years)",
+        "Low platform response rate (16%)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0000022": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 22
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 49
+      }
+    ],
+    "confidence_score": 66.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)"
+      ],
+      "cons": [
+        "More junior level of experience (1.1 years)",
+        "Extended notice period (150 days)",
+        "Low platform response rate (27%)"
       ]
     },
     "skill_gap": {
@@ -3644,6 +3699,60 @@
     },
     "honeypot_reason": null
   },
+  "CAND_0000089": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 22
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 44
+      }
+    ],
+    "confidence_score": 66.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)"
+      ],
+      "cons": [
+        "More junior level of experience (1.1 years)",
+        "Extended notice period (150 days)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
   "CAND_0000071": {
     "requirements_breakdown": [
       {
@@ -3689,115 +3798,6 @@
         "vector database",
         "pinecone",
         "weaviate",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0000022": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 22
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 49
-      }
-    ],
-    "confidence_score": 66.7,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)"
-      ],
-      "cons": [
-        "More junior level of experience (1.1 years)",
-        "Extended notice period (150 days)",
-        "Low platform response rate (27%)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0000089": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 22
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 44
-      }
-    ],
-    "confidence_score": 66.7,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)"
-      ],
-      "cons": [
-        "More junior level of experience (1.1 years)",
-        "Extended notice period (150 days)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
         "milvus",
         "faiss",
         "hybrid search",
@@ -3888,7 +3888,7 @@
         "score": 65
       }
     ],
-    "confidence_score": 62.1,
+    "confidence_score": 62.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
@@ -3941,7 +3941,7 @@
         "score": 56
       }
     ],
-    "confidence_score": 61.6,
+    "confidence_score": 61.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3995,7 +3995,7 @@
         "score": 46
       }
     ],
-    "confidence_score": 56.3,
+    "confidence_score": 56.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4105,7 +4105,7 @@
         "score": 53
       }
     ],
-    "confidence_score": 46.4,
+    "confidence_score": 46.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
@@ -4158,7 +4158,7 @@
         "score": 61
       }
     ],
-    "confidence_score": 43.6,
+    "confidence_score": 43.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4213,7 +4213,7 @@
         "score": 75
       }
     ],
-    "confidence_score": 41.7,
+    "confidence_score": 41.9,
     "why_cards": {
       "pros": [
         "Ideal experience range (7.5 years)",
@@ -4267,7 +4267,7 @@
         "score": 53
       }
     ],
-    "confidence_score": 39.2,
+    "confidence_score": 39.4,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
@@ -4321,7 +4321,7 @@
         "score": 54
       }
     ],
-    "confidence_score": 37.4,
+    "confidence_score": 37.9,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
@@ -4375,13 +4375,67 @@
         "score": 49
       }
     ],
-    "confidence_score": 37.0,
+    "confidence_score": 37.1,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)"
       ],
       "cons": [
         "Low platform response rate (26%)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0000086": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 98
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 20
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 59
+      }
+    ],
+    "confidence_score": 36.5,
+    "why_cards": {
+      "pros": [
+        "Demonstrates solid general software development experience"
+      ],
+      "cons": [
+        "Consulting-only history (may lack product experience)",
+        "Extended notice period (90 days)"
       ]
     },
     "skill_gap": {
@@ -4428,7 +4482,7 @@
         "score": 70
       }
     ],
-    "confidence_score": 36.4,
+    "confidence_score": 36.3,
     "why_cards": {
       "pros": [
         "Demonstrates solid general software development experience"
@@ -4452,60 +4506,6 @@
         "milvus",
         "faiss",
         "hybrid search",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0000086": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 98
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 20
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 59
-      }
-    ],
-    "confidence_score": 36.2,
-    "why_cards": {
-      "pros": [
-        "Demonstrates solid general software development experience"
-      ],
-      "cons": [
-        "Consulting-only history (may lack product experience)",
-        "Extended notice period (90 days)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
         "ndcg",
         "mrr",
         "map",
@@ -4623,6 +4623,60 @@
     },
     "honeypot_reason": null
   },
+  "CAND_0000008": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 72
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 20
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 45
+      }
+    ],
+    "confidence_score": 35.4,
+    "why_cards": {
+      "pros": [
+        "Demonstrates solid general software development experience"
+      ],
+      "cons": [
+        "Consulting-only history (may lack product experience)",
+        "Extended notice period (90 days)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
   "CAND_0000098": {
     "requirements_breakdown": [
       {
@@ -4677,60 +4731,6 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000008": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 72
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 20
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 45
-      }
-    ],
-    "confidence_score": 35.3,
-    "why_cards": {
-      "pros": [
-        "Demonstrates solid general software development experience"
-      ],
-      "cons": [
-        "Consulting-only history (may lack product experience)",
-        "Extended notice period (90 days)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
   "CAND_0000062": {
     "requirements_breakdown": [
       {
@@ -4754,68 +4754,13 @@
         "score": 73
       }
     ],
-    "confidence_score": 35.1,
+    "confidence_score": 34.7,
     "why_cards": {
       "pros": [
         "Demonstrates solid general software development experience"
       ],
       "cons": [
         "Consulting-only history (may lack product experience)",
-        "Extended notice period (90 days)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0000047": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 48
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 20
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 52
-      }
-    ],
-    "confidence_score": 34.3,
-    "why_cards": {
-      "pros": [
-        "Demonstrates solid general software development experience"
-      ],
-      "cons": [
-        "Consulting-only history (may lack product experience)",
-        "More junior level of experience (2.4 years)",
         "Extended notice period (90 days)"
       ]
     },
@@ -4895,7 +4840,7 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000028": {
+  "CAND_0000047": {
     "requirements_breakdown": [
       {
         "label": "Technical Depth",
@@ -4907,7 +4852,7 @@
       },
       {
         "label": "Experience Fit",
-        "score": 22
+        "score": 48
       },
       {
         "label": "Pedigree Alignment",
@@ -4915,7 +4860,7 @@
       },
       {
         "label": "Availability & Signals",
-        "score": 61
+        "score": 52
       }
     ],
     "confidence_score": 34.1,
@@ -4925,8 +4870,118 @@
       ],
       "cons": [
         "Consulting-only history (may lack product experience)",
-        "More junior level of experience (1.1 years)",
-        "Low platform response rate (14%)"
+        "More junior level of experience (2.4 years)",
+        "Extended notice period (90 days)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [],
+      "missing": [
+        "python",
+        "embeddings",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0000056": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 35
+      },
+      {
+        "label": "Experience Fit",
+        "score": 26
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 20
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 57
+      }
+    ],
+    "confidence_score": 34.0,
+    "why_cards": {
+      "pros": [
+        "Demonstrates solid general software development experience"
+      ],
+      "cons": [
+        "Consulting-only history (may lack product experience)",
+        "More junior level of experience (1.3 years)"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "embeddings"
+      ],
+      "missing": [
+        "python",
+        "vector database",
+        "pinecone",
+        "weaviate",
+        "qdrant",
+        "milvus",
+        "faiss",
+        "hybrid search",
+        "retrieval",
+        "ndcg",
+        "mrr",
+        "map",
+        "learning-to-rank"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0000087": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 30
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 50
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 20
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 66
+      }
+    ],
+    "confidence_score": 33.9,
+    "why_cards": {
+      "pros": [
+        "Excellent platform response rate (70%)"
+      ],
+      "cons": [
+        "Consulting-only history (may lack product experience)",
+        "More junior level of experience (2.5 years)",
+        "Extended notice period (120 days)"
       ]
     },
     "skill_gap": {
@@ -4973,7 +5028,7 @@
         "score": 54
       }
     ],
-    "confidence_score": 34.1,
+    "confidence_score": 33.7,
     "why_cards": {
       "pros": [
         "Demonstrates solid general software development experience"
@@ -4983,61 +5038,6 @@
         "More junior level of experience (1.5 years)",
         "Extended notice period (90 days)",
         "Low platform response rate (16%)"
-      ]
-    },
-    "skill_gap": {
-      "matching": [],
-      "missing": [
-        "python",
-        "embeddings",
-        "vector database",
-        "pinecone",
-        "weaviate",
-        "qdrant",
-        "milvus",
-        "faiss",
-        "hybrid search",
-        "retrieval",
-        "ndcg",
-        "mrr",
-        "map",
-        "learning-to-rank"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0000087": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 30
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 50
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 20
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 66
-      }
-    ],
-    "confidence_score": 33.8,
-    "why_cards": {
-      "pros": [
-        "Excellent platform response rate (70%)"
-      ],
-      "cons": [
-        "Consulting-only history (may lack product experience)",
-        "More junior level of experience (2.5 years)",
-        "Extended notice period (120 days)"
       ]
     },
     "skill_gap": {
@@ -5116,7 +5116,7 @@
     },
     "honeypot_reason": null
   },
-  "CAND_0000056": {
+  "CAND_0000028": {
     "requirements_breakdown": [
       {
         "label": "Technical Depth",
@@ -5124,11 +5124,11 @@
       },
       {
         "label": "Retrieval & AI Search",
-        "score": 35
+        "score": 30
       },
       {
         "label": "Experience Fit",
-        "score": 26
+        "score": 22
       },
       {
         "label": "Pedigree Alignment",
@@ -5136,7 +5136,7 @@
       },
       {
         "label": "Availability & Signals",
-        "score": 57
+        "score": 61
       }
     ],
     "confidence_score": 33.7,
@@ -5146,15 +5146,15 @@
       ],
       "cons": [
         "Consulting-only history (may lack product experience)",
-        "More junior level of experience (1.3 years)"
+        "More junior level of experience (1.1 years)",
+        "Low platform response rate (14%)"
       ]
     },
     "skill_gap": {
-      "matching": [
-        "embeddings"
-      ],
+      "matching": [],
       "missing": [
         "python",
+        "embeddings",
         "vector database",
         "pinecone",
         "weaviate",
@@ -5300,7 +5300,7 @@
         "score": 68
       }
     ],
-    "confidence_score": 10.1,
+    "confidence_score": 10.0,
     "why_cards": {
       "pros": [
         "Ideal experience range (6.7 years)"
@@ -5354,7 +5354,7 @@
         "score": 54
       }
     ],
-    "confidence_score": 8.6,
+    "confidence_score": 8.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",

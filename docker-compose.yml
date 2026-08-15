@@ -1,0 +1,15 @@
+services:
+  ai-screening-engine:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-screening-engine
+    ports:
+      - "8000:8000"
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    volumes:
+      - ./roles:/app/roles
+    restart: unless-stopped
