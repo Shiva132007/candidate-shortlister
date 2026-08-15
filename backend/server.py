@@ -20,6 +20,22 @@ else:
     WORKSPACE_DIR = SCRIPT_DIR
 
 import auth_db
+from supabase_db import SupabaseUserStore
+
+# Initialize Supabase (primary) with SQLite fallback
+_supabase_store = SupabaseUserStore()
+
+def _verify_session_any(token: str):
+    """Try Supabase first, fall back to SQLite."""
+    if _supabase_store.is_available():
+        return _supabase_store.verify_session(token)
+    return auth_db.verify_session(token)
+
+def _destroy_session_any(token: str):
+    if _supabase_store.is_available():
+        _supabase_store.destroy_session(token)
+    else:
+        auth_db.destroy_session(token)
 
 app = FastAPI(title="AI-Screening Enginee Talent Intelligence API")
 
@@ -37,14 +53,18 @@ DATASET_DIR = os.path.join(WORKSPACE_DIR, "[PUB] India_runs_data_and_ai_challeng
 # Initialize database at startup
 @app.on_event("startup")
 def startup_event():
-    auth_db.init_db()
+    auth_db.init_db()  # Always init SQLite as fallback
+    if _supabase_store.is_available():
+        print("Auth: Using Supabase PostgreSQL (primary)")
+    else:
+        print("Auth: Using SQLite (fallback — set SUPABASE_URL + SUPABASE_KEY for cloud)")
 
 # Helper dependency to authenticate users
 async def get_current_user(authorization: Optional[str] = Header(None)):
     if not authorization or not authorization.startswith("Bearer "):
         raise HTTPException(status_code=401, detail="Unauthorized: No active session")
     token = authorization.split(" ")[1]
-    username = auth_db.verify_session(token)
+    username = _verify_session_any(token)
     if not username:
         raise HTTPException(status_code=401, detail="Unauthorized: Session expired or invalid")
     return username
@@ -102,6 +122,12 @@ class ChatMessage(BaseModel):
 # Auth endpoints
 @app.post("/api/auth/register")
 def register(credentials: AuthRequest):
+    if _supabase_store.is_available():
+        result = _supabase_store.register_user(credentials.username, credentials.password)
+        if not result["success"]:
+            raise HTTPException(status_code=400, detail=result.get("detail", "Registration failed"))
+        return {"status": "success", "token": result["token"], "username": result["username"]}
+    # SQLite fallback
     success = auth_db.register_user(credentials.username, credentials.password)
     if not success:
         raise HTTPException(status_code=400, detail="Username already exists or invalid password")
@@ -110,6 +136,12 @@ def register(credentials: AuthRequest):
 
 @app.post("/api/auth/login")
 def login(credentials: AuthRequest):
+    if _supabase_store.is_available():
+        result = _supabase_store.login_user(credentials.username, credentials.password)
+        if not result["success"]:
+            raise HTTPException(status_code=401, detail=result.get("detail", "Invalid credentials"))
+        return {"status": "success", "token": result["token"], "username": result["username"]}
+    # SQLite fallback
     authenticated = auth_db.authenticate_user(credentials.username, credentials.password)
     if not authenticated:
         raise HTTPException(status_code=401, detail="Invalid username or password")
@@ -120,7 +152,7 @@ def login(credentials: AuthRequest):
 def logout(authorization: Optional[str] = Header(None)):
     if authorization and authorization.startswith("Bearer "):
         token = authorization.split(" ")[1]
-        auth_db.delete_session(token)
+        _destroy_session_any(token)
     return {"status": "success"}
 
 @app.get("/api/auth/me")

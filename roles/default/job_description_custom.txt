@@ -1,0 +1,89 @@
+Job Description: Senior Backend Engineer (Python, AWS, Databases)
+Job Title
+
+Senior Backend Engineer
+
+Company
+
+TechNova Solutions Pvt. Ltd.
+
+Location
+
+Hyderabad, Telangana (Hybrid)
+
+Experience
+
+3–6 Years
+
+Employment Type
+
+Full-Time
+
+Salary
+
+₹15–25 LPA
+
+About the Role
+
+TechNova Solutions is looking for a passionate Senior Backend Engineer to design, develop, and maintain scalable backend systems powering our SaaS products. You will work closely with frontend developers, DevOps engineers, and product managers to build reliable APIs and cloud-native services.
+
+Responsibilities
+Design and develop scalable RESTful APIs using Python.
+Build microservices using FastAPI or Django.
+Design and optimize relational databases.
+Integrate cloud services such as AWS S3, Lambda, EC2, and RDS.
+Implement authentication and authorization (JWT, OAuth2).
+Write clean, maintainable, and well-tested code.
+Optimize application performance and database queries.
+Participate in code reviews and technical discussions.
+Collaborate with frontend developers and DevOps teams.
+Monitor production systems and resolve issues.
+Required Skills
+Strong proficiency in Python
+Experience with FastAPI or Django
+Good knowledge of REST APIs
+Experience with PostgreSQL or MySQL
+Familiarity with AWS services
+Strong understanding of SQL optimization
+Experience with Docker
+Version control using Git
+Knowledge of authentication and authorization mechanisms
+Strong problem-solving skills
+Preferred Skills
+Kubernetes
+Redis
+Celery
+GraphQL
+CI/CD pipelines (GitHub Actions, Jenkins)
+Terraform
+Elasticsearch
+RabbitMQ or Kafka
+Unit testing using PyTest
+Qualifications
+Bachelor's degree in Computer Science or related field.
+3+ years of backend development experience.
+Excellent communication and teamwork skills.
+Nice to Have
+Experience building AI-powered applications
+Knowledge of Vector Databases
+Experience with LangChain or LLM integrations
+AWS Solutions Architect certification
+Benefits
+Flexible work hours
+Hybrid work model
+Health insurance
+Annual performance bonus
+Learning and certification budget
+Paid vacation
+Employee stock options
+Free snacks and wellness programs
+Tech Stack
+Backend: Python, FastAPI, Django
+Frontend: React.js
+Database: PostgreSQL, MySQL
+Cloud: AWS
+Containerization: Docker, Kubernetes
+CI/CD: GitHub Actions
+Monitoring: Prometheus, Grafana
+Messaging: RabbitMQ
+Caching: Redis

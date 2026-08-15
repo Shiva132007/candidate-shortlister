@@ -153,3 +153,7 @@ typing-inspection==0.4.2
     #   pydantic
 uvicorn==0.49.0
     # via candidate-shortlister (pyproject.toml)
+qdrant-client>=1.19.0
+    # via candidate-shortlister (pyproject.toml) - vector store for candidate embeddings
+supabase>=2.31.0
+    # via candidate-shortlister (pyproject.toml) - cloud PostgreSQL for user auth & tracking

@@ -10,6 +10,16 @@ services:
       - HOST=0.0.0.0
       - PORT=8000
       - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+      # Qdrant Cloud Free Tier (https://cloud.qdrant.io) — set these in .env
+      - QDRANT_URL=${QDRANT_URL:-}
+      - QDRANT_API_KEY=${QDRANT_API_KEY:-}
+      # If QDRANT_URL is blank, Qdrant will use local disk storage inside /app/qdrant_storage
+      - QDRANT_STORAGE_DIR=/app/qdrant_storage
+      - SQLITE_DB_PATH=/app/roles/auth.db
     volumes:
       - ./roles:/app/roles
+      - qdrant_storage:/app/qdrant_storage
     restart: unless-stopped
+
+volumes:
+  qdrant_storage:

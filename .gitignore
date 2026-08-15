@@ -1,31 +1,39 @@
-# Python virtual environment
-.venv/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
 
-# HuggingFace cache
-.hf_cache/
+# Virtual environments
+.venv/
+venv/
+env/
 
-# Node modules
-node_modules/
-frontend/node_modules/
-
-# Dataset files (large files with brackets escaped)
-\[PUB\]\ India_runs_data_and_ai_challenge/
-candidates.jsonl
-embeddings.npy
-candidate_id_map.json
-
-# Local custom input/output files
-candidates_custom.jsonl
-job_description_custom.txt
-team_submission.csv
-test_submission.csv
-
-# Local model folder (downloaded weights)
-model/
-
-# Logs and environment variables
+# Secrets / credentials
 .env
-*.log
-debug.txt
+*.env.local
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Docker
+.dockerignore
+
+# Database & data files
+*.db
+roles/*/auth.db
+
+# Qdrant local storage
+qdrant_storage/
+
+# Editor
+.idea/
+.vscode/
+*.swp
