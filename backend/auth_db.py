@@ -134,3 +134,5 @@ def destroy_session(token: str):
     cursor.execute("DELETE FROM sessions WHERE token = ?", (token,))
     conn.commit()
     conn.close()
+
+delete_session = destroy_session

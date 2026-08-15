@@ -131,7 +131,9 @@ export default function App() {
   const [authSuccess, setAuthSuccess] = useState('');
 
   // Workspace View
-  const [view, setView] = useState('landing'); // 'landing' | 'auth' | 'workspace'
+  const [view, setView] = useState(() => {
+    return localStorage.getItem('token') ? 'workspace' : 'landing';
+  }); // 'landing' | 'auth' | 'workspace'
   const [activeTab, setActiveTab] = useState('shortlist'); // 'shortlist' | 'compare' | 'analytics'
   const [rightPanelTab, setRightPanelTab] = useState('details'); // 'details' | 'ai_assistant'
   
@@ -226,21 +228,16 @@ export default function App() {
         return;
       }
 
-      if (authView === 'register') {
-        setAuthSuccess('Registration successful! Please login.');
-        setAuthView('login');
-        setAuthPassword('');
-      } else {
-        localStorage.setItem('token', data.token);
-        localStorage.setItem('username', data.username);
-        setToken(data.token);
-        setUsername(data.username);
-        setAuthUsername('');
-        setAuthPassword('');
-        setView('workspace');
-        if (!localStorage.getItem('seenOnboardingTour')) {
-          setTourStep(1);
-        }
+      // Automatically store token & username for both register and login
+      localStorage.setItem('token', data.token);
+      localStorage.setItem('username', data.username);
+      setToken(data.token);
+      setUsername(data.username);
+      setAuthUsername('');
+      setAuthPassword('');
+      setView('workspace');
+      if (!localStorage.getItem('seenOnboardingTour')) {
+        setTourStep(1);
       }
     } catch (e) {
       setAuthError('Connection error.');
