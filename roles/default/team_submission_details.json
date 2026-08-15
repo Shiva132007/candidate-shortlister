@@ -22,7 +22,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 100.0,
+    "confidence_score": 99.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -73,7 +73,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 99.8,
+    "confidence_score": 99.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -124,7 +124,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 99.7,
+    "confidence_score": 99.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -175,7 +175,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 99.7,
+    "confidence_score": 99.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -226,7 +226,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 99.4,
+    "confidence_score": 98.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -234,57 +234,6 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (97%)",
         "Active contributor on GitHub (Score: 87.0)"
-      ],
-      "cons": [
-        "Missing core technical stack: fastapi, django"
-      ]
-    },
-    "skill_gap": {
-      "matching": [
-        "python"
-      ],
-      "missing": [
-        "fastapi",
-        "django",
-        "docker",
-        "kubernetes",
-        "aws",
-        "vector database"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0282": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 41
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 99
-      }
-    ],
-    "confidence_score": 99.2,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (7.1 years)",
-        "Short notice period (21 days)",
-        "Excellent platform response rate (96%)",
-        "Active contributor on GitHub (Score: 92.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -328,7 +277,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 99.2,
+    "confidence_score": 98.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -336,6 +285,57 @@
         "Short notice period (15 days)",
         "Excellent platform response rate (96%)",
         "Active contributor on GitHub (Score: 88.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0282": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 98.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.1 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 92.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -379,7 +379,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 99.1,
+    "confidence_score": 98.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -430,7 +430,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 98.9,
+    "confidence_score": 98.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -481,7 +481,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 98.8,
+    "confidence_score": 98.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -532,7 +532,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 98.6,
+    "confidence_score": 98.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -583,7 +583,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 98.3,
+    "confidence_score": 97.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -634,7 +634,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 98.3,
+    "confidence_score": 97.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -685,7 +685,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 98.2,
+    "confidence_score": 97.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -736,7 +736,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 98.1,
+    "confidence_score": 97.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -787,7 +787,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 98.0,
+    "confidence_score": 97.4,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -838,7 +838,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 98.0,
+    "confidence_score": 97.4,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -889,7 +889,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.9,
+    "confidence_score": 97.4,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -897,57 +897,6 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (95%)",
         "Active contributor on GitHub (Score: 89.0)"
-      ],
-      "cons": [
-        "Missing core technical stack: fastapi, django"
-      ]
-    },
-    "skill_gap": {
-      "matching": [
-        "python"
-      ],
-      "missing": [
-        "fastapi",
-        "django",
-        "docker",
-        "kubernetes",
-        "aws",
-        "vector database"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0222": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 41
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 99
-      }
-    ],
-    "confidence_score": 97.9,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (6.1 years)",
-        "Short notice period (15 days)",
-        "Excellent platform response rate (96%)",
-        "Active contributor on GitHub (Score: 100.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -991,7 +940,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.9,
+    "confidence_score": 97.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -999,6 +948,57 @@
         "Short notice period (15 days)",
         "Excellent platform response rate (95%)",
         "Active contributor on GitHub (Score: 94.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0222": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 97.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.1 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (96%)",
+        "Active contributor on GitHub (Score: 100.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -1042,7 +1042,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.7,
+    "confidence_score": 97.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1093,7 +1093,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 97.7,
+    "confidence_score": 97.1,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1101,57 +1101,6 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (91%)",
         "Active contributor on GitHub (Score: 91.0)"
-      ],
-      "cons": [
-        "Missing core technical stack: fastapi, django"
-      ]
-    },
-    "skill_gap": {
-      "matching": [
-        "python"
-      ],
-      "missing": [
-        "fastapi",
-        "django",
-        "docker",
-        "kubernetes",
-        "aws",
-        "vector database"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0542": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 41
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 98
-      }
-    ],
-    "confidence_score": 97.6,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (6.8 years)",
-        "Short notice period (15 days)",
-        "Excellent platform response rate (94%)",
-        "Active contributor on GitHub (Score: 78.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -1195,7 +1144,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.6,
+    "confidence_score": 97.1,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1203,6 +1152,57 @@
         "Short notice period (15 days)",
         "Excellent platform response rate (94%)",
         "Active contributor on GitHub (Score: 98.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0542": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 97.0,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.8 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 78.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -1246,7 +1246,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.6,
+    "confidence_score": 97.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1297,7 +1297,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.4,
+    "confidence_score": 96.9,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1305,57 +1305,6 @@
         "Short notice period (15 days)",
         "Excellent platform response rate (94%)",
         "Active contributor on GitHub (Score: 80.0)"
-      ],
-      "cons": [
-        "Missing core technical stack: fastapi, django"
-      ]
-    },
-    "skill_gap": {
-      "matching": [
-        "python"
-      ],
-      "missing": [
-        "fastapi",
-        "django",
-        "docker",
-        "kubernetes",
-        "aws",
-        "vector database"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0052": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 41
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 98
-      }
-    ],
-    "confidence_score": 97.4,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (6.9 years)",
-        "Short notice period (21 days)",
-        "Excellent platform response rate (94%)",
-        "Active contributor on GitHub (Score: 89.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -1399,7 +1348,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.4,
+    "confidence_score": 96.9,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1407,6 +1356,57 @@
         "Short notice period (15 days)",
         "Excellent platform response rate (94%)",
         "Active contributor on GitHub (Score: 91.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0052": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 98
+      }
+    ],
+    "confidence_score": 96.8,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.9 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (94%)",
+        "Active contributor on GitHub (Score: 89.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -1450,7 +1450,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.4,
+    "confidence_score": 96.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1501,7 +1501,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 97.3,
+    "confidence_score": 96.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1552,7 +1552,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 97.3,
+    "confidence_score": 96.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1603,7 +1603,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.1,
+    "confidence_score": 96.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1654,7 +1654,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 97.1,
+    "confidence_score": 96.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1705,7 +1705,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 97.1,
+    "confidence_score": 96.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1756,7 +1756,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 97.0,
+    "confidence_score": 96.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1807,7 +1807,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 96.9,
+    "confidence_score": 96.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1858,7 +1858,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 96.8,
+    "confidence_score": 96.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1909,7 +1909,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 96.6,
+    "confidence_score": 96.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -1960,7 +1960,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 96.5,
+    "confidence_score": 96.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2011,7 +2011,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 96.5,
+    "confidence_score": 96.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2062,7 +2062,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 96.5,
+    "confidence_score": 95.9,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2113,7 +2113,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 96.4,
+    "confidence_score": 95.9,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2164,7 +2164,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 96.1,
+    "confidence_score": 95.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2215,7 +2215,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 96.1,
+    "confidence_score": 95.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2266,7 +2266,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 95.2,
+    "confidence_score": 94.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2317,7 +2317,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 95.2,
+    "confidence_score": 94.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2368,7 +2368,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 95.2,
+    "confidence_score": 94.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2419,7 +2419,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 95.1,
+    "confidence_score": 94.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2427,57 +2427,6 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (98%)",
         "Active contributor on GitHub (Score: 78.0)"
-      ],
-      "cons": [
-        "Missing core technical stack: fastapi, django"
-      ]
-    },
-    "skill_gap": {
-      "matching": [
-        "python"
-      ],
-      "missing": [
-        "fastapi",
-        "django",
-        "docker",
-        "kubernetes",
-        "aws",
-        "vector database"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0511": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 41
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 99
-      }
-    ],
-    "confidence_score": 95.1,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (6.3 years)",
-        "Short notice period (15 days)",
-        "Excellent platform response rate (98%)",
-        "Active contributor on GitHub (Score: 79.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -2521,7 +2470,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 95.1,
+    "confidence_score": 94.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2529,6 +2478,57 @@
         "Short notice period (15 days)",
         "Excellent platform response rate (98%)",
         "Active contributor on GitHub (Score: 98.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0511": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (6.3 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 79.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -2572,7 +2572,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 95.0,
+    "confidence_score": 94.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2623,7 +2623,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 94.8,
+    "confidence_score": 94.4,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2631,57 +2631,6 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (97%)",
         "Active contributor on GitHub (Score: 95.0)"
-      ],
-      "cons": [
-        "Missing core technical stack: fastapi, django"
-      ]
-    },
-    "skill_gap": {
-      "matching": [
-        "python"
-      ],
-      "missing": [
-        "fastapi",
-        "django",
-        "docker",
-        "kubernetes",
-        "aws",
-        "vector database"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0041": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 41
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 99
-      }
-    ],
-    "confidence_score": 94.8,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (7.3 years)",
-        "Short notice period (21 days)",
-        "Excellent platform response rate (97%)",
-        "Active contributor on GitHub (Score: 88.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -2725,7 +2674,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 94.8,
+    "confidence_score": 94.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2733,6 +2682,57 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (97%)",
         "Active contributor on GitHub (Score: 77.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0041": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 94.3,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.3 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 88.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -2776,7 +2776,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 94.8,
+    "confidence_score": 94.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2827,7 +2827,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 94.7,
+    "confidence_score": 94.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2878,7 +2878,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 94.3,
+    "confidence_score": 93.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2886,57 +2886,6 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (99%)",
         "Active contributor on GitHub (Score: 77.0)"
-      ],
-      "cons": [
-        "Missing core technical stack: fastapi, django"
-      ]
-    },
-    "skill_gap": {
-      "matching": [
-        "python"
-      ],
-      "missing": [
-        "fastapi",
-        "django",
-        "docker",
-        "kubernetes",
-        "aws",
-        "vector database"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0512": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 41
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 99
-      }
-    ],
-    "confidence_score": 94.2,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (7.2 years)",
-        "Short notice period (15 days)",
-        "Excellent platform response rate (98%)",
-        "Active contributor on GitHub (Score: 98.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -2980,7 +2929,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 94.2,
+    "confidence_score": 93.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -2988,6 +2937,57 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (98%)",
         "Active contributor on GitHub (Score: 83.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0512": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.7,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.2 years)",
+        "Short notice period (15 days)",
+        "Excellent platform response rate (98%)",
+        "Active contributor on GitHub (Score: 98.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -3031,7 +3031,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 94.1,
+    "confidence_score": 93.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3039,57 +3039,6 @@
         "Short notice period (15 days)",
         "Excellent platform response rate (99%)",
         "Active contributor on GitHub (Score: 100.0)"
-      ],
-      "cons": [
-        "Missing core technical stack: fastapi, django"
-      ]
-    },
-    "skill_gap": {
-      "matching": [
-        "python"
-      ],
-      "missing": [
-        "fastapi",
-        "django",
-        "docker",
-        "kubernetes",
-        "aws",
-        "vector database"
-      ]
-    },
-    "honeypot_reason": null
-  },
-  "CAND_0852": {
-    "requirements_breakdown": [
-      {
-        "label": "Technical Depth",
-        "score": 41
-      },
-      {
-        "label": "Retrieval & AI Search",
-        "score": 30
-      },
-      {
-        "label": "Experience Fit",
-        "score": 100
-      },
-      {
-        "label": "Pedigree Alignment",
-        "score": 100
-      },
-      {
-        "label": "Availability & Signals",
-        "score": 99
-      }
-    ],
-    "confidence_score": 94.0,
-    "why_cards": {
-      "pros": [
-        "Product company pedigree (high-growth focus)",
-        "Ideal experience range (7.5 years)",
-        "Short notice period (21 days)",
-        "Excellent platform response rate (97%)",
-        "Active contributor on GitHub (Score: 79.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -3133,7 +3082,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 94.0,
+    "confidence_score": 93.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3141,6 +3090,57 @@
         "Short notice period (21 days)",
         "Excellent platform response rate (97%)",
         "Active contributor on GitHub (Score: 89.0)"
+      ],
+      "cons": [
+        "Missing core technical stack: fastapi, django"
+      ]
+    },
+    "skill_gap": {
+      "matching": [
+        "python"
+      ],
+      "missing": [
+        "fastapi",
+        "django",
+        "docker",
+        "kubernetes",
+        "aws",
+        "vector database"
+      ]
+    },
+    "honeypot_reason": null
+  },
+  "CAND_0852": {
+    "requirements_breakdown": [
+      {
+        "label": "Technical Depth",
+        "score": 41
+      },
+      {
+        "label": "Retrieval & AI Search",
+        "score": 30
+      },
+      {
+        "label": "Experience Fit",
+        "score": 100
+      },
+      {
+        "label": "Pedigree Alignment",
+        "score": 100
+      },
+      {
+        "label": "Availability & Signals",
+        "score": 99
+      }
+    ],
+    "confidence_score": 93.6,
+    "why_cards": {
+      "pros": [
+        "Product company pedigree (high-growth focus)",
+        "Ideal experience range (7.5 years)",
+        "Short notice period (21 days)",
+        "Excellent platform response rate (97%)",
+        "Active contributor on GitHub (Score: 79.0)"
       ],
       "cons": [
         "Missing core technical stack: fastapi, django"
@@ -3184,7 +3184,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 94.0,
+    "confidence_score": 93.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3235,7 +3235,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 94.0,
+    "confidence_score": 93.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3286,7 +3286,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 94.0,
+    "confidence_score": 93.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3337,7 +3337,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.9,
+    "confidence_score": 93.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3388,7 +3388,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.9,
+    "confidence_score": 93.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3439,7 +3439,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.9,
+    "confidence_score": 93.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3490,7 +3490,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.9,
+    "confidence_score": 93.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3541,7 +3541,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.8,
+    "confidence_score": 93.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3592,7 +3592,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.7,
+    "confidence_score": 93.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3643,7 +3643,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.7,
+    "confidence_score": 93.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3694,7 +3694,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.6,
+    "confidence_score": 93.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3745,7 +3745,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.6,
+    "confidence_score": 93.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3796,7 +3796,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.5,
+    "confidence_score": 93.1,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3847,7 +3847,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.5,
+    "confidence_score": 93.1,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3898,7 +3898,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.5,
+    "confidence_score": 93.1,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -3949,7 +3949,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.5,
+    "confidence_score": 93.1,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4000,7 +4000,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.4,
+    "confidence_score": 93.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4051,7 +4051,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.4,
+    "confidence_score": 93.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4102,7 +4102,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.4,
+    "confidence_score": 93.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4153,7 +4153,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.4,
+    "confidence_score": 93.0,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4204,7 +4204,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.3,
+    "confidence_score": 92.9,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4255,7 +4255,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.2,
+    "confidence_score": 92.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4306,7 +4306,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 93.2,
+    "confidence_score": 92.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4357,7 +4357,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.2,
+    "confidence_score": 92.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4408,7 +4408,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.2,
+    "confidence_score": 92.8,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4459,7 +4459,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.1,
+    "confidence_score": 92.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4510,7 +4510,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.1,
+    "confidence_score": 92.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4561,7 +4561,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.0,
+    "confidence_score": 92.7,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4612,7 +4612,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 93.0,
+    "confidence_score": 92.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4663,7 +4663,7 @@
         "score": 97
       }
     ],
-    "confidence_score": 93.0,
+    "confidence_score": 92.6,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4714,7 +4714,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 93.0,
+    "confidence_score": 92.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4765,7 +4765,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 92.9,
+    "confidence_score": 92.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4816,7 +4816,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 92.9,
+    "confidence_score": 92.5,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4867,7 +4867,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 92.8,
+    "confidence_score": 92.4,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4918,7 +4918,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 92.7,
+    "confidence_score": 92.4,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -4969,7 +4969,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 92.7,
+    "confidence_score": 92.4,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -5020,7 +5020,7 @@
         "score": 99
       }
     ],
-    "confidence_score": 92.7,
+    "confidence_score": 92.3,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",
@@ -5071,7 +5071,7 @@
         "score": 98
       }
     ],
-    "confidence_score": 92.6,
+    "confidence_score": 92.2,
     "why_cards": {
       "pros": [
         "Product company pedigree (high-growth focus)",

@@ -11,7 +11,7 @@ from typing import List, Dict, Any, Optional
 
 import auth_db
 
-app = FastAPI(title="Redrob Talent Intelligence API")
+app = FastAPI(title="AI-Screening Enginee Talent Intelligence API")
 
 # Enable CORS for frontend development
 app.add_middleware(
@@ -675,7 +675,7 @@ def get_fallback_bot_response(message: str, jd: str, candidates: List[Dict[str, 
                 cand = p
                 break
                 
-        email = f"**Subject:** Exciting Founding Team Opportunity - Senior AI Engineer at Redrob\n\n"
+        email = f"**Subject:** Exciting Founding Team Opportunity - Senior AI Engineer at AI-Screening Enginee\n\n"
         email += f"Hi {cand['name']},\n\n"
         email += f"I hope this message finds you well.\n\n"
         email += f"I was reviewing your impressive background, particularly your tenure as a **{cand['title']}** at **{cand['company']}** and your {cand['yoe']} years of experience. We are currently building a founding AI team, and your expertise in **{', '.join(cand['skills'][:3])}** aligns exceptionally well with our technical challenges.\n\n"
@@ -683,7 +683,7 @@ def get_fallback_bot_response(message: str, jd: str, candidates: List[Dict[str, 
             email += f"I also noticed your strong contributions on GitHub (Activity Score: {cand['github']}), which represents the high-signal builder mindset we value.\n\n"
         email += f"Since your notice period is {cand['notice']} days, we would love to connect for a quick 15-minute conversation to explore if there is mutual alignment.\n\n"
         email += "Are you free for a call sometime this week?\n\n"
-        email += "Best regards,\n[Recruiter Name]\nRedrob Talent Intelligence"
+        email += "Best regards,\n[Recruiter Name]\nAI-Screening Enginee Talent Intelligence"
         return f"Here is a personalized outreach email draft for **{cand['name']}** (Rank #{cand['rank']}):\n\n---\n\n{email}"
 
     # Check for skills queries
@@ -792,7 +792,7 @@ async def chat_assistant(
     candidates_context = "\n---\n".join(cand_summary_list)
     
     system_prompt = (
-        "You are an advanced AI Recruiter Assistant integrated inside REDROB Talent Intelligence dashboard.\n"
+        "You are an advanced AI Recruiter Assistant integrated inside AI-Screening Enginee Talent Intelligence dashboard.\n"
         "You help recruitment teams query, compare, shortlist, analyze, and draft outreach emails for candidates.\n\n"
         f"ACTIVE TARGET JOB DESCRIPTION:\n{jd_text}\n\n"
         f"SHORTLISTED CANDIDATES (TOP 15):\n{candidates_context}\n\n"

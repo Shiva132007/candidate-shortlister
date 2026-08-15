@@ -638,7 +638,7 @@ export default function App() {
               </svg>
             </div>
             <div>
-              <h1 className="brand-title">REDROB</h1>
+              <h1 className="brand-title">AI-Screening Enginee</h1>
               <p className="brand-subtitle">Talent Intelligence</p>
             </div>
           </div>
@@ -767,7 +767,7 @@ export default function App() {
         </section>
 
         <footer className="landing-footer">
-          <span>&copy; 2026 Redrob Inc. All rights reserved.</span>
+          <span>&copy; 2026 AI-Screening Enginee Inc. All rights reserved.</span>
           <a href="#" className="footer-link" onClick={(e) => { e.preventDefault(); enterWorkspace(); }}>Launch Console</a>
         </footer>
       </div>
@@ -788,7 +788,7 @@ export default function App() {
           </div>
           <h2 className="auth-title">{authView === 'login' ? 'Welcome Back' : 'Create Account'}</h2>
           <p className="auth-subtitle">
-            {authView === 'login' ? 'Sign in to access your talent console' : 'Register to get started with Redrob'}
+            {authView === 'login' ? 'Sign in to access your talent console' : 'Register to get started with AI-Screening Enginee'}
           </p>
 
           {authError && <div style={{ color: 'var(--accent-rose)', background: 'rgba(244,63,94,0.1)', padding: '10px', borderRadius: '8px', fontSize: '12px', marginBottom: '16px', fontWeight: 600 }}>{authError}</div>}
@@ -851,7 +851,7 @@ export default function App() {
             </svg>
           </div>
           <div>
-            <h1 className="brand-title">REDROB</h1>
+            <h1 className="brand-title">AI-Screening Enginee</h1>
             <p className="brand-subtitle">Talent Intelligence</p>
           </div>
           
